@@ -18,4 +18,4 @@
 3. Set it as Home Page:
     - Click the menu button. and select Options. Preferences.
     - Click the Home panel.
-    - Click the menu next to Homepage and new windows and choose to show the default Firefox Home page, custom URLs or a - blank page.
+    - Click the menu next to Homepage and new windows and choose to show the default Firefox Home page, custom URLs or blank page.

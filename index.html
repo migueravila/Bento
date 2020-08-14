@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>🍱</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel=" shortcut icon" type="image/png" href="icons/favicon.png" />
+        <script src="https://unpkg.com/feather-icons"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="hour">
+                <div class="clock">
+                    <div id="hour"></div>
+                    <div id="separator"></div>
+                    <div id="minutes"></div>
+                </div>
+                <div id="greetings"></div>
+            </div>
+            <div class="secon">
+                <div class="secon__date">
+                    <div id="month"></div>
+                    <div id="day"></div>
+                </div>
+                <div class="secon__weather">
+                    <div class="weather-icon">
+                        <img src="icons/unknown.png" />
+                    </div>
+                    <div class="temperature-value">
+                        <p>- °<span>c</span></p>
+                    </div>
+                    <div class="temperature-description">
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <div class="qlink">
+                <a
+                    href="https://github.com/"
+                    target="blank"
+                    class="qlink__link qlink__link-1"
+                >
+                    <i class="qlink__icon" data-feather="github"></i>
+                </a>
+                <a
+                    target="blank"
+                    href="https://outlook.live.com/mail/inbox"
+                    class="qlink__link qlink__link-2"
+                >
+                    <i class="qlink__icon" data-feather="mail"></i>
+                </a>
+                <a
+                    target="blank"
+                    href="https://calendar.google.com/calendar/r"
+                    class="qlink__link qlink__link-3"
+                >
+                    <i class="qlink__icon" data-feather="calendar"></i>
+                </a>
+                <a
+                    target="blank"
+                    href="https://flipboard.com/"
+                    class="qlink__link qlink__link-4"
+                >
+                    <i class="qlink__icon" data-feather="bookmark"></i>
+                </a>
+                <a href="https://columns.app" class="qlink__link qlink__link-5">
+                    <i class="qlink__icon" data-feather="trello"></i>
+                </a>
+                <a
+                    href="https://www.youtube.com/"
+                    class="qlink__link qlink__link-6"
+                >
+                    <i class="qlink__icon" data-feather="youtube"></i>
+                </a>
+            </div>
+
+            <div class="card qlist qlist__3">
+                <i class="qlist__head" data-feather="music"></i>
+                <a
+                    href="https://www.youtube.com/watch?v=UZ7oOhhPEWU&list=PLSJyylnigxYQ9AYrgCVcvHxH2YduVwd_a"
+                    class="qlist__link"
+                    >Inspirational</a
+                >
+                <a
+                    href="https://www.youtube.com/watch?v=UdfCcWR2KOY&list=PLSJyylnigxYQpgF9CrihQNrB5VXv4Lk5S"
+                    class="qlist__link"
+                    >Classic</a
+                >
+                <a
+                    href="https://www.youtube.com/watch?v=fEzqndjwwIA&list=PLSJyylnigxYRheFSqhX0vu8aI5MtSoHrW"
+                    class="qlist__link"
+                    >Oldies</a
+                >
+                <a
+                    href="https://www.youtube.com/watch?v=9vWNauaZAgg&list=PLSJyylnigxYRKPDiUR770cv69_ziOIxwb"
+                    class="qlist__link"
+                    >Rock</a
+                >
+            </div>
+
+            <div class="card qlist qlist__4">
+                <i class="qlist__head" data-feather="coffee"></i>
+                <a href="https://www.linkedin.com" class="qlist__link"
+                    >LinkedIn</a
+                >
+                <a href="https://dribbble.com/" class="qlist__link">Dribble</a>
+                <a href="https://www.udemy.com/" class="qlist__link">Udemy</a>
+                <a href="https://www.figma.com/files/recent" class="qlist__link"
+                    >Figma</a
+                >
+            </div>
+        </div>
+        <script src="js/time.js"></script>
+        <script src="js/weather.js"></script>
+        <script src="js/greeting.js"></script>
+        <script>
+            feather.replace();
+        </script>
+    </body>
+</html>

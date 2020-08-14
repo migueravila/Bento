@@ -1,11 +1,8 @@
-// Select Elements
-
 const iconElement = document.querySelector('.weather-icon');
 const tempElement = document.querySelector('.temperature-value p');
 const descElement = document.querySelector('.temperature-description p');
 
 // App data
-
 const weather = {};
 weather.temperature = {
     unit: 'celsius',
@@ -14,20 +11,18 @@ weather.temperature = {
 const KELVIN = 273;
 const key = 'aa5b0a76dfbf87441928fb3cc32d3d69';
 
+// Set Position function
 setPosition();
 
 function setPosition(position) {
+    // Here you can change your position
     let latitude = 21.0265;
     let longitude = -89.6765;
-    console.log('What happens here');
-
-    console.log(latitude);
-    console.log(longitude);
 
     getWeather(latitude, longitude);
-    console.log('What happens here');
 }
 
+// Get the Weather data
 function getWeather(latitude, longitude) {
     let api = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${key}`;
 
@@ -48,6 +43,7 @@ function getWeather(latitude, longitude) {
         });
 }
 
+// Display Weather info
 function displayWeather() {
     iconElement.innerHTML = `<img src="icons/${weather.iconId}.png"/>`;
     tempElement.innerHTML = `${weather.temperature.value}°<span>C</span>`;

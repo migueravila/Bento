@@ -1,3 +1,11 @@
+// Variables
+
+$bp-largest: 75em;
+$bp-large: 68.75em;
+$bp-medium: 56.25em;
+$bp-small: 37.5em;
+$bp-smallest: 31.25em;
+
 :root {
     --fsg: 150px;
     --fsm: 85px;
@@ -7,6 +15,12 @@
     --fg: #d8dee9;
     --qbg: #2c323d;
     --blue: #5e81ac;
+
+    @media only screen and (max-width: $bp-large) {
+        --fsg: 100px;
+        --fsm: 65px;
+        --fss: 20px;
+    }
 }
 
 * {
@@ -37,6 +51,11 @@ body {
 
     grid-gap: 30px;
     padding: 20px;
+
+    @media only screen and (max-width: $bp-large) {
+        grid-gap: 20px;
+        padding: 40px;
+    }
 
     & > * {
         width: 100%;
@@ -140,6 +159,11 @@ body {
 
     grid-gap: 30px;
     padding: 30px;
+
+    @media only screen and (max-width: $bp-large) {
+        padding: 60px;
+        grid-gap: 20px;
+    }
 
     &__icon {
         width: 26px;

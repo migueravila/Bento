@@ -9,6 +9,7 @@ weather.temperature = {
 };
 
 const KELVIN = 273;
+// You can use your own key for the Weather
 const key = 'aa5b0a76dfbf87441928fb3cc32d3d69';
 
 // Set Position function
@@ -16,8 +17,9 @@ setPosition();
 
 function setPosition(position) {
     // Here you can change your position
-    let latitude = 21.0265;
-    let longitude = -89.6765;
+    // You can use https://www.latlong.net/ to get it! (I use San Francisco as an example)
+    let latitude = 37.774929;
+    let longitude = -122.419418;
 
     getWeather(latitude, longitude);
 }

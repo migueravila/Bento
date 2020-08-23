@@ -6,8 +6,8 @@
 
 #### Features:
 
--   **Clock and Date** functions
--   **Greetings**: easy to change and modify
+-   **Clock and Date** format can be set to 24 hour (default) or 12 hour
+-   **Greetings** are easy to change and modify
 -   **Variables** for custom colors in the `css` code
 -   **Modular** javascript files for an easy read
 

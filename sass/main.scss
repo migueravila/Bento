@@ -1,5 +1,4 @@
-// Variables
-
+// Responsive
 $bp-largest: 75em;
 $bp-large: 68.75em;
 $bp-medium: 56.25em;
@@ -14,7 +13,7 @@ $bp-smallest: 31.25em;
     --bg: #1f2229;
     --fg: #d8dee9;
     --qbg: #2c323d;
-    --blue: #5e81ac;
+    --accent: #5e81ac;
 
     @media only screen and (max-width: $bp-large) {
         --fsg: 100px;
@@ -81,6 +80,11 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    @media only screen and (max-width: $bp-large) {
+        grid-row: 1 / span 2;
+        grid-column: 1 / span 4;
+    }
 }
 
 .secon {
@@ -102,6 +106,10 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+
+    @media only screen and (max-width: $bp-large) {
+        display: none;
     }
 }
 
@@ -130,6 +138,10 @@ body {
 #greetings {
     font-size: var(--fses);
     font-weight: lighter;
+
+    @media only screen and (max-width: $bp-large) {
+        font-size: var(--fss);
+    }
 }
 
 .weather-icon img {
@@ -161,8 +173,11 @@ body {
     padding: 30px;
 
     @media only screen and (max-width: $bp-large) {
-        padding: 60px;
-        grid-gap: 20px;
+        grid-row: 3 / span 2;
+        grid-column: 1 / span 4;
+
+        grid-gap: 40px;
+        padding: 20px;
     }
 
     &__icon {
@@ -204,7 +219,7 @@ body {
         }
 
         &:hover {
-            background-color: var(--blue);
+            background-color: var(--accent);
             transform: translateY(-0.3rem);
 
             & svg {
@@ -218,6 +233,10 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
+
+    @media only screen and (max-width: $bp-large) {
+        display: none;
+    }
 
     &__3 {
         grid-column: 3;
@@ -242,7 +261,7 @@ body {
         font-weight: bold;
 
         &:hover {
-            background-color: var(--blue);
+            background-color: var(--accent);
             color: var(--bg);
         }
     }

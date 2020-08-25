@@ -7,7 +7,7 @@
     --bg: #1f2229;
     --fg: #d8dee9;
     --qbg: #2c323d;
-    --blue: #5e81ac;
+    --accent: #5e81ac;
 }
 @media only screen and (max-width: 68.75em) {
     :root {
@@ -191,7 +191,7 @@ body {
     grid-column: 3;
 }
 .qlink__link:hover {
-    background-color: var(--blue);
+    background-color: var(--accent);
     transform: translateY(-0.3rem);
 }
 .qlink__link:hover svg {
@@ -226,6 +226,6 @@ body {
     font-weight: bold;
 }
 .qlist__link:hover {
-    background-color: var(--blue);
+    background-color: var(--accent);
     color: var(--bg);
 }

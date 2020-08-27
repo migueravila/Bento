@@ -19,3 +19,7 @@
     - Click the menu button. and select Options. Preferences.
     - Click the Home panel.
     - Click the menu next to Homepage and new windows and choose to show custom URLs and add your `Github Pages link`
+
+### Customization:
+> It has the Nord Color Scheme by default, but you can change it easyly with the variables in the `style/style.css` file. 
+![](https://github.com/MiguelRAvila/Bento/blob/master/assets/code.png)

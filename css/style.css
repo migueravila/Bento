@@ -4,21 +4,21 @@
   --fsm: 85px;
   --fss: 30px;
   --fses: 18px;
-  --accent: #186efd60;
-  --bg: #1e1f21;
-  --sbg: #2c2d31;
-  --fg: #d8dee9; }
+  --accent: #186efdaa;
+  --bg: #f5f5f5;
+  --sbg: #e4e6e6;
+  --fg: #3a3a3a; }
   @media only screen and (max-width: 68.75em) {
     :root {
       --fsg: 100px;
       --fsm: 65px;
       --fss: 20px; } }
 
-.lightmode {
-  --accent: #186efdaa;
-  --bg: #f5f5f5;
-  --sbg: #e4e6e6;
-  --fg: #3a3a3a; }
+.darktheme {
+  --accent: #186efd60;
+  --bg: #1e1f21;
+  --sbg: #2c2d31;
+  --fg: #d8dee9; }
 
 * {
   margin: 0;

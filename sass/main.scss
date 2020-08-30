@@ -15,17 +15,11 @@ $bp-smallest: 31.25em;
 
     // C O L O R S
 
-    --accent: #20a4f3;
+    --accent: #186efd60;
 
-    // Colors Dark theme
-    --darkbg: #1e1f21;
-    --darksbg: #2c2d31;
-    --darkfg: #d8dee9;
-
-    // Colors White theme
-    --lightbg: #ffffff;
-    --lightsbg: #f9fafa;
-    --lightfg: #000000;
+    --bg: #1e1f21;
+    --sbg: #2c2d31;
+    --fg: #d8dee9;
 
     @media only screen and (max-width: $bp-large) {
         --fsg: 100px;
@@ -33,48 +27,58 @@ $bp-smallest: 31.25em;
         --fss: 20px;
     }
 }
+.lightmode {
+
+    --accent: #186efdaa;
+    
+    --bg: #f5f5f5;
+    --sbg: #e4e6e6;
+    --fg: #3a3a3a;
+
+}
 
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;font-family: 'Open Sans', sans-serif;
-    color: var(--darkfg);
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
     font-size: 13.5px;
 
     transition: 0.2s ease-in-out;
 }
 
-.darkbg {
-    background-color: var(--darkbg);
-}
-
-.darksbg {
-    background-color: var(--darksbg);
-}
-
-.darkfg {
-    color: var(--darkfg);
-}
-
-.lightbg {
-    background-color: var(--lightbg);
-}
-
-.lightsbg {
-    background-color: var(--lightsbg);
-}
-
-
-.lightfg {
-    color: var(--lightfg);
-}
-
 body {
     width: 100vw;
     height: 100vh;
+    background-color: var(--bg);
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#themeButton {
+    position: absolute;
+    margin: 2em 2em 0 0;
+    right: 0;
+    top: 0;
+
+    color: var(--fg);
+
+    border: none;
+    border-radius: 5px;
+
+    padding: 10px;
+    cursor: pointer;
+
+    background-color: #00000000;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.bicon {
+    width: 26px;
+    height: 26px;
 }
 .container {
     width: 150vh;
@@ -99,10 +103,11 @@ body {
 .card {
     box-shadow: 0 5px 7px rgba(#000000, 0.35);
     border-radius: 5px;
+    background-color: var(--sbg);
 
     &:hover {
-        transform: translateY(-0.3rem);
-        box-shadow: 0 20px 30px rgba(#000000, 0.35);
+        transform: translateY(-0.2rem);
+        box-shadow: 0 10px 10px rgba(#000000, 0.35);
     }
 }
 
@@ -158,12 +163,14 @@ body {
 #minutes {
     font-size: var(--fsg);
     font-weight: bolder;
+    color: var(--fg);
 }
 
 #month,
 #day {
     font-size: var(--fsm);
     font-weight: bold;
+    color: var(--fg);
 }
 #day {
     margin-left: 20px;
@@ -171,7 +178,7 @@ body {
 
 #greetings {
     font-size: var(--fses);
-    font-weight: lighter;
+    color: var(--fg);
 
     @media only screen and (max-width: $bp-large) {
         font-size: var(--fss);
@@ -188,10 +195,12 @@ body {
         font-size: var(--fss);
         font-weight: bolder;
         margin-left: 15px;
+        color: var(--fg);
     }
     &-description p {
         font-size: var(--fss);
         margin-left: 15px;
+        color: var(--fg);
     }
 }
 
@@ -217,14 +226,15 @@ body {
     &__icon {
         width: 26px;
         height: 26px;
+        color: var(--fg);
     }
 
     &__link {
         display: flex;
         justify-content: center;
         align-items: center;
+        background-color: var(--sbg);
         width: 100%;
-        background-color: var(--darksbg);
         box-shadow: 0 5px 7px rgba(#000000, 0.35);
         border-radius: 5px;
         &-1 {
@@ -254,12 +264,12 @@ body {
 
         &:hover {
             background-color: var(--accent);
-            transform: translateY(-0.3rem);
+            transform: translateY(-0.2rem);
 
-            box-shadow: 0 20px 30px rgba(#000000, 0.35);
+            box-shadow: 0 10px 10px rgba(#000000, 0.35);
 
             & svg {
-                stroke: var(--darkbg);
+                stroke: var(--fg);;
             }
         }
     }
@@ -286,19 +296,21 @@ body {
         margin-top: 30px;
         margin-bottom: 20px;
         width: 30px;
+        color: var(--fg);
         height: 30px;
     }
     &__link {
         text-decoration: none;
         font-size: var(--fses);
+        color: var(--fg);
         margin-top: 1px;
-        padding: 10px 12px;
+        padding: 6px 12px;
         border-radius: 5px;
         font-weight: bold;
 
         &:hover {
             background-color: var(--accent);
-            color: var(--darkbg);
+            color: var(--fg);
         }
     }
 }

@@ -52,6 +52,6 @@ function getWeather(latitude, longitude) {
 // Display Weather info
 function displayWeather() {
     iconElement.innerHTML = `<img src="icons/${weather.iconId}.png"/>`;
-    tempElement.innerHTML = `${weather.temperature.value}°<span>${tempUnit}</span>`;
+    tempElement.innerHTML = `${weather.temperature.value}°<span class="darkfg">${tempUnit}</span>`;
     descElement.innerHTML = weather.description;
 }

@@ -6,30 +6,31 @@
         <link rel="stylesheet" href="css/style.css" />
         <script src="https://unpkg.com/feather-icons"></script>
     </head>
-    <body class="darkfg darkbg">
+    <body class="">
+        <button id="themeButton"><i class="bicon" data-feather="sun"></i></button>
         <div class="container">
             <div class="fblock">
                 <div class="clock ">
-                    <div id="hour" class="darkfg"></div>
-                    <div id="separator" class="darkfg"></div>
-                    <div id="minutes" class="darkfg"></div>
+                    <div id="hour" class=""></div>
+                    <div id="separator" class=""></div>
+                    <div id="minutes" class=""></div>
                 </div>
-                <div id="greetings" class="darkfg"></div>
+                <div id="greetings" class=""></div>
             </div>
             <div class="sblock">
                 <div class="sblock__date">
-                    <div id="month" class="darkfg"></div>
-                    <div id="day" class="darkfg"></div>
+                    <div id="month" class=""></div>
+                    <div id="day" class=""></div>
                 </div>
                 <div class="sblock__weather">
                     <div class="weather-icon">
                         <img src="icons/unknown.png" />
                     </div>
                     <div class="temperature-value">
-                        <p>- °<span class="darkfg">c</span></p>
+                        <p class="">- °<span class="g">c</span></p>
                     </div>
                     <div class="temperature-description">
-                        <p class="darkfg"></p>
+                        <p class=""></p>
                     </div>
                 </div>
             </div>
@@ -37,9 +38,9 @@
                 <a
                     href="https://github.com/"
                     target="blank"
-                    class="qlink__link qlink__link-1"
+                    class="qlink__link qlink__link-1 "
                 >
-                    <i class="qlink__icon" data-feather="github"></i>
+                    <i class="qlink__icon " data-feather="github"></i>
                 </a>
                 <a
                     target="blank"
@@ -73,7 +74,7 @@
                 </a>
             </div>
 
-            <div class="card darksbg qlist qlist__1">
+            <div class="card qlist qlist__1">
                 <i class="qlist__head" data-feather="music"></i>
                 <a
                     href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
@@ -97,7 +98,7 @@
                 >
             </div>
 
-            <div class="card darksbg qlist qlist__2">
+            <div class="card qlist qlist__2">
                 <i class="qlist__head" data-feather="coffee"></i>
                 <a href="https://www.linkedin.com" class="qlist__link"
                     >LinkedIn</a
@@ -112,6 +113,7 @@
         <script src="js/time.js"></script>
         <script src="js/weather.js"></script>
         <script src="js/greeting.js"></script>
+        <script src="js/theme.js"></script>
         <script>
             feather.replace();
         </script>

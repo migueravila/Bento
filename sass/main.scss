@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
 // Responsive
 $bp-largest: 75em;
 $bp-large: 68.75em;
@@ -14,16 +15,16 @@ $bp-smallest: 31.25em;
 
     // C O L O R S
 
-    --accent: #3F8CC9;
+    --accent: #20a4f3;
 
     // Colors Dark theme
-    --darkbg: #1E1F21;
-    --darksbg: #2C2D31;
+    --darkbg: #1e1f21;
+    --darksbg: #2c2d31;
     --darkfg: #d8dee9;
 
     // Colors White theme
-    --lightbg: #FFFFFF;
-    --lightsbg: #F9FAFA;
+    --lightbg: #ffffff;
+    --lightsbg: #f9fafa;
     --lightfg: #000000;
 
     @media only screen and (max-width: $bp-large) {
@@ -36,18 +37,41 @@ $bp-smallest: 31.25em;
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Proxima nova', monospace;
+    box-sizing: border-box;font-family: 'Open Sans', sans-serif;
     color: var(--darkfg);
     font-size: 13.5px;
 
     transition: 0.2s ease-in-out;
 }
 
+.darkbg {
+    background-color: var(--darkbg);
+}
+
+.darksbg {
+    background-color: var(--darksbg);
+}
+
+.darkfg {
+    color: var(--darkfg);
+}
+
+.lightbg {
+    background-color: var(--lightbg);
+}
+
+.lightsbg {
+    background-color: var(--lightsbg);
+}
+
+
+.lightfg {
+    color: var(--lightfg);
+}
+
 body {
     width: 100vw;
     height: 100vh;
-    background-color: var(--darkbg);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -73,7 +97,6 @@ body {
 }
 
 .card {
-    background-color: var(--darksbg);
     box-shadow: 0 5px 7px rgba(#000000, 0.35);
     border-radius: 5px;
 
@@ -83,7 +106,7 @@ body {
     }
 }
 
-.hour {
+.fblock {
     grid-row: 1 / span 2;
     grid-column: 1 / span 2;
 
@@ -98,7 +121,7 @@ body {
     }
 }
 
-.secon {
+.sblock {
     grid-column: 3 / span 2;
     grid-row: 1 / span 2;
 
@@ -233,7 +256,7 @@ body {
             background-color: var(--accent);
             transform: translateY(-0.3rem);
 
-        box-shadow: 0 20px 30px rgba(#000000, 0.35);
+            box-shadow: 0 20px 30px rgba(#000000, 0.35);
 
             & svg {
                 stroke: var(--darkbg);
@@ -251,11 +274,11 @@ body {
         display: none;
     }
 
-    &__3 {
+    &__1 {
         grid-column: 3;
         grid-row: 3 / span 2;
     }
-    &__4 {
+    &__2 {
         grid-column: 4;
         grid-row: 3 / span 2;
     }

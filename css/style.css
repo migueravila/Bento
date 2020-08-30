@@ -3,10 +3,13 @@
   --fsm: 85px;
   --fss: 30px;
   --fses: 18px;
-  --bg: #1f2229;
-  --fg: #d8dee9;
-  --qbg: #2c323d;
-  --accent: #5e81ac; }
+  --accent: #3F8CC9;
+  --darkbg: #1E1F21;
+  --darksbg: #2C2D31;
+  --darkfg: #d8dee9;
+  --lightbg: #FFFFFF;
+  --lightsbg: #F9FAFA;
+  --lightfg: #000000; }
   @media only screen and (max-width: 68.75em) {
     :root {
       --fsg: 100px;
@@ -18,14 +21,14 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Proxima nova', monospace;
-  color: var(--fg);
+  color: var(--darkfg);
   font-size: 13.5px;
   transition: 0.2s ease-in-out; }
 
 body {
   width: 100vw;
   height: 100vh;
-  background-color: var(--bg);
+  background-color: var(--darkbg);
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -46,7 +49,7 @@ body {
     width: 100%; }
 
 .card {
-  background-color: var(--qbg);
+  background-color: var(--darksbg);
   box-shadow: 0 5px 7px rgba(0, 0, 0, 0.35);
   border-radius: 5px; }
   .card:hover {
@@ -146,7 +149,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    background-color: var(--qbg);
+    background-color: var(--darksbg);
     box-shadow: 0 5px 7px rgba(0, 0, 0, 0.35);
     border-radius: 5px; }
     .qlink__link-1 {
@@ -169,9 +172,10 @@ body {
       grid-column: 3; }
     .qlink__link:hover {
       background-color: var(--accent);
-      transform: translateY(-0.3rem); }
+      transform: translateY(-0.3rem);
+      box-shadow: 0 20px 30px rgba(0, 0, 0, 0.35); }
       .qlink__link:hover svg {
-        stroke: var(--bg); }
+        stroke: var(--darkbg); }
 
 .qlist {
   display: flex;
@@ -200,4 +204,4 @@ body {
     font-weight: bold; }
     .qlist__link:hover {
       background-color: var(--accent);
-      color: var(--bg); }
+      color: var(--darkbg); }

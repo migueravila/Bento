@@ -22,4 +22,5 @@
 
 ### Customization:
 > It has the Nord Color Scheme by default, but you can change it easyly with the variables in the `style/style.css` file. 
+
 ![](https://github.com/MiguelRAvila/Bento/blob/master/assets/code.png)

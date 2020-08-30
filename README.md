@@ -2,7 +2,7 @@
 
 > ### 🍱 A Clean and Simple Startpage
 
-![](https://github.com/MiguelRAvila/Bento/blob/master/assets/preview.gif)
+![](https://github.com/MiguelRAvila/Bento/blob/master/assets/preview.png)
 
 #### Features:
 
@@ -11,6 +11,11 @@
 -   **Greetings** are easy to change and modify
 -   **Variables** for custom colors in the `css` code
 -   **Modular** javascript files for an easy read
+
+
+<p align="center">
+  <img src="https://github.com/MiguelRAvila/Bento/blob/master/assets/preview.gif">
+</p>
 
 ### Usage:
 

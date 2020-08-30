@@ -1,7 +1,6 @@
 
 <div align="center">
-<h1>Bento</h1>
-<h5 style="color: green"> 🍱 A Clean and Simple Startpage</h5>
+<h2>Bento</h2  🍱 A Clean and Simple Startpage>
 </div>
 
 ![](https://github.com/MiguelRAvila/Bento/blob/master/assets/preview.png)

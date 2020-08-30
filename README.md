@@ -2,7 +2,7 @@
 
 > ### 🍱 A Clean and Simple Startpage
 
-![](https://github.com/MiguelRAvila/Bento/blob/master/assets/preview.png)
+![](https://github.com/MiguelRAvila/Bento/blob/master/assets/preview.gif)
 
 #### Features:
 

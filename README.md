@@ -2,10 +2,11 @@
 
 > ### 🍱 A Clean and Simple Startpage
 
-![](https://github.com/MiguelRAvila/Bento/blob/master/assets/preview.png)
+![](https://github.com/MiguelRAvila/Bento/blob/master/assets/preview.gif)
 
 #### Features:
 
+- **Dark/Light** mode, you can toggle them and It'll be saved in local store
 -   **Clock and Date** format can be set to 24 hour (default) or 12 hour
 -   **Greetings** are easy to change and modify
 -   **Variables** for custom colors in the `css` code

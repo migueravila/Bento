@@ -1,6 +1,8 @@
-# Bento
 
-> ### 🍱 A Clean and Simple Startpage
+<div align="center">
+<h1>Bento</h1>
+<h4>🍱 A Clean and Simple Startpage</h4>
+</div>
 
 ![](https://github.com/MiguelRAvila/Bento/blob/master/assets/preview.png)
 

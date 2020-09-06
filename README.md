@@ -48,3 +48,7 @@
 In the CSS code you can always change the variables for both themes (Dark and Light)
 
 #### Weather Widget
+
+For setting up the Weather widget you're going to need an API Key in: `https://openweathermap.org/`. Once you have your Key you'll need to set yourlatitude and longitude, you can use: `https://www.latlong.net/` to get them. Once you have the data, you'll need to set them in the `weather.js` in the **js** folder.
+
+> If you don't like the idea of having your API Key public, you can make the repo into a private one. You can still use the Github Pages service.

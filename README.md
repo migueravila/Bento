@@ -13,9 +13,9 @@
          - [Home Page](#as-home-page)
          - [New Tab](#as-new-tab)
     -   [Customization](#customization)
-         - [Home Page](#as-home-page)
-         - [New Tab](#as-new-tab)
-
+         - [Colors](#as-home-page)
+         - [Wather Widget](#as-new-tab)
+         - [Image Background](#as-new-tab)
 #### Features:
 
 - **Dark/Light** mode, you can toggle them and It'll be saved in local store

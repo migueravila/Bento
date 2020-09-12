@@ -13,6 +13,8 @@
          - [Home Page](#as-home-page)
          - [New Tab](#as-new-tab)
     -   [Customization](#customization)
+         - [Home Page](#as-home-page)
+         - [New Tab](#as-new-tab)
 
 #### Features:
 
@@ -49,6 +51,16 @@ In the CSS code you can always change the variables for both themes (Dark and Li
 
 #### Weather Widget
 
-For setting up the Weather widget you're going to need an API Key in: `https://openweathermap.org/`. Once you have your Key you'll need to set yourlatitude and longitude, you can use: `https://www.latlong.net/` to get them. Once you have the data, you'll need to set them in the `weather.js` in the **js** folder.
+For setting up the Weather widget you're going to need an API Key in: `https://openweathermap.org/`. Once you have your Key you'll need to set yourlatitude and longitude, you can use: `https://www.latlong.net/` to get them. Once you have the data, you'll need to set them in the `weather.js` in the **js** folder. The code is 
 
 > If you don't like the idea of having your API Key public, you can make the repo into a private one. You can still use the Github Pages service.
+
+#### Image Background
+
+You can set your own background image with the variable `--imgbg` and set the route to the image you want It's disable by default. If you uncomment the variable, it has by default this image: 
+
+<p align="center">
+  <img src="https://github.com/MiguelRAvila/Bento/blob/master/assets/previewbg.png">
+</p>
+
+It has a black filter by default in `--imgcol`, and it'ts value is: `rgba(255, 255, 255, 0.7)` and `rgba(0, 0, 0, 0.7)` for the dark theme. You can change them and the opacity for a better experience with your image.

@@ -21,6 +21,11 @@ $bp-smallest: 31.25em;
     --sbg: #e4e6e6;
     --fg: #3a3a3a;
 
+    --imgbg: url(/img/wal.jpg);
+
+
+    --imgcol: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
+
     @media only screen and (max-width: $bp-large) {
         --fsg: 100px;
         --fsm: 65px;
@@ -28,15 +33,14 @@ $bp-smallest: 31.25em;
     }
 }
 .darktheme {
-
     --accent: #186efd60;
+    
 
     --bg: #1e1f21;
     --sbg: #2c2d31;
     --fg: #d8dee9;
-    
-    
 
+    --imgcol: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
 }
 
 * {
@@ -53,6 +57,9 @@ body {
     width: 100vw;
     height: 100vh;
     background-color: var(--bg);
+
+    background-image: var(--imgcol), var(--imgbg);
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -271,7 +278,7 @@ body {
             box-shadow: 0 10px 10px rgba(#000000, 0.35);
 
             & svg {
-                stroke: var(--fg);;
+                stroke: var(--fg);
             }
         }
     }

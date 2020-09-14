@@ -13,7 +13,7 @@
     --fg: #3a3a3a;
 
     /* Image background  */
-    --imgbg: url(/img/wal.jpg);
+    /* --imgbg: url(/img/wal.jpg); */
     --imgcol: linear-gradient(
         rgba(255, 255, 255, 0.7),
         rgba(255, 255, 255, 0.7)

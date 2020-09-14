@@ -1,13 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
 :root {
+    /* Fonts  */
     --fsg: 150px;
     --fsm: 85px;
     --fss: 30px;
     --fses: 18px;
+
+    /* Light theme  */
     --accent: #186efdaa;
     --bg: #f5f5f5;
     --sbg: #e4e6e6;
     --fg: #3a3a3a;
+
+    /* Image background  */
     --imgbg: url(/img/wal.jpg);
     --imgcol: linear-gradient(
         rgba(255, 255, 255, 0.7),
@@ -22,6 +27,7 @@
     }
 }
 
+/* Dark theme  */
 .darktheme {
     --accent: #186efd60;
     --bg: #1e1f21;

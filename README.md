@@ -66,6 +66,16 @@ In the CSS code you can always change the variables for both themes (Dark and Li
 <p align="center">
   <img src="https://github.com/MiguelRAvila/Bento/blob/master/assets/code2.png">
 </p>
+<div align="center">
+<h5>Light mode (default)</h5>
+</div>
+
+<p align="center">
+  <img src="https://github.com/MiguelRAvila/Bento/blob/master/assets/code3.png">
+</p>
+<div align="center">
+<h5>Dark mode</h5>
+</div>
 
 #### Weather Widget
 

@@ -13,6 +13,12 @@
     --fg: #3a3a3a;
 
     /* Image background  */
+
+    /* Uncoment this section to get the 
+    image wallpaper. You can also 
+    change the --imgcol value 
+    to make the filter to your own */
+
     /* --imgbg: url(/img/wal.jpg); */
     --imgcol: linear-gradient(
         rgba(255, 255, 255, 0.7),

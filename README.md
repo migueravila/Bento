@@ -25,7 +25,6 @@
 -   **Variables** for custom colors in the `css` code
 -   **Modular** javascript files for an easy read
 
-
 <p align="center">
   <img src="https://github.com/MiguelRAvila/Bento/blob/master/assets/preview.gif">
 </p>
@@ -57,7 +56,7 @@ You can change the links (and the icons too) in the HTML Code:
 </p>
 
 Change the link in the `href` property with the link you want. (The `target="blank"` makes the link to open a new tab with the link you choose). 
-The Project uses `https://feathericons.com/` for the icons, and you can change them in the `data-feather=""` property with the name of the icon. 
+The Project uses [Feather icons](https://feathericons.com/) for the icons, and you can change them in the `data-feather=""` property with the name of the icon. 
 
 
 #### Colors

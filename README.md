@@ -13,6 +13,7 @@
          - [Home Page](#as-home-page)
          - [New Tab](#as-new-tab)
     -   [Customization](#customization)
+         - [Links and Icons](#links-and-icons)
          - [Colors](#colors)
          - [Wather Widget](#weather-widget)
          - [Image Background](#image-background)
@@ -46,8 +47,25 @@
 
 ### Customization
 
+> All the code is using variables and is comented, It's easy to customize the project to your own, and this sections are the principal customizable elements in the Startpage:
+
+#### Links and Icons
+You can change the links (and the icons too) in the HTML Code:
+
+<p align="center">
+  <img src="https://github.com/MiguelRAvila/Bento/blob/master/assets/code1.png">
+</p>
+
+Change the link in the `href` property with the link you want. (The `target="blank"` makes the link to open a new tab with the link you choose). 
+The Project uses `https://feathericons.com/` for the icons, and you can change them in the `data-feather=""` property with the name of the icon. 
+
+
 #### Colors
 In the CSS code you can always change the variables for both themes (Dark and Light)
+
+<p align="center">
+  <img src="https://github.com/MiguelRAvila/Bento/blob/master/assets/code2.png">
+</p>
 
 #### Weather Widget
 

@@ -1,4 +1,4 @@
-
+    
 <div align="center">
 <h1>Bento: 🍱 A Clean and Simple Startpage</h1>
 </div>
@@ -16,6 +16,7 @@
          - [Links and Icons](#links-and-icons)
          - [Colors](#colors)
          - [Wather Widget](#weather-widget)
+         - [Greetings](#greetings)
          - [Image Background](#image-background)
 #### Features:
 
@@ -81,6 +82,19 @@ In the CSS code you can always change the variables for both themes (Dark and Li
 For setting up the Weather widget you're going to need an API Key in: `https://openweathermap.org/`. Once you have your Key you'll need to set yourlatitude and longitude, you can use: `https://www.latlong.net/` to get them. Once you have the data, you'll need to set them in the `weather.js` in the **js** folder. The code is 
 
 > If you don't like the idea of having your API Key public, you can make the repo into a private one. You can still use the Github Pages service.
+
+#### Greetings
+You can put your name and change the greetings.
+
+```js
+var name = 'John Doe'; 
+var lateTxt = 'Go to Sleep! ';
+var morningTxt = 'Good morning! ';
+var afterTxt = 'Good afternoon ';
+var evenTxt = 'Good evening ';
+```
+
+It'll change in order of the hour.
 
 #### Image Background
 

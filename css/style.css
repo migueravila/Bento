@@ -176,7 +176,7 @@ body {
 }
 
 #greetings {
-    font-size: var(--fses);
+    font-size: var(--fss);
     color: var(--fg);
 }
 @media only screen and (max-width: 68.75em) {

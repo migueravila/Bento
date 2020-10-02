@@ -278,7 +278,8 @@ body {
     }
 }
 .qlist__1 {
-    grid-column: 3;
+    grid-column-start: 3;
+    grid-column-end: 5;
     grid-row: 3 / span 2;
 }
 .qlist__2 {

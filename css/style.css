@@ -316,3 +316,7 @@ body {
     background-color: var(--accent);
     color: var(--fg);
 }
+
+#fw-container {
+    border: none !important;
+}

@@ -286,7 +286,12 @@ body {
     grid-row: 5;
 }
 
-.qlist__3 {
+.qulist__3 {
+    grid-column: 2 / span 2;
+    grid-row: 5;
+}
+
+.qlist__4 {
     grid-column: 1 / span 4;
     grid-row: 6;
 }

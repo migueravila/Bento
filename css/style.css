@@ -317,6 +317,6 @@ body {
     color: var(--fg);
 }
 
-#fw-container {
+html body div#fw-container {
     border: none !important;
 }

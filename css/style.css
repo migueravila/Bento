@@ -282,12 +282,12 @@ body {
     grid-row: 3 / span 2;
 }
 .qlist__2 {
-    grid-column: 1;
+    grid-column: 1 / span 4;
     grid-row: 5;
 }
 
 .qlist__3 {
-    grid-column: 1;
+    grid-column: 1 / span 4;
     grid-row: 6;
 }
 

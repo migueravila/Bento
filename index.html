@@ -87,8 +87,14 @@
                 <script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" preloader-text="Loading..." data-fw-param="137041/"></script> 
             </div>
             
+            <!-- John Hopkinds Covid Dashboard -->
+            <div class="qlist qlist__2">
+                <iframe src="https://www.arcgis.com/apps/opsdashboard/index.html#/409af567637846e3b5d4182fcd779bea" scrolling="no" width="1200" height="610">Iframes not supported</iframe>
+            </div>
+            <!-- JH Covid END -->
+            
             <!-- TradingView Widget BEGIN -->
-            <div class="qlist qlist__2 tradingview-widget-container">
+            <div class="qlist qlist__3 tradingview-widget-container">
               <div id="technical-analysis"></div>
               <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/AAPL/" rel="noopener" target="_blank"><span class="blue-text">AAPL Chart</span></a> by TradingView</div>
               <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
@@ -96,6 +102,7 @@
               new TradingView.widget(
               {
               "container_id": "technical-analysis",
+              "width": 1200,
               "height": 610,
               "symbol": "CURRENCYCOM:US500",
               "interval": "D",
@@ -122,11 +129,7 @@
             </div>
             <!-- TradingView Widget END -->
             
-            <!-- John Hopkinds Covid Dashboard -->
-            <div class="qlist qlist__3">
-                <iframe style= "height: 610; overflow: hidden;" src="https://www.arcgis.com/apps/opsdashboard/index.html#/409af567637846e3b5d4182fcd779bea" scrolling="no" width="500" height="500">Iframes not supported</iframe>
-            </div>
-            <!-- JH Covid END -->
+
 
 <!--             <div class="card qlist qlist__1">
                 <i class="qlist__head" data-feather="music"></i>

@@ -67,19 +67,30 @@ The Project uses [Feather icons](https://feathericons.com/) for the icons, and y
 #### Colors
 In the CSS code you can always change the variables for both themes (Dark and Light)
 
-<p align="center">
-  <img src="https://github.com/MiguelRAvila/Bento/blob/master/assets/code2.png">
-</p>
-<div align="center">
-<h5>Light mode (default)</h5>
-</div>
+```css
+    /* Light theme  */
+:root {
+    --accent: #186efdaa;
+    --bg: #f5f5f5;
+    --sbg: #e4e6e6;
+    --fg: #3a3a3a;
+    --imgcol: linear-gradient(
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.7)
+    );
+}
 
-<p align="center">
-  <img src="https://github.com/MiguelRAvila/Bento/blob/master/assets/code3.png">
-</p>
-<div align="center">
-<h5>Dark mode</h5>
-</div>
+   /* Dark theme  */
+.darktheme {
+    --accent: #186efd60;
+    --bg: #1e1f21;
+    --sbg: #2c2d31;
+    --fg: #d8dee9;
+    --imgcol: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+}
+```
+
+
 
 #### Image Background
 

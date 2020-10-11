@@ -30,10 +30,6 @@
 -   **Icons** all icons are from Feather Icons (Some others I made them with the Feather icons as a base)
 -   **Modular** javascript files for an easy read
 
-<p align="center">
-  <img src="https://github.com/MiguelRAvila/Bento/blob/master/assets/preview.gif">
-</p>
-
 ### Usage:
 
 #### As Home Page:

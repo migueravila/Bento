@@ -128,28 +128,28 @@ For setting up the Weather widget you're going to need an API Key in: `https://o
 
 ### Weather Icons
 
-The icons by themselves have now 4 different color schemes:
-
--   **Dark** For White theme only users that want a minimalist look
--   **White** For Dark theme only users that want a minimalist look
--   **Nord** Using the Nord Color Scheme and easy-to-eyes colors
--   **Odp** (Default one) Using the One Dark Pro color scheme
-
 <p align="center">
   <img src="https://github.com/MiguelRAvila/Bento/blob/master/assets/previewico.png">
 </p>
 
+The icons by themselves have now 4 different color schemes:
+
+-   **Nord** Using the Nord Color Scheme and easy-to-eyes colors
+-   **OneDark** (Default one) Using the One Dark Pro color scheme
+-   **Dark** For White theme only users that want a minimalist look
+-   **White** For Dark theme only users that want a minimalist look
+
 You set the icon theme changing this two lines of code in the `index.html` and `weather.js` files:
 
--   If you want the Dark icon theme, change the `Odp` to `Dark`
--   If you want the White icon theme, change the `Odp` to `White`
--   If you want the Nord icon theme, change the `Odp` to `Nord`
+-   If you want the Dark icon theme, change the `OneDark` to `Dark`
+-   If you want the White icon theme, change the `OneDark` to `White`
+-   If you want the Nord icon theme, change the `OneDark` to `Nord`
 
 For example if I'd like to use the `Dark` icon theme:
 
 ```html
 <div class="weather-icon">
-    <img src="icons/Odp/unknown.png" />
+    <img src="icons/OneDark/unknown.png" />
 </div>
 <!-- Change it to: -->
 <div class="weather-icon">
@@ -159,7 +159,7 @@ For example if I'd like to use the `Dark` icon theme:
 
 ```js
 function displayWeather() {
-    iconElement.innerHTML = `<img src="icons/Odp/${weather.iconId}.png"/>`;
+    iconElement.innerHTML = `<img src="icons/OneDark/${weather.iconId}.png"/>`;
     tempElement.innerHTML = `${weather.temperature.value}°<span class="darkfg">${tempUnit}</span>`;
     descElement.innerHTML = weather.description;
 }

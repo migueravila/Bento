@@ -23,10 +23,11 @@
          - [Weather Icons](#weather-icons)
 #### Features:
 
-- **Dark/Light** mode, you can toggle them and It'll be saved in local store
+-   **Dark/Light** mode, you can toggle them and It'll be saved in local store
 -   **Clock and Date** format can be set to 24 hour (default) or 12 hour
 -   **Greetings** are easy to change and modify
 -   **Variables** for custom colors and font sizes in the `css` code
+-   **Icons** all icons are from Feather Icons (Some others I made them with the Feather icons as a base)
 -   **Modular** javascript files for an easy read
 
 <p align="center">

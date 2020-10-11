@@ -7,7 +7,7 @@
   <img src="https://github.com/MiguelRAvila/Bento/blob/master/assets/preview.png">
 </p>
 
-## Index
+### Index
 
 -   [Bento](#)
     -   [Features](#features)
@@ -31,7 +31,7 @@
 -   **Icons** all icons are from Feather Icons (Some others I made them with the Feather icons as a base)
 -   **Modular** javascript files for an easy read
 
----
+***
 
 ### Usage:
 
@@ -47,6 +47,8 @@
 1. You can use different Add-ons/Extensions for it
   - If you use Firefox: [Custom New Tab Page](https://addons.mozilla.org/en-US/firefox/addon/custom-new-tab-page/?src=search)
   - If you use Chromium (Brave, Vivaldi, Chrome): [Custom New Tab URL](https://chrome.google.com/webstore/detail/custom-new-tab-url/mmjbdbjnoablegbkcklggeknkfcjkjia)
+
+***
 
 ### Customization
 

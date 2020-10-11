@@ -18,7 +18,7 @@
         -   [Colors](#colors)
         -   [Image Background](#image-background)
         -   [Greetings](#greetings)
-        -   [Wather Info](#weather-info)
+        -   [Weather Info](#weather-info)
         -   [Weather Icons](#weather-icons)
 
 ### Features:

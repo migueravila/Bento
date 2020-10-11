@@ -7,7 +7,7 @@
   <img src="https://github.com/MiguelRAvila/Bento/blob/master/assets/preview.png">
 </p>
 
-### Index
+## Index
 
 -   [Bento](#)
     -   [Features](#features)

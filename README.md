@@ -15,12 +15,12 @@
          - [Home Page](#as-home-page)
          - [New Tab](#as-new-tab)
     -   [Customization](#customization)
-         - [Links and Icons](#links-and-icons)
+         - [Links](#links)
          - [Colors](#colors)
          - [Image Background](#image-background)
          - [Greetings](#greetings)
          - [Wather Info](#weather-info)
-         - [Weather Icons](#image-background)
+         - [Weather Icons](#weather-icons)
 #### Features:
 
 - **Dark/Light** mode, you can toggle them and It'll be saved in local store
@@ -52,7 +52,7 @@
 
 > All the code is using variables and is comented, It's easy to customize the project to your own, and this sections are the principal customizable elements in the Startpage:
 
-#### Links and Icons
+#### Links
 You can change the links (and the icons too) in the HTML Code:
 
 <p align="center">

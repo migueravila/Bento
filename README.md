@@ -7,7 +7,7 @@
   <img src="https://github.com/MiguelRAvila/Bento/blob/master/assets/preview.png">
 </p>
 
-### Index
+## Index
 
 -   [Bento](#)
     -   [Features](#features)
@@ -31,9 +31,8 @@
 -   **Icons** all icons are from Feather Icons (Some others I made them with the Feather icons as a base)
 -   **Modular** javascript files for an easy read
 
-***
 
-### Usage:
+## Usage:
 
 #### As Home Page:
 1. Fork this repo
@@ -48,13 +47,12 @@
   - If you use Firefox: [Custom New Tab Page](https://addons.mozilla.org/en-US/firefox/addon/custom-new-tab-page/?src=search)
   - If you use Chromium (Brave, Vivaldi, Chrome): [Custom New Tab URL](https://chrome.google.com/webstore/detail/custom-new-tab-url/mmjbdbjnoablegbkcklggeknkfcjkjia)
 
-***
 
-### Customization
+## Customization
 
 > All the code is using variables and is comented, It's easy to customize the project to your own, and this sections are the principal customizable elements in the Startpage:
 
-#### Links
+### Links
 You can change the links (and the icons too) in the HTML Code:
 
 <p align="center">
@@ -65,7 +63,7 @@ Change the link in the `href` property with the link you want. (The `target="bla
 The Project uses [Feather icons](https://feathericons.com/) for the icons, and you can change them in the `data-feather=""` property with the name of the icon. 
 
 
-#### Colors
+### Colors
 In the CSS code you can always change the variables for both themes (Dark and Light)
 
 ```css
@@ -91,9 +89,7 @@ In the CSS code you can always change the variables for both themes (Dark and Li
 }
 ```
 
-
-
-#### Image Background
+### Image Background
 
 You can set your own background image with the variable `--imgbg` and set the route to the image you want It's disable by default. If you uncomment the variable, it has by default this image: 
 
@@ -103,7 +99,7 @@ You can set your own background image with the variable `--imgbg` and set the ro
 
 It has a black filter by default in `--imgcol`, and it'ts value is: `rgba(255, 255, 255, 0.7)` and `rgba(0, 0, 0, 0.7)` for the dark theme. You can change them and the opacity for a better experience with your image.
 
-#### Greetings
+### Greetings
 You can put your name and change the greetings.
 
 ```js
@@ -116,13 +112,13 @@ var evenTxt = 'Good evening ';
 
 It'll change in order of the hour.
 
-#### Weather Info
+### Weather Info
 
 For setting up the Weather widget you're going to need an API Key in: `https://openweathermap.org/`. Once you have your Key you'll need to set yourlatitude and longitude, you can use: `https://www.latlong.net/` to get them. Once you have the data, you'll need to set them in the `weather.js` in the **js** folder. The code is 
 
 > If you don't like to have your API Key public, you can make the repo into a private one. You can still use the Github Pages service.
 
-#### Weather Icons
+### Weather Icons
 
 The icons by themselves have now 4 different color schemes:
 

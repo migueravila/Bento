@@ -38,4 +38,4 @@ if (Hr >= 19 || Hr < 5) {
     enableDark();
 } else {
     disableDark();
-}Wasd
+}

@@ -16,6 +16,7 @@
     -   [Customization](#customization)
         -   [Links](#links)
         -   [Colors](#colors)
+        -   [Theme Depending at the time](#theme-depending-at-the-time)
         -   [Image Background](#image-background)
         -   [Greetings](#greetings)
         -   [Weather Info](#weather-info)
@@ -57,13 +58,9 @@
 You can change the links (and the icons too) in the HTML Code:
 
 ```html
-  <a 
-    href="https://github.com/" 
-    target="blank" 
-    class="qlink__link qlink__link-1"
-  >
+<a href="https://github.com/" target="blank" class="qlink__link qlink__link-1">
     <i class="qlink__icon" data-feather="github"></i>
-  </a>
+</a>
 ```
 
 Change the link in the `href` property with the link you want. (The `target="blank"` makes the link to open a new tab with the link you choose).
@@ -93,6 +90,21 @@ In the CSS code you can always change the variables for both themes (Dark and Li
     --sbg: #2c2d31;
     --fg: #d8dee9;
     --imgcol: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+}
+```
+
+### Theme Depending at the time
+
+In the `theme.js` file there's a section about changing the theme depending in the time. You have to 'Uncomment' that section to enable it:
+
+```js
+const today = new Date();
+const Hr = today.getHours();
+
+if (Hr >= 19 || Hr < 5) {
+    enableDark();
+} else {
+    disableDark();
 }
 ```
 

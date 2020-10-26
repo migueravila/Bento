@@ -1,5 +1,6 @@
 <div align="center">
-<h1>Bento: 🍱 A Clean and Simple Startpage</h1>
+<h1>Bento</h1>
+<b>🍱 A Clean and Simple Startpage</b>
 </div>
 
 <p align="center">

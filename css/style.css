@@ -35,10 +35,10 @@
 
 /* Dark theme  */
 .darktheme {
-  --accent: #8fbcbb;
-  --bg: #3b4252;
+  --accent: #5e81ac;
+  --bg: #2e3440;
   --sbg: #434c5e;
-  --fg: #4c566a;
+  --fg: #eceff4;
   --imgcol: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
 }
 

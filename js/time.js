@@ -16,7 +16,7 @@ function displayClock() {
     ];
 
     // Set to true to use a 12 hour date format
-    var format_12hour = false;
+    var format_12hour = true;
 
     var d = new Date();
     var mm = monthNames[d.getMonth()];

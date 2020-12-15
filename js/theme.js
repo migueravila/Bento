@@ -31,6 +31,31 @@ themeToggle.addEventListener('click', () => {
     }
 });
 
+// Set automatic mode on load page
+window.onload = () => {
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        // set dark mode
+        localStorage.setItem('darkTheme', 'enabled');
+        enableDark()
+    } else {
+        //set light mode
+        localStorage.setItem('darkTheme', null)
+        disableDark()
+    }
+};
+
+//Automatic detection dark/light mode
+window.matchMedia('(prefers-color-scheme: dark)')
+    .addEventListener('change', event => {
+    if (event.matches) {
+        localStorage.setItem('darkTheme', 'enabled');
+        enableDark();
+    } else {
+        localStorage.setItem('darkTheme', null);
+        disableDark();
+    }
+});
+
 // Change the theme with the time
 
 // const today = new Date();

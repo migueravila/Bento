@@ -1,17 +1,22 @@
 // Get the hour
-var today = new Date();
-var hour = today.getHours();
+if (today === undefined) {
+    const today = new Date();
+}
+
+if (today === undefined) {
+    const hour = today.getHours();
+}
 
 // Here you can change your name
-var name = 'John Doe';
+const name = 'John Doe';
 
 // Here you can change your greetings
-var gree1 = 'Go to Sleep! ';
-var gree2 = 'Good morning! ';
-var gree3 = 'Good afternoon ';
-var gree4 = 'Good evening ';
-var gree5 = 'Good evening ';
-var gree6 = 'Good evening ';
+const gree1 = 'Go to Sleep! ';
+const gree2 = 'Good morning! ';
+const gree3 = 'Good afternoon ';
+const gree4 = 'Good evening ';
+const gree5 = 'Good evening ';
+const gree6 = 'Good evening ';
 
 // Define the hours of the greetings
 if (hour >= 23 && hour < 5) {

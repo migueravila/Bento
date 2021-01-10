@@ -7,6 +7,8 @@
   <img src="https://github.com/MiguelRAvila/Bento/blob/master/assets/Header.png">
 </p>
 
+>  Image by [anima_contritum](https://www.reddit.com/user/anima_contritum)
+
 ## Index
 
 - [Bento](#)
@@ -25,12 +27,12 @@
 
 ### Features:
 
-- **Dark/Light** mode, you can toggle them and It'll be saved in local store
-- **Clock and Date** format can be set to 24 hour (default) or 12 hour
-- **Greetings** are easy to change and modify
-- **Variables** for custom colors and font sizes in the `css` code
+- **Dark/Light** mode, you can toggle them and It'll be saved in local storage.
+- **Clock and Date** format can be set to 24 hour (default) or 12 hour.
+- **Greetings** are easy to modify.
+- **Variables** for custom colors and font sizes in the `style.css` code.
 - **Icons** all icons are from Feather Icons (Some others I made them with the Feather icons as a base)
-- **Modular** javascript files for an easy read
+- **Modular** javascript files for an easy read.
 
 ## Usage:
 

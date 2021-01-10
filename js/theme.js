@@ -1,45 +1,43 @@
 // Store the theme
-let darkTheme = localStorage.getItem('darkTheme');
-const themeToggle = document.querySelector('#themeButton');
+let darkTheme = localStorage.getItem("darkTheme");
+const themeToggle = document.querySelector("#themeButton");
 
+// Apply Dark theme
 const enableDark = () => {
-  document.body.classList.add('darktheme');
-  localStorage.setItem('darkTheme', 'enabled');
-  themeToggle.innerHTML = `<i id="bicon" data-feather="moon"></i>`;
+  document.body.classList.add("darktheme");
+  localStorage.setItem("darkTheme", "enabled");
+  themeToggle.innerHTML = `<i id="themeButton__icon" data-feather="sun"></i>`;
   feather.replace();
 };
 
+// Remove Dark theme
 const disableDark = () => {
-  document.body.classList.remove('darktheme');
-  localStorage.setItem('darkTheme', null);
-  themeToggle.innerHTML = `<i id="bicon" data-feather="sun"></i>`;
+  document.body.classList.remove("darktheme");
+  localStorage.setItem("darkTheme", null);
+  themeToggle.innerHTML = `<i id="themeButton__icon" data-feather="moon"></i>`;
   feather.replace();
 };
 
-if (darkTheme === 'enabled') {
+//Toggle theme
+if (darkTheme === "enabled") {
   enableDark();
 } else {
   disableDark();
 }
 
-themeToggle.addEventListener('click', () => {
-  darkTheme = localStorage.getItem('darkTheme');
-  if (darkTheme !== 'enabled') {
+themeToggle.addEventListener("click", () => {
+  darkTheme = localStorage.getItem("darkTheme");
+  if (darkTheme !== "enabled") {
     enableDark();
   } else {
     disableDark();
   }
 });
 
-// Change the theme with the time
-/*
-if (today === undefined) {
-    const today = new Date();
-}
+// Theme accordint the hour
 
-if (today === undefined) {
-    const hour = today.getHours();
-}
+/*
+const today = new Date();
 
 if (hour >= 19 || hour < 5) {
     enableDark();

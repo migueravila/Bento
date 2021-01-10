@@ -4,7 +4,7 @@
 </div>
 
 <p align="center">
-  <img src="https://github.com/MiguelRAvila/Bento/blob/master/assets/preview.png">
+  <img src="https://github.com/MiguelRAvila/Bento/blob/master/assets/Header.png">
 </p>
 
 ## Index
@@ -94,6 +94,10 @@ In the CSS code you can always change the variables for both themes (Dark and Li
   --sfg: #3a3a3a; /* Secondary Foreground color */
 }
 ```
+
+<p align="center">
+  <img src="https://github.com/MiguelRAvila/Bento/blob/master/assets/SubHeader.png">
+</p>
 
 ### Theme Depending at the time
 

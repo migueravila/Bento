@@ -7,7 +7,7 @@
   <img src="https://github.com/MiguelRAvila/Bento/blob/master/assets/Header.png">
 </p>
 
->  Image by [anima_contritum](https://www.reddit.com/user/anima_contritum)
+>  Wallpaper by [anima_contritum](https://www.reddit.com/user/anima_contritum)
 
 ## Index
 

@@ -9,12 +9,12 @@
   --fss: 25px; /* Greetings and Weather widger */
   --fses: 16px; /* Links List */
 
-  /* Light theme  */
-  --accent: #4b8ec4; /* Hover color */
-  --bg: #f5f5f5; /* Background color */
-  --sbg: #e4e6e6; /* Cards color */
-  --fg: #3a3a3a; /* Foreground color */
-  --sfg: #3a3a3a; /* Sceondary Foreground color */
+  /* Dark theme  */
+    --accent: #4b8ec4; /* Hover color */
+    --bg: #19171a; /* Background color */
+    --sbg: #201e21; /* Cards color */
+    --fg: #d8dee9; /* Foreground color */
+    --sfg: #3a3a3a; /* Secondary Foreground color */
 
   /* Image background  */
 
@@ -33,10 +33,10 @@
 /* Dark theme  */
 .darktheme {
   --accent: #4b8ec4; /* Hover color */
-  --bg: #19171a; /* Background color */
-  --sbg: #201e21; /* Cards color */
-  --fg: #d8dee9; /* Foreground color */
-  --sfg: #3a3a3a; /* Secondary Foreground color */
+  --bg: #f5f5f5; /* Background color */
+  --sbg: #e4e6e6; /* Cards color */
+  --fg: #3a3a3a; /* Foreground color */
+  --sfg: #3a3a3a; /* Sceondary Foreground color */
   --imgcol: linear-gradient(
     rgba(0, 0, 0, 0.7),
     rgba(0, 0, 0, 0.7)

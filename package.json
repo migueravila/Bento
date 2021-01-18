@@ -1,6 +1,6 @@
 {
-  "name": "StartPoint",
-  "version": "1.0.0",
+  "name": "bento",
+  "version": "1.3.0",
   "description": "A Simple Startpage",
   "main": "index.js",
   "scripts": {

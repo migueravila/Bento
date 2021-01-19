@@ -1,3 +1,5 @@
+[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/MiguelRAvila/Bento)
+
 <div align="center">
     <h1>Bento</h1>
     <b>🍱 A Clean and Simple Startpage</b>

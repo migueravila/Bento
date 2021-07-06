@@ -13,10 +13,18 @@ const CONFIG = {
   name: 'John',
 
   layout: 'bento',
-
   imageBackground: false,
-  weatherIcons: 'dark',
+  
   openInNewTab: true,
+
+  weatherIcons: 'OneDark',
+  weatherUnit: 'C',
+
+  greetingMorning: 'Good morning!',
+  greetingAfternoon: 'Good afternoon,',
+  greetingEvening: 'Good evening,',
+  greetingNight: 'Go to Sleep!',
+
 
   // ┌─┐┌─┐┬─┐┌┬┐┌─┐
   // │  ├─┤├┬┘ ││└─┐
@@ -96,5 +104,3 @@ const CONFIG = {
     ],
   },
 };
-
-export default CONFIG;

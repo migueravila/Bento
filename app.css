@@ -24,7 +24,7 @@
     change the --imgcol value 
     to make the filter to your own */
 
-  --imgbg: url(assets/background.png);
+  --imgbg: url(assets/background.jpg);
   --imgcol: linear-gradient(
     rgba(255, 255, 255, 0.7),
     rgba(255, 255, 255, 0.7)
@@ -264,13 +264,16 @@ body {
   font-size: var(--fses);
   color: var(--fg);
   margin-top: 1vh;
-  padding: 6px 12px;
+  padding: 8px 12px;
   border-radius: 5px;
   font-weight: bold;
+  text-align: center;
+  width: 80%;
 }
 .list__link:hover {
   background-color: var(--accent);
   color: var(--sfg);
+  
 }
 
 /* M E D I A - Q U E R I E S */

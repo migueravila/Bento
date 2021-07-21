@@ -82,38 +82,38 @@ const CONFIG = {
   lists: {
     firstList: [
       {
-        name: 'Github',
-        link: 'https://github.com/',
+        name: 'Inspirational',
+        link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
       },
       {
-        name: 'Mail',
-        link: 'https://mail.protonmail.com/',
+        name: 'Classic',
+        link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
       },
       {
-        name: 'Calendar',
-        link: 'https://calendar.google.com/calendar/r',
+        name: 'Oldies',
+        link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
       },
       {
-        name: 'Reddit',
-        link: 'https://reddit.com',
+        name: 'Rock',
+        link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
       },
     ],
     secondList: [
       {
         name: 'Linkedin',
-        link: 'https://github.com/',
+        link: 'https://linkedin.com/',
       },
       {
-        name: 'Facebook',
-        link: 'https://mail.protonmail.com/',
+        name: 'Figma',
+        link: 'https://figma.com/',
       },
       {
-        name: 'Instagram',
-        link: 'https://calendar.google.com/calendar/r',
+        name: 'Dribbble',
+        link: 'https://dribbble.com',
       },
       {
         name: 'Telegram',
-        link: 'https://reddit.com',
+        link: 'https://webk.telegram.org',
       },
     ],
   },

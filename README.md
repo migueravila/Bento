@@ -187,7 +187,7 @@ Finally just add them to the `config.js` file.
 
 ```js
   // Weather
-  weatherKey: '15fe26a8e22e4783054e3273824c5e7b',
+  weatherKey: '15fe26a8e22e4783054e3273824c5e7d',
   weatherIcons: 'OneDark',
   weatherUnit: 'C',
   weatherLatitude: '37.774929',

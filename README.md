@@ -1,14 +1,19 @@
-<div align="center">
-    <h1>Bento</h1>
-    <b>🍱 Minimalist, elegant and simple startpage inspired by the Bento box!</b>
-</div>
 
 ![image](assets/img/Header.png)
 
+<div align="center">
+    <b>🍱 Minimalist, elegant and simple startpage inspired by the Bento box!</b>
+</div>
+
+<br />
+<br />
+
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/migueravila)
 
-## Index
-- [Index](#index)
+<br />
+
+## 👇 Index
+- [👇 Index](#-index)
 - [✨ Features:](#-features)
 - [🚀 Usage:](#-usage)
     - [As Home Page:](#as-home-page)

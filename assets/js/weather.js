@@ -13,7 +13,7 @@ var tempUnit = CONFIG.weatherUnit;
 
 const KELVIN = 273.15;
 // Use your own key for the Weather, Get it here: https://openweathermap.org/
-const key = '15fe26a8e22e4783054e3273824c5xdxd';
+const key = `${CONFIG.weatherKey}`;
 
 // Set Position function
 setPosition();

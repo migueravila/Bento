@@ -15,16 +15,21 @@ const CONFIG = {
   imageBackground: false,
   openInNewTab: true,
 
-  // Weather
-  weatherKey: '15fe26a8e22e4783054e3273824c5e7b',
-  weatherIcons: 'OneDark',
-  weatherUnit: 'C',
-
   // Greetings
   greetingMorning: 'Good morning!',
   greetingAfternoon: 'Good afternoon,',
   greetingEvening: 'Good evening,',
   greetingNight: 'Go to Sleep!',
+
+  // Weather
+  weatherKey: '15fe26a8e22e4783054e3273824c5e7b',
+  weatherIcons: 'OneDark', // 'Nord', 'Dark', 'White'
+  weatherUnit: 'C',
+  weatherLatitude: '37.774929',
+  weatherLongitude: '-122.419418',
+  
+
+  
 
   // ┌─┐┌─┐┬─┐┌┬┐┌─┐
   // │  ├─┤├┬┘ ││└─┐

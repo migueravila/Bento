@@ -7,7 +7,7 @@ const printFirstList = () => {
   for (const link of CONFIG.lists.firstList) {
     let item = `
         <a
-        target="blank"
+        target="${CONFIG.openInNewTab ? "_blank" : ""}"
         href="${link.link}"
         class="list__link"
         >${link.name}</a
@@ -19,13 +19,13 @@ const printFirstList = () => {
 };
 
 const printSecondList = () => {
-    let icon = `<i class="list__head" data-feather="${CONFIG.secondListIcon}"></i>`;
+  let icon = `<i class="list__head" data-feather="${CONFIG.secondListIcon}"></i>`;
   const position = "beforeend";
-    list_2.insertAdjacentHTML(position, icon);
+  list_2.insertAdjacentHTML(position, icon);
   for (const link of CONFIG.lists.secondList) {
     let item = `
           <a
-          target="blank"
+          target="${CONFIG.openInNewTab ? "_blank" : ""}"
           href="${link.link}"
           class="list__link"
           >${link.name}</a

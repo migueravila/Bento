@@ -10,27 +10,27 @@ const CONFIG = {
   // ├┴┐├─┤└─┐││  └─┐
   // └─┘┴ ┴└─┘┴└─┘└─┘
 
+  // General
   name: 'John',
-
-  layout: 'bento',
   imageBackground: false,
-  
   openInNewTab: true,
 
-  weatherKey: '12345678910111213141516',
+  // Weather
+  weatherKey: '15fe26a8e22e4783054e3273824c5e7b',
   weatherIcons: 'OneDark',
   weatherUnit: 'C',
 
+  // Greetings
   greetingMorning: 'Good morning!',
   greetingAfternoon: 'Good afternoon,',
   greetingEvening: 'Good evening,',
   greetingNight: 'Go to Sleep!',
 
-
   // ┌─┐┌─┐┬─┐┌┬┐┌─┐
   // │  ├─┤├┬┘ ││└─┐
   // └─┘┴ ┴┴└──┴┘└─┘
 
+  // Links
   cards: [
     {
       id: '1',
@@ -74,9 +74,11 @@ const CONFIG = {
   // │  │└─┐ │ └─┐
   // ┴─┘┴└─┘ ┴ └─┘
 
+  //Icons
   firstListIcon: 'music',
   secondListIcon: 'coffee',
 
+  // Links
   lists: {
     firstList: [
       {

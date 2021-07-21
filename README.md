@@ -14,11 +14,11 @@
     - [As Home Page:](#as-home-page)
     - [As New Tab:](#as-new-tab)
 - [🎨 Customization](#-customization)
-  - [General: Name, Image Background and Greetings](#general-name-image-background-and-greetings)
-  - [Button Links](#button-links)
-  - [List Links](#list-links)
-  - [Weather: Api Key, Icons and Unit](#weather-api-key-icons-and-unit)
-  - [Colors](#colors)
+  - [👋 General: Name, Image Background and Greetings](#-general-name-image-background-and-greetings)
+  - [🏷️ Button Links](#️-button-links)
+  - [📑 List Links](#-list-links)
+  - [⛈️ Weather: Api Key, Icons and Unit](#️-weather-api-key-icons-and-unit)
+  - [💛 Colors](#-colors)
 
 
 ## ✨ Features:
@@ -53,7 +53,7 @@ You can use different Add-ons/Extensions for it
 
 Almost all customization can be managed in the `config.js` file:
 
-### General: Name, Image Background and Greetings
+### 👋 General: Name, Image Background and Greetings
 
 To change the default name, the greetings and if you want to have an image background or open your links in new tabs, edit the first configs in the `config.js`.
 
@@ -71,11 +71,11 @@ To change the default name, the greetings and if you want to have an image backg
 
 ```
 
-> You cah change the backgriund by substituting the `background.jpg` file in `assets` folder.
+> You cah change the background by substituting the `background.jpg` file in `assets` folder.
 
 ![](assets/img/previewbg.png)
 
-### Button Links
+### 🏷️ Button Links
 
 To edit the buttons you just need to change the follow list in the `config.js` file by choosing a link, an icon from [Feather icons](https://feathericons.com/) and a name:
 
@@ -120,7 +120,7 @@ cards: [
   ],
 ```
 
-### List Links
+### 📑 List Links
 
 The same happens with the list links, you can change the list icon (also using feather icons) and the links:
 
@@ -170,7 +170,7 @@ The same happens with the list links, you can change the list icon (also using f
   },
 ```
 
-### Weather: Api Key, Icons and Unit
+### ⛈️ Weather: Api Key, Icons and Unit
 
 For setting up the Weather widget you'll need an API Key from: `https://openweathermap.org/`. Once you have your Key you'll need to set your latitude and longitude, you can use: `https://www.latlong.net/` to get them. 
 
@@ -194,7 +194,7 @@ Finally just add them to the `config.js` file.
   weatherLongitude: '-122.419418',
 ```
 
-### Colors
+### 💛 Colors
 
 In the `app.css` file you can change the variables for both themes (Dark and Light):
 

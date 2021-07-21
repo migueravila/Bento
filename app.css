@@ -4,15 +4,16 @@
 
 :root {
   /* Fonts  */
-  --fsg: 135px; /* Time and Greetings */
-  --fsm: 75px; /* Date */
-  --fss: 25px; /* Greetings and Weather widger */
+  --fsg: 12vh; /* Time and Greetings */
+  --fsm: 8vh; /* Date */
+  --fss: 3vh; /* Greetings and Weather widger */
   --fses: 2vh; /* Links List */
 
   /* Light theme  */
-  --accent: #4b8ec4; /* Hover color */
+  --accent: #61b0f1; /* Hover color */
   --bg: #f5f5f5; /* Background color */
   --sbg: #e4e6e6; /* Cards color */
+
   --fg: #3a3a3a; /* Foreground color */
   --sfg: #3a3a3a; /* Sceondary Foreground color */
 
@@ -32,7 +33,7 @@
 
 /* Dark theme  */
 .darktheme {
-  --accent: #4b8ec4; /* Hover color */
+  --accent: #61b0f1; /* Hover color */
   --bg: #19171a; /* Background color */
   --sbg: #201e21; /* Cards color */
   --fg: #d8dee9; /* Foreground color */
@@ -240,7 +241,6 @@ body {
 .list {
   display: flex;
   align-items: center;
-  /* justify-content: space-evenly; */
   flex-direction: column;
 }
 
@@ -276,12 +276,6 @@ body {
 /* M E D I A - Q U E R I E S */
 
 @media only screen and (max-width: 68.75em) {
-  :root {
-    --fsg: 100px;
-    --fsm: 65px;
-    --fss: 20px;
-  }
-
   .container {
     grid-gap: 20px;
     padding: 40px;

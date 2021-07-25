@@ -1,6 +1,10 @@
 const iconElement = document.querySelector('.weather-icon');
-const tempElement = document.querySelector('.temperature-value p');
-const descElement = document.querySelector('.temperature-description p');
+const tempElement = document.querySelector(
+  '.temperature-value p'
+);
+const descElement = document.querySelector(
+  '.temperature-description p'
+);
 
 // App data
 const weather = {};
@@ -19,8 +23,10 @@ const key = `${CONFIG.weatherKey}`;
 setPosition();
 
 function setPosition(position) {
-
-  getWeather(CONFIG.weatherLatitude, CONFIG.weatherLongitude);
+  getWeather(
+    CONFIG.weatherLatitude,
+    CONFIG.weatherLongitude
+  );
 }
 
 // Get the Weather data

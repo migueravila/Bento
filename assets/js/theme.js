@@ -35,6 +35,6 @@ themeToggle.addEventListener('click', () => {
   }
 });
 
-if(CONFIG.imageBackground) {
+if (CONFIG.imageBackground) {
   document.body.classList.add('withImageBackground');
-} 
+}

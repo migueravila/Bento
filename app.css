@@ -1,18 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
 
 /* V A R I A B L E S */
 
 :root {
   /* Fonts  */
-  --fsg: 135px; /* Time and Greetings */
-  --fsm: 75px; /* Date */
-  --fss: 25px; /* Greetings and Weather widger */
-  --fses: 16px; /* Links List */
+  --fsg: 12vh; /* Time and Greetings */
+  --fsm: 8vh; /* Date */
+  --fss: 3vh; /* Greetings and Weather widger */
+  --fses: 2vh; /* Links List */
 
   /* Light theme  */
-  --accent: #4b8ec4; /* Hover color */
+  --accent: #61b0f1; /* Hover color */
   --bg: #f5f5f5; /* Background color */
   --sbg: #e4e6e6; /* Cards color */
+
   --fg: #3a3a3a; /* Foreground color */
   --sfg: #3a3a3a; /* Sceondary Foreground color */
 
@@ -23,7 +24,7 @@
     change the --imgcol value 
     to make the filter to your own */
 
-  /* --imgbg: url(/img/wal.jpg); */
+  --imgbg: url(assets/background.jpg);
   --imgcol: linear-gradient(
     rgba(255, 255, 255, 0.7),
     rgba(255, 255, 255, 0.7)
@@ -32,14 +33,14 @@
 
 /* Dark theme  */
 .darktheme {
-  --accent: #4b8ec4; /* Hover color */
+  --accent: #61b0f1; /* Hover color */
   --bg: #19171a; /* Background color */
   --sbg: #201e21; /* Cards color */
   --fg: #d8dee9; /* Foreground color */
   --sfg: #3a3a3a; /* Secondary Foreground color */
   --imgcol: linear-gradient(
-    rgba(0, 0, 0, 0.7),
-    rgba(0, 0, 0, 0.7)
+    rgba(0, 0, 0, 0.85),
+    rgba(0, 0, 0, 0.85)
   ); /* Filter color */
 }
 
@@ -49,15 +50,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   transition: 0.2s ease-in-out;
+}
+
+.withImageBackground {
+  background-image: var(--imgcol), var(--imgbg);
+  background-size: cover;
 }
 
 body {
   width: 100vw;
   height: 100vh;
   background-color: var(--bg);
-  background-image: var(--imgcol), var(--imgbg);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -94,6 +99,7 @@ body {
   box-shadow: 0 5px 7px rgba(0, 0, 0, 0.35);
   border-radius: 5px;
 }
+
 .card:hover {
   transform: translateY(-0.2rem);
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.35);
@@ -116,12 +122,14 @@ body {
   align-items: center;
   justify-content: center;
 }
+
 .weatherBlock__date {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 30px;
 }
+
 .weatherBlock__weather {
   display: flex;
   align-items: center;
@@ -194,8 +202,8 @@ body {
 }
 
 .buttonLink__icon {
-  width: 23px;
-  height: 23px;
+  width: 3vh;
+  height: 3vh;
   color: var(--fg);
 }
 
@@ -245,35 +253,32 @@ body {
   grid-row: 3 / span 2;
 }
 .list__head {
-  margin-top: 30px;
-  margin-bottom: 10px;
-  width: 30px;
+  margin-top: 3vh;
+  margin-bottom: 2vh;
   color: var(--fg);
-  height: 30px;
+  width: 3vh;
+  height: 3vh;
 }
 .list__link {
   text-decoration: none;
   font-size: var(--fses);
   color: var(--fg);
-  margin-top: 1px;
-  padding: 6px 12px;
+  margin-top: 1vh;
+  padding: 8px 12px;
   border-radius: 5px;
   font-weight: bold;
+  text-align: center;
+  width: 80%;
 }
 .list__link:hover {
   background-color: var(--accent);
   color: var(--sfg);
+  
 }
 
 /* M E D I A - Q U E R I E S */
 
 @media only screen and (max-width: 68.75em) {
-  :root {
-    --fsg: 100px;
-    --fsm: 65px;
-    --fss: 20px;
-  }
-
   .container {
     grid-gap: 20px;
     padding: 40px;
@@ -298,7 +303,7 @@ body {
 
   .buttonLink {
     grid-column: 1 / span 4;
-    grid-gap: 20px;
+    grid-gap: 3vw;
     padding-left: 100px;
     padding-right: 100px;
   }

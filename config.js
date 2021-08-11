@@ -11,9 +11,9 @@ const CONFIG = {
   // └─┘┴ ┴└─┘┴└─┘└─┘
 
   // General
-  name: 'John',
+  name: 'Nobel',
   imageBackground: false,
-  openInNewTab: true,
+  openInNewTab: false,
 
   // Greetings
   greetingMorning: 'Good morning!',
@@ -45,19 +45,19 @@ const CONFIG = {
       id: '2',
       name: 'Mail',
       icon: 'mail',
-      link: 'https://mail.protonmail.com/',
+      link: 'https://mail.protonmail.com/u/0/inbox',
     },
     {
       id: '3',
-      name: 'Todoist',
-      icon: 'trello',
-      link: 'https://calendar.google.com/calendar/r',
+      name: 'Music',
+      icon: 'music',
+      link: 'mswindowsmusic:',
     },
     {
       id: '4',
       name: 'Calendar',
       icon: 'calendar',
-      link: 'https://calendar.google.com/calendar/r',
+      link: 'https://calendar.protonmail.com/u/0/',
     },
     {
       id: '5',
@@ -67,9 +67,9 @@ const CONFIG = {
     },
     {
       id: '6',
-      name: 'Odysee',
+      name: 'Youtube',
       icon: 'youtube',
-      link: 'https://odysee.com/',
+      link: 'https://youtube.com/',
     },
   ],
 

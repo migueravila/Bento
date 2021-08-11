@@ -9,6 +9,8 @@
   --fss: 3vh; /* Greetings and Weather widger */
   --fses: 2vh; /* Links List */
 
+  --iconsize: 3vh;
+
   /* Light theme  */
   --accent: #61b0f1; /* Hover color */
   --bg: #f5f5f5; /* Background color */
@@ -202,8 +204,8 @@ body {
 }
 
 .buttonLink__icon {
-  width: 3vh;
-  height: 3vh;
+  width: var(--iconsize);
+  height: var(--iconsize);
   color: var(--fg);
 }
 
@@ -256,8 +258,8 @@ body {
   margin-top: 3vh;
   margin-bottom: 2vh;
   color: var(--fg);
-  width: 3vh;
-  height: 3vh;
+  width: var(--iconsize);
+  height: var(--iconsize);
 }
 .list__link {
   text-decoration: none;

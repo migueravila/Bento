@@ -14,6 +14,7 @@ const CONFIG = {
   name: 'John',
   imageBackground: false,
   openInNewTab: true,
+  twelveHourFormat: false,
 
   // Greetings
   greetingMorning: 'Good morning!',

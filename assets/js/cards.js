@@ -1,4 +1,7 @@
-console.log("Connected cards");
+// ┌─┐┌─┐┬─┐┌┬┐┌─┐
+// │  ├─┤├┬┘ ││└─┐
+// └─┘┴ ┴┴└──┴┘└─┘
+
 
 const printCards = () => {
   for (const card of CONFIG.cards) {

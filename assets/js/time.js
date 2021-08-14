@@ -3,6 +3,7 @@
 //  ┴ ┴┴ ┴└─┘
 
 window.onload = displayClock();
+// Clock function
 function displayClock() {
   const monthNames = [
     'Jan',
@@ -19,6 +20,7 @@ function displayClock() {
     'Dec',
   ];
 
+  // Get clock elements
   var d = new Date();
   var mm = monthNames[d.getMonth()];
   var dd = d.getDate();
@@ -26,12 +28,14 @@ function displayClock() {
   var hh = d.getHours();
   var ampm = '';
 
+  // Hour format
   if (CONFIG.twelveHourFormat) {
     ampm = hh >= 12 ? ' pm' : ' am';
     hh = hh % 12;
-    hh = hh ? hh : 12; //show mod 0 as 12
+    hh = hh ? hh : 12;
   }
 
+  // Display clock elements
   document.getElementById('hour').innerText = hh;
   document.getElementById('separator').innerHTML = ' : ';
   document.getElementById('minutes').innerText = min + ampm;

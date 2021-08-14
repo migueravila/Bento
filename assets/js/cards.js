@@ -2,10 +2,12 @@
 // │  ├─┤├┬┘ ││└─┐
 // └─┘┴ ┴┴└──┴┘└─┘
 
+// Print cards
 const printCards = () => {
   for (const card of CONFIG.cards) {
     console.log(card.id);
 
+    // Card Item
     let item = `
         <a
           href="${card.link}"

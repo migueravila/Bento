@@ -1,12 +1,10 @@
 
-![image](assets/img/Header.png)
+![image](assets/img/header.png)
 
 <br />
-<br />
 
-[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/migueravila)
+[!["Buy Me A Coffee"](https://github.com/migueravila/Bento/blob/master/assets/img/donation.png)](https://www.buymeacoffee.com/migueravila)
 
-<br />
 <br />
 
 ## 👇 Index

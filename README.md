@@ -3,7 +3,9 @@
 
 <br />
 
-[!["Buy Me A Coffee"](https://github.com/migueravila/Bento/blob/master/assets/img/donation.png)](https://www.buymeacoffee.com/migueravila)
+<a href="https://www.buymeacoffee.com/migueravila" target="_blank" style='margin-right:0px; margin-top:5px'>
+  <img align="center" src="https://github.com/migueravila/Bento/blob/master/assets/img/donation.png" alt="linkedin" height="35px" />
+</a> 
 
 <br />
 

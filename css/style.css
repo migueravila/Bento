@@ -121,7 +121,6 @@ body {
 @media only screen and (max-width: 68.75em) {
     .fblock {
         grid-row: 1 / span 2;
-        grid-column: 1 / span 4;
     }
 }
 
@@ -225,7 +224,7 @@ body {
 @media only screen and (max-width: 68.75em) {
     .qlink1 {
         grid-row: 3 / span 2;
-        grid-column: 1 / span 4;
+        /*grid-column: 1 / span 4;*/
         grid-gap: 40px;
         padding: 20px;
     }
@@ -282,11 +281,11 @@ body {
     align-items: center;
     flex-direction: column;
 }
-@media only screen and (max-width: 68.75em) {
+/*@media only screen and (max-width: 68.75em) {
     .qlist {
         display: none;
     }
-}
+}*/
 .qlist__1 {
     grid-column: 3 / span 2;
     grid-row: 3 / span 2;

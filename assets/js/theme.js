@@ -25,7 +25,11 @@ const disableDark = () => {
 
 //Toggle theme
 if (darkTheme === 'enabled') {
+  // Temporarily disable transitions when changing theme on startup
+  document.body.classList.add('notransition');
   enableDark();
+  document.body.offsetHeight; // Trigger reflow to flush CSS changes
+  document.body.classList.remove('notransition');
 } else {
   disableDark();
 }

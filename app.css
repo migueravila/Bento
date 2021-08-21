@@ -56,6 +56,13 @@
   transition: 0.2s ease-in-out;
 }
 
+.notransition {
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+
 .withImageBackground {
   background-image: var(--imgcol), var(--imgbg);
   background-size: cover;

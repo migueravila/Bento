@@ -13,7 +13,8 @@ const CONFIG = {
   // General
   name: 'Nobel',
   imageBackground: false,
-  openInNewTab: false,
+  openInNewTab: true,
+  twelveHourFormat: false,
 
   // Greetings
   greetingMorning: 'Good morning!',
@@ -27,7 +28,6 @@ const CONFIG = {
   weatherUnit: 'C',
   weatherLatitude: '37.774929',
   weatherLongitude: '-122.419418',
-  
 
   // ┌─┐┌─┐┬─┐┌┬┐┌─┐
   // │  ├─┤├┬┘ ││└─┐

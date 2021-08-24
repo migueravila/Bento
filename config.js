@@ -23,9 +23,9 @@ const CONFIG = {
   greetingNight: 'Go to Sleep!',
 
   // Weather
-  weatherKey: 'InsertYourAPIKeyHere123456',
+  weatherKey: 'ed9d219aa78c4bc4edb7e0c3ad02b158',
   weatherIcons: 'OneDark', // 'Nord', 'Dark', 'White'
-  weatherUnit: 'C',
+  weatherUnit: 'F',
   weatherLatitude: '37.774929',
   weatherLongitude: '-122.419418',
 

@@ -31,11 +31,7 @@ function setPosition(position) {
 function getWeather() {
   if(navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(function(a) {
-      console.log(a.coords["latitude"]);
-      console.log(a.coords["longitude"]);
-  });
- }
-  let api = `https://api.openweathermap.org/data/2.5/weather?zip=${zip.postal}&appid=${key}`;
+      let api = `https://api.openweathermap.org/data/2.5/weather?lat=${a.coords["latitude"]}&lon=${a.coords["longitude"]}&appid=${key}`;
 
   console.log(api);
 
@@ -54,6 +50,8 @@ function getWeather() {
     .then(function () {
       displayWeather();
     });
+  });
+ }
 }
 
 // Display Weather info

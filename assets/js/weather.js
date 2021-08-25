@@ -24,12 +24,14 @@ const key = `${CONFIG.weatherKey}`;
 setPosition();
 
 function setPosition(position) {
-  getWeather(CONFIG.weatherLatitude, CONFIG.weatherLongitude);
+  getWeather();
 }
 
 // Get the Weather data
-function getWeather(latitude, longitude) {
-  let api = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${key}`;
+function getWeather() {
+  if(navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(function(a) {
+      let api = `https://api.openweathermap.org/data/2.5/weather?lat=${a.coords["latitude"]}&lon=${a.coords["longitude"]}&appid=${key}`;
 
   console.log(api);
 
@@ -48,6 +50,8 @@ function getWeather(latitude, longitude) {
     .then(function () {
       displayWeather();
     });
+  });
+ }
 }
 
 // Display Weather info

@@ -29,12 +29,13 @@ function setPosition(position) {
 
 // Get the Weather data
 function getWeather() {
-  fetch("ipinfo.io").then(function(responce) {
-    let data = responce.json();
-    return data
-  })
-  .then(function(zip) {
-    let api = `https://api.openweathermap.org/data/2.5/weather?zip=${zip.postal}&appid=${key}`;
+  if(navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(function(a) {
+      console.log(a.coords["latitude"]);
+      console.log(a.coords["longitude"]);
+  });
+ }
+  let api = `https://api.openweathermap.org/data/2.5/weather?zip=${zip.postal}&appid=${key}`;
 
   console.log(api);
 
@@ -53,7 +54,6 @@ function getWeather() {
     .then(function () {
       displayWeather();
     });
-  })
 }
 
 // Display Weather info

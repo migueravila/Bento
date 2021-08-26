@@ -1,149 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <title>Bento</title>
-        <link rel=" shortcut icon" type="image/png" href="icons/favicon.png" />
-        <link rel="stylesheet" href="css/style.css" />
-        <script src="https://unpkg.com/feather-icons"></script>
-    </head>
-    <body class="">
-        <button id="themeButton"><i id="bicon" data-feather="moon"></i></button>
-        <div class="container">
-            <div class="fblock">
-                <div class="clock">
-                    <div id="hour" class=""></div>
-                    <div id="separator" class=""></div>
-                    <div id="minutes" class=""></div>
-                </div>
-                <div id="greetings" class=""></div>
-            </div>
-            <div class="sblock">
-                <div class="sblock__date">
-                    <div id="month" class=""></div>
-                    <div id="day" class=""></div>
-                </div>
-                <div class="sblock__weather">
-                    <div class="weather-icon">
-                        <img src="icons/OneDark/unknown.png" />
-                    </div>
-                    <div class="temperature-value">
-                        <p class="">- °<span class="g">c</span></p>
-                    </div>
-                    <div class="temperature-description">
-                        <p class=""></p>
-                    </div>
-                </div>
-            </div>
-            <div class="qlink">
-                <a
-                    href="https://github.com/"
-                    target="blank"
-                    class="qlink__link qlink__link-1"
-                >
-                    <i class="qlink__icon" data-feather="github"></i>
-                </a>
-                <a
-                    target="blank"
-                    href="https://outlook.live.com/mail/inbox"
-                    class="qlink__link qlink__link-2"
-                >
-                    <i class="qlink__icon" data-feather="mail"></i>
-                </a>
-                <a
-                    target="blank"
-                    href="https://calendar.google.com/calendar/r"
-                    class="qlink__link qlink__link-3"
-                >
-                    <i class="qlink__icon" data-feather="calendar"></i>
-                </a>
-                <a
-                    target="blank"
-                    href="https://flipboard.com/"
-                    class="qlink__link qlink__link-4"
-                >
-                    <i class="qlink__icon" data-feather="bookmark"></i>
-                </a>
-                <a
-                    href="https://columns.app"
-                    target="blank"
-                    class="qlink__link qlink__link-5"
-                >
-                    <i class="qlink__icon" data-feather="trello"></i>
-                </a>
-                <a
-                    target="blank"
-                    href="https://www.youtube.com/"
-                    class="qlink__link qlink__link-6"
-                >
-                    <i class="qlink__icon" data-feather="youtube"></i>
-                </a>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bento</title>
+    <link
+      rel=" shortcut icon"
+      type="image/png"
+      href="assets/icons/favicon.png"
+    />
+    <link rel="stylesheet" href="app.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
 
-            <div class="card qlist qlist__1">
-                <i class="qlist__head" data-feather="music"></i>
-                <a
-                    target="blank"
-                    href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                    class="qlist__link"
-                    >Inspirational</a
-                >
-                <a
-                    target="blank"
-                    href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                    class="qlist__link"
-                    >Classic</a
-                >
-                <a
-                    target="blank"
-                    href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                    class="qlist__link"
-                    >Oldies</a
-                >
-                <a
-                    target="blank"
-                    href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                    class="qlist__link"
-                    >Rock</a
-                >
-            </div>
+  <!-- 
+      ╔╗ ╔═╗╔╗╔╔╦╗╔═╗
+      ╠╩╗║╣ ║║║ ║ ║ ║
+      ╚═╝╚═╝╝╚╝ ╩ ╚═╝
+      -->
 
-            <div class="card qlist qlist__2">
-                <i class="qlist__head" data-feather="coffee"></i>
-                <a
-                    href="https://www.linkedin.com"
-                    target="blank"
-                    class="qlist__link"
-                    >LinkedIn</a
-                >
-                <a
-                    href="https://dribbble.com/"
-                    target="blank"
-                    class="qlist__link"
-                    >Dribble</a
-                >
-                <a
-                    href="https://www.udemy.com/"
-                    target="blank"
-                    class="qlist__link"
-                    >Udemy</a
-                >
-                <a
-                    href="https://www.figma.com/files/recent"
-                    target="blank"
-                    class="qlist__link"
-                    >Figma</a
-                >
-            </div>
+  <body class="">
+    <button id="themeButton">
+      <i id="themeButton__icon" data-feather="moon"></i>
+    </button>
+    <div class="container">
+      <!-- Clock and Greetings  -->
+
+      <div class="timeBlock">
+        <div class="clock">
+          <div id="hour" class=""></div>
+          <div id="separator" class=""></div>
+          <div id="minutes" class=""></div>
         </div>
-        <script src="js/time.js"></script>
-        <script src="js/theme.js"></script>
-        <script src="js/greeting.js"></script>
-        <script src="js/weather.js"></script>
-        <script>
-            feather.replace();
-        </script>
-    </body>
+        <div id="greetings" class=""></div>
+      </div>
 
-    <!-- Coded and designed by Miguel R. Ávila: https://github.com/MiguelRAvila -->
+      <!-- Date and Weather  -->
+
+      <div class="weatherBlock">
+        <div class="weatherBlock__date">
+          <div id="month" class=""></div>
+          <div id="day" class=""></div>
+        </div>
+        <div class="weatherBlock__weather">
+          <div class="weather-icon">
+            <img src="assets/icons/OneDark/unknown.png" />
+          </div>
+          <div class="temperature-value">
+            <p class="">- °<span class="g">c</span></p>
+          </div>
+          <div class="temperature-description">
+            <p class=""></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 
+        ┌┐ ┬ ┬┌┬┐┌┬┐┌─┐┌┐┌┌─┐
+        ├┴┐│ │ │  │ │ ││││└─┐
+        └─┘└─┘ ┴  ┴ └─┘┘└┘└─┘ 
+        -->
+
+      <div class="buttonLink" id="buttonsContainer"></div>
+
+      <!-- 
+        ┬  ┬┌─┐┌┬┐┌─┐
+        │  │└─┐ │ └─┐
+        ┴─┘┴└─┘ ┴ └─┘
+        -->
+
+      <div class="card list list__1" id="list_1"></div>
+
+      <div class="card list list__2" id="list_2"></div>
+    </div>
+
+    <!-- Config  -->
+    <script src="config.js"></script>
+
+    <!-- Scripts  -->
+    <script src="assets/js/time.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/greeting.js"></script>
+    <script src="assets/js/weather.js"></script>
+
+    <script src="assets/js/cards.js"></script>
+    <script src="assets/js/lists.js"></script>
+    <script>
+      feather.replace();
+    </script>
+  </body>
+
+  <!-- Developed and designed by Miguel R. Ávila: -->
+  <!-- https://github.com/migueravila -->
 </html>

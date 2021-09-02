@@ -27,9 +27,7 @@
     to make the filter to your own */
 
   --imgbg: url(assets/background.jpg);
-  --imgcol: linear-gradient(
-    rgba(255, 255, 255, 0.7),
-    rgba(255, 255, 255, 0.7)
+  --imgcol: assets/background.jpg
   ); /* Filter color */
 }
 

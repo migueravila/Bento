@@ -12,7 +12,7 @@ const CONFIG = {
 
   // General
   name: 'Shreyan',
-  imageBackground: false,
+  imageBackground: true,
   openInNewTab: true,
   twelveHourFormat: true,
 

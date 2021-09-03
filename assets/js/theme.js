@@ -17,9 +17,9 @@ const enableDark = () => {
 
 // Remove Dark theme
 const disableDark = () => {
-  document.body.classList.remove('darktheme');
-  localStorage.setItem('darkTheme', null);
-  themeToggle.innerHTML = `<i id="themeButton__icon" data-feather="moon"></i>`;
+  document.body.classList.add('darktheme');
+  localStorage.setItem('darkTheme', 'enabled');
+  themeToggle.innerHTML = `<i id="themeButton__icon" data-feather="sun"></i>`;
   feather.replace();
 };
 

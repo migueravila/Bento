@@ -105,7 +105,7 @@ const CONFIG = {
     secondList: [
       {
         name: 'Frontend Mentor',
-        link: 'https://www.frontendmentor.io//',
+        link: 'https://www.frontendmentor.io',
       },
       {
         name: 'Freecodecamp',

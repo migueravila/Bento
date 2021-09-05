@@ -26,7 +26,7 @@
     change the --imgcol value 
     to make the filter to your own */
 
-  --imgbg: url(assets/background.jpg);
+  --imgbg: url(assets/background.jpeg);
   --imgcol: 
   ); /* Filter color */
 }

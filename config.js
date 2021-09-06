@@ -113,7 +113,7 @@ const CONFIG = {
       },
       {
         name: 'Full Stack Open',
-        link: 'hhttps://fullstackopen.com/',
+        link: 'https://fullstackopen.com/en/',
       },
       {
         name: 'HackerRank',

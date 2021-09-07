@@ -4,9 +4,7 @@
 
 const iconElement = document.querySelector('.weather-icon');
 const tempElement = document.querySelector('.temperature-value p');
-const descElement = document.querySelector(
-  '.temperature-description p'
-);
+const descElement = document.querySelector('.temperature-description p');
 
 // App data
 const weather = {};
@@ -33,17 +31,21 @@ function setPosition(position) {
   }
   navigator.geolocation.getCurrentPosition(
     (pos) => {
-      getWeather(pos.coords.latitude.toFixed(3), pos.coords.longitude.toFixed(3));
-    }, (err) => {
+      getWeather(
+        pos.coords.latitude.toFixed(3),
+        pos.coords.longitude.toFixed(3)
+      );
+    },
+    (err) => {
       console.error(err);
       getWeather(CONFIG.defaultLatitude, CONFIG.defaultLongitude);
     }
-  )
+  );
 }
 
 // Get the Weather data
 function getWeather(latitude, longitude) {
-  let api = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${key}`;
+  let api = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&lang=${CONFIG.language}&appid=${key}`;
 
   console.log(api);
 

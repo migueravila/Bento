@@ -25,13 +25,30 @@ setPosition();
 
 function setPosition(position) {
   getWeather();
+  if (!CONFIG.trackLocation || !navigator.geolocation) {
+    if (CONFIG.trackLocation) {
+      console.error('Geolocation not available');
+    }
+    getWeather(CONFIG.defaultLatitude, CONFIG.defaultLongitude);
+    return;
+  }
+  navigator.geolocation.getCurrentPosition(
+    (pos) => {
+      getWeather(
+        pos.coords.latitude.toFixed(3),
+        pos.coords.longitude.toFixed(3)
+      );
+    },
+    (err) => {
+      console.error(err);
+      getWeather(CONFIG.defaultLatitude, CONFIG.defaultLongitude);
+    }
+  );
 }
 
 // Get the Weather data
-function getWeather() {
-  if(navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(function(a) {
-      let api = `https://api.openweathermap.org/data/2.5/weather?lat=${a.coords["latitude"]}&lon=${a.coords["longitude"]}&appid=${key}`;
+function getWeather(latitude, longitude) {
+  let api = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&lang=${CONFIG.language}&appid=${key}`;
 
   console.log(api);
 
@@ -50,8 +67,6 @@ function getWeather() {
     .then(function () {
       displayWeather();
     });
-  });
- }
 }
 
 // Display Weather info

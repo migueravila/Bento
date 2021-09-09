@@ -11,7 +11,7 @@ const CONFIG = {
   // └─┘┴ ┴└─┘┴└─┘└─┘
 
   // General
-  name: 'John',
+  name: 'Jennifer',
   imageBackground: false,
   openInNewTab: true,
   twelveHourFormat: false,
@@ -48,7 +48,7 @@ const CONFIG = {
       id: '2',
       name: 'Mail',
       icon: 'mail',
-      link: 'https://mail.protonmail.com/',
+      link: 'https://outlook.live.com/mail/0/inbox/',
     },
     {
       id: '3',

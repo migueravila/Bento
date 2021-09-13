@@ -23,9 +23,9 @@ const CONFIG = {
   greetingNight: 'Go to Sleep!',
 
   // Weather
-  weatherKey: 'InsertYourAPIKeyHere123456',
-  weatherIcons: 'OneDark', // 'Nord', 'Dark', 'White'
-  weatherUnit: 'C', // 'F', 'C'
+  weatherKey: '95b0b7a7edcda921b024a7e280fd5d6c539ad4a3',
+  weatherIcons: 'Nord', // 'Nord', 'Dark', 'White'
+  weatherUnit: 'F', // 'F', 'C'
   language: 'en', // More languages in https://openweathermap.org/current#multi
 
   trackLocation: true, // If false or an error occurs, the app will use the lat/lon below
@@ -89,7 +89,7 @@ const CONFIG = {
     firstList: [
       {
         name: 'Read Something',
-        link: 'https://getpocket.com/my-list?src=sidebar',
+        link: 'https://getpocket.com/',
       },
       {
         name: 'Work on Something',
@@ -97,11 +97,11 @@ const CONFIG = {
       },
       {
         name: 'Work on Work',
-        link: 'https://projects.mosaicapp.com/jenniferdaros/home/tasks',
+        link: 'https://projects.mosaicapp.com/',
       },
       {
         name: 'Go Shopping',
-        link: 'https://smile.amazon.com/ref=smi_ge_rl_rd_gw?_encoding=UTF8&newts=1&ref_=smi_chpf_redirect',
+        link: 'https://smile.amazon.com/',
       },
     ],
     secondList: [

@@ -88,20 +88,20 @@ const CONFIG = {
   lists: {
     firstList: [
       {
-        name: 'Inspirational',
-        link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+        name: 'Read Something',
+        link: 'https://getpocket.com/my-list?src=sidebar',
       },
       {
-        name: 'Classic',
-        link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+        name: 'Work on Something',
+        link: 'https://actions.moleskinestudio.com/',
       },
       {
-        name: 'Oldies',
-        link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+        name: 'Work on Work',
+        link: 'https://projects.mosaicapp.com/jenniferdaros/home/tasks',
       },
       {
-        name: 'Rock',
-        link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+        name: 'Go Shopping',
+        link: 'https://smile.amazon.com/ref=smi_ge_rl_rd_gw?_encoding=UTF8&newts=1&ref_=smi_chpf_redirect',
       },
     ],
     secondList: [

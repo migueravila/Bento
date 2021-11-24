@@ -26,12 +26,6 @@
   --sfg: #3a3a3a; /* Sceondary Foreground color */
 
   /* Image background  */
-
-  /* Uncoment this section to get the 
-    image wallpaper. You can also 
-    change the --imgcol value 
-    to make the filter to your own */
-
   --imgbg: url(assets/background.jpg);
   --imgcol: linear-gradient(
     rgba(255, 255, 255, 0.7),
@@ -94,7 +88,7 @@ body {
   background-color: #00000000;
 }
 
-#themeButton__icon {
+#themeIcon {
   width: 25px;
   height: 25px;
 }
@@ -138,14 +132,14 @@ body {
   justify-content: center;
 }
 
-.weatherBlock__date {
+.date {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 30px;
 }
 
-.weatherBlock__weather {
+.weather {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -181,25 +175,25 @@ body {
   color: var(--fg);
 }
 
-.weather-icon img {
+.weatherIcon img {
   width: 70px;
   height: 70px;
 }
 
-.temperature-value p {
+.weatherValue p {
   font-size: var(--fss);
   font-weight: bolder;
   margin-left: 15px;
   color: var(--fg);
 }
 
-.temperature-description p {
+.weatherDescription p {
   font-size: var(--fss);
   margin-left: 15px;
   color: var(--fg);
 }
 
-.buttonLink {
+.buttons {
   grid-row: 3 / span 2;
   grid-column: 1 / span 2;
   display: grid;
@@ -209,7 +203,7 @@ body {
   padding: 20px;
 }
 
-.buttonLink__link {
+.buttons__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -222,34 +216,34 @@ body {
   color: var(--fg);
 }
 
-.buttonLink__link-1 {
+.buttons__link-1 {
   grid-row: 1;
   grid-column: 1;
 }
-.buttonLink__link-2 {
+.buttons__link-2 {
   grid-row: 1;
   grid-column: 2;
 }
-.buttonLink__link-3 {
+.buttons__link-3 {
   grid-row: 2;
   grid-column: 1;
 }
-.buttonLink__link-4 {
+.buttons__link-4 {
   grid-row: 2;
   grid-column: 2;
 }
-.buttonLink__link-5 {
+.buttons__link-5 {
   grid-row: 1;
   grid-column: 3;
 }
-.buttonLink__link-6 {
+.buttons__link-6 {
   grid-row: 2;
   grid-column: 3;
 }
-.buttonLink__link:hover {
+.buttons__link:hover {
   background-color: var(--accent);
 }
-.buttonLink__link:hover svg {
+.buttons__link:hover svg {
   stroke: var(--sfg);
 }
 
@@ -288,7 +282,6 @@ body {
 .list__link:hover {
   background-color: var(--accent);
   color: var(--sfg);
-  
 }
 
 /* M E D I A - Q U E R I E S */
@@ -316,8 +309,11 @@ body {
     display: none;
   }
 
-  .buttonLink {
+  .buttons {
     grid-column: 1 / span 4;
+  }
+
+  .buttonLink {
     grid-gap: 3vw;
     padding-left: 100px;
     padding-right: 100px;

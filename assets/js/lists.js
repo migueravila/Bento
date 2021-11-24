@@ -4,7 +4,7 @@
 
 // Print the first List
 const printFirstList = () => {
-  let icon = `<i class="list__head" data-feather="${CONFIG.firstListIcon}"></i>`;
+  let icon = `<i class="list__head" icon-name="${CONFIG.firstListIcon}"></i>`;
   const position = 'beforeend';
   list_1.insertAdjacentHTML(position, icon);
   for (const link of CONFIG.lists.firstList) {
@@ -24,7 +24,7 @@ const printFirstList = () => {
 
 // Print the second List
 const printSecondList = () => {
-  let icon = `<i class="list__head" data-feather="${CONFIG.secondListIcon}"></i>`;
+  let icon = `<i class="list__head" icon-name="${CONFIG.secondListIcon}"></i>`;
   const position = 'beforeend';
   list_2.insertAdjacentHTML(position, icon);
   for (const link of CONFIG.lists.secondList) {

@@ -9,7 +9,7 @@
       href="assets/icons/favicon.png"
     />
     <link rel="stylesheet" href="app.css" />
-    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
   </head>
 
   <!-- 
@@ -20,7 +20,7 @@
 
   <body class="">
     <button id="themeButton">
-      <i id="themeButton__icon" data-feather="moon"></i>
+      <i id="themeIcon" icon-name="moon"></i>
     </button>
     <div class="container">
       <!-- Clock and Greetings  -->
@@ -37,18 +37,18 @@
       <!-- Date and Weather  -->
 
       <div class="weatherBlock">
-        <div class="weatherBlock__date">
+        <div class="date">
           <div id="month" class=""></div>
           <div id="day" class=""></div>
         </div>
-        <div class="weatherBlock__weather">
-          <div class="weather-icon">
+        <div class="weather">
+          <div class="weatherIcon">
             <img src="assets/icons/OneDark/unknown.png" />
           </div>
-          <div class="temperature-value">
+          <div class="weatherValue">
             <p class="">- °<span class="g">c</span></p>
           </div>
-          <div class="temperature-description">
+          <div class="weatherDescription">
             <p class=""></p>
           </div>
         </div>
@@ -60,7 +60,7 @@
         └─┘└─┘ ┴  ┴ └─┘┘└┘└─┘ 
         -->
 
-      <div class="buttonLink" id="buttonsContainer"></div>
+      <div class="buttons" id="buttonsContainer"></div>
 
       <!-- 
         ┬  ┬┌─┐┌┬┐┌─┐
@@ -85,7 +85,7 @@
     <script src="assets/js/cards.js"></script>
     <script src="assets/js/lists.js"></script>
     <script>
-      feather.replace();
+      lucide.createIcons();
     </script>
   </body>
 

@@ -54,7 +54,7 @@ const CONFIG = {
       id: '3',
       name: 'Todoist',
       icon: 'trello',
-      link: 'https://calendar.google.com/calendar/r',
+      link: 'https://todoist.com',
     },
     {
       id: '4',
@@ -65,7 +65,7 @@ const CONFIG = {
     {
       id: '5',
       name: 'Reddit',
-      icon: 'bookmark',
+      icon: 'glasses',
       link: 'https://reddit.com',
     },
     {

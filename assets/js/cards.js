@@ -1,20 +1,19 @@
-console.log('Connected cards');
+// ┌─┐┌─┐┬─┐┌┬┐┌─┐
+// │  ├─┤├┬┘ ││└─┐
+// └─┘┴ ┴┴└──┴┘└─┘
 
+// Print cards
 const printCards = () => {
   for (const card of CONFIG.cards) {
-    console.log(card.id);
-
+    
+    // Card Item
     let item = `
         <a
           href="${card.link}"
           target="${CONFIG.openInNewTab ? '_blank' : ''}"
-          class="card buttons__link buttons__link-${
-            card.id
-          }"
+          class="buttonLink__link card buttonLink__link-${card.id}"
         >
-          <i class="buttons__link-icon" data-feather="${
-            card.icon
-          }"></i>
+          <i class="buttonLink__icon" data-feather="${card.icon}"></i>
         </a>
     `;
 

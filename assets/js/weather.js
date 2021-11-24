@@ -1,3 +1,7 @@
+// ┬ ┬┌─┐┌─┐┌┬┐┬ ┬┌─┐┬─┐
+// │││├┤ ├─┤ │ ├─┤├┤ ├┬┘
+// └┴┘└─┘┴ ┴ ┴ ┴ ┴└─┘┴└─
+
 const iconElement = document.querySelector('.weather-icon');
 const tempElement = document.querySelector(
   '.temperature-value p'
@@ -12,7 +16,6 @@ weather.temperature = {
   unit: 'celsius',
 };
 
-// Change to 'F' for Fahrenheit
 var tempUnit = CONFIG.weatherUnit;
 
 const KELVIN = 273.15;
@@ -23,15 +26,30 @@ const key = `${CONFIG.weatherKey}`;
 setPosition();
 
 function setPosition(position) {
-  getWeather(
-    CONFIG.weatherLatitude,
-    CONFIG.weatherLongitude
+  if (!CONFIG.trackLocation || !navigator.geolocation) {
+    if (CONFIG.trackLocation) {
+      console.error('Geolocation not available');
+    }
+    getWeather(CONFIG.defaultLatitude, CONFIG.defaultLongitude);
+    return;
+  }
+  navigator.geolocation.getCurrentPosition(
+    (pos) => {
+      getWeather(
+        pos.coords.latitude.toFixed(3),
+        pos.coords.longitude.toFixed(3)
+      );
+    },
+    (err) => {
+      console.error(err);
+      getWeather(CONFIG.defaultLatitude, CONFIG.defaultLongitude);
+    }
   );
 }
 
 // Get the Weather data
 function getWeather(latitude, longitude) {
-  let api = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${key}`;
+  let api = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&lang=${CONFIG.language}&appid=${key}`;
 
   console.log(api);
 

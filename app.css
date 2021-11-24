@@ -1,3 +1,9 @@
+/* 
+// ╔╗ ╔═╗╔╗╔╔╦╗╔═╗
+// ╠╩╗║╣ ║║║ ║ ║ ║
+// ╚═╝╚═╝╝╚╝ ╩ ╚═╝ 
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
 
 /* V A R I A B L E S */
@@ -8,6 +14,8 @@
   --fsm: 8vh; /* Date */
   --fss: 3vh; /* Greetings and Weather widger */
   --fses: 2vh; /* Links List */
+
+  --iconsize: 3vh;
 
   /* Light theme  */
   --accent: #61b0f1; /* Hover color */
@@ -52,6 +60,13 @@
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
   transition: 0.2s ease-in-out;
+}
+
+.notransition {
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none;
 }
 
 .withImageBackground {
@@ -201,9 +216,9 @@ body {
   width: 100%;
 }
 
-.buttons__link-icon {
-  width: 3vh;
-  height: 3vh;
+.buttonLink__icon {
+  width: var(--iconsize);
+  height: var(--iconsize);
   color: var(--fg);
 }
 
@@ -256,8 +271,8 @@ body {
   margin-top: 3vh;
   margin-bottom: 2vh;
   color: var(--fg);
-  width: 3vh;
-  height: 3vh;
+  width: var(--iconsize);
+  height: var(--iconsize);
 }
 .list__link {
   text-decoration: none;

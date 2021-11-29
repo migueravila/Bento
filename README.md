@@ -9,6 +9,10 @@
   <a href="https://migueravila.github.io/Bento/" target="_blank" style='margin-right:0px; margin-top:5px'>
     <img align="center" src="https://github.com/migueravila/Bento/blob/master/assets/img/live.png" alt="live-preview" height="35px" />
   </a> 
+
+  <a href="https://migueravila.github.io/Bento/" target="_blank" style='margin-right:0px; margin-top:5px'>
+    <img align="center" src="https://github.com/migueravila/Bento/blob/master/assets/img/spanish.png" alt="live-preview" height="35px" />
+  </a> 
 </p>
 
 <br />

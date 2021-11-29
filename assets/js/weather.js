@@ -2,12 +2,12 @@
 // │││├┤ ├─┤ │ ├─┤├┤ ├┬┘
 // └┴┘└─┘┴ ┴ ┴ ┴ ┴└─┘┴└─
 
-const iconElement = document.querySelector('.weather-icon');
+const iconElement = document.querySelector('.weatherIcon');
 const tempElement = document.querySelector(
-  '.temperature-value p'
+  '.weatherValue p'
 );
 const descElement = document.querySelector(
-  '.temperature-description p'
+  '.weatherDescription p'
 );
 
 // App data

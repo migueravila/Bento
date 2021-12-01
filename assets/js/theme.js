@@ -46,3 +46,23 @@ themeToggle.addEventListener('click', () => {
 if (CONFIG.imageBackground) {
   document.body.classList.add('withImageBackground');
 }
+
+//Theme switcher based on system dark or light theme (uncomment to activate)
+/*
+if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+  enableDark();
+} else {
+  disableDark();
+}
+*/
+
+//Theme Switcher based on time (uncomment to activate)
+/*
+var d = new Date();
+var hours = d.getHours();
+if (hours >= 18 || hours <= 5) {
+  enableDark();
+} else {
+  disableDark();
+}
+*/

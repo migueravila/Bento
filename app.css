@@ -39,13 +39,13 @@
 
 .darktheme {
   /* Dark Colors  */
-  --accent: #57a0d9; /* Hover color */
-  --background: #19171a; /* Background color */
-  --cards: #201e21; /* Cards color */
+  --accent: #caa9fa; /* Hover color */
+  --bg: #282a36; /* Background color */
+  --sbg: #282a36; /* Cards color */
 
   /* Fonts Color */
-  --fg: #d8dee9; /* Foreground color */
-  --sfg: #2c292e; /* Secondary Foreground color */
+  --fg: #f8f8f2; /* Foreground color */
+  --sfg: #44475a; /* Secondary Foreground color */
 
   /* Image background  */
   --imgcol: linear-gradient(
@@ -236,7 +236,7 @@ body {
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 30px;
   padding: 20px;

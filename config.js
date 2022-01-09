@@ -11,9 +11,9 @@ const CONFIG = {
   // └─┘┴ ┴└─┘┴└─┘└─┘
 
   // General
-  name: 'John',
+  name: 'Marek',
   imageBackground: false,
-  openInNewTab: true,
+  openInNewTab: false,
   twelveHourFormat: false,
 
   // Greetings
@@ -23,14 +23,14 @@ const CONFIG = {
   greetingNight: 'Go to Sleep!',
 
   // Weather
-  weatherKey: 'InsertYourAPIKeyHere123456',
+  weatherKey: '5b20d4e2f4018a199ae6ceb3c8d5a634',
   weatherIcons: 'OneDark', // 'Nord', 'Dark', 'White'
   weatherUnit: 'C', // 'F', 'C'
   language: 'en', // More languages in https://openweathermap.org/current#multi
 
-  trackLocation: true, // If false or an error occurs, the app will use the lat/lon below
-  defaultLatitude: '37.775',
-  defaultLongitude: '-122.419',
+  trackLocation: false, // If false or an error occurs, the app will use the lat/lon below
+  defaultLatitude: '50.075539',
+  defaultLongitude: '14.437800',
 
   // ┌─┐┌─┐┬─┐┌┬┐┌─┐
   // │  ├─┤├┬┘ ││└─┐
@@ -40,27 +40,27 @@ const CONFIG = {
   cards: [
     {
       id: '1',
-      name: 'Github',
-      icon: 'github',
-      link: 'https://github.com/',
+      name: 'Mail',
+      icon: 'mail',
+      link: 'https://mail.google.com/',
     },
     {
       id: '2',
-      name: 'Mail',
-      icon: 'mail',
-      link: 'https://mail.protonmail.com/',
+      name: 'Drive',
+      icon: 'upload-cloud',
+      link: 'https://drive.google.com/drive/my-drive',
     },
     {
       id: '3',
-      name: 'Todoist',
+      name: 'Notion',
       icon: 'trello',
-      link: 'https://todoist.com',
+      link: 'https://notion.so/',
     },
     {
       id: '4',
-      name: 'Calendar',
-      icon: 'calendar',
-      link: 'https://calendar.google.com/calendar/r',
+      name: 'Github',
+      icon: 'github',
+      link: 'https://github.com/',
     },
     {
       id: '5',
@@ -70,9 +70,9 @@ const CONFIG = {
     },
     {
       id: '6',
-      name: 'Odysee',
+      name: 'YouTube',
       icon: 'youtube',
-      link: 'https://odysee.com/',
+      link: 'https://youtube.com/',
     },
   ],
 
@@ -81,45 +81,53 @@ const CONFIG = {
   // ┴─┘┴└─┘ ┴ └─┘
 
   //Icons
-  firstListIcon: 'music',
-  secondListIcon: 'coffee',
+  firstListIcon: 'dollar-sign',
+  secondListIcon: 'terminal',
 
   // Links
   lists: {
     firstList: [
       {
-        name: 'Inspirational',
-        link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+        name: 'IBKR',
+        link: 'https://www.interactivebrokers.co.uk/en/home.php',
       },
       {
-        name: 'Classic',
-        link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+        name: 'Trading View',
+        link: 'https://www.tradingview.com/',
       },
       {
-        name: 'Oldies',
-        link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+        name: 'GuruFocus',
+        link: 'https://www.gurufocus.com/new_index/',
       },
       {
-        name: 'Rock',
-        link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+        name: 'Finviz',
+        link: 'https://finviz.com/',
+      },
+      {
+        name: 'Seeking Alpha',
+        link: 'https://seekingalpha.com/',
       },
     ],
     secondList: [
       {
-        name: 'Linkedin',
-        link: 'https://linkedin.com/',
+        name: 'Front end resources',
+        link: 'https://codingheroes.io/resources/',
       },
       {
         name: 'Figma',
         link: 'https://figma.com/',
       },
       {
-        name: 'Dribbble',
-        link: 'https://dribbble.com',
+        name: 'Stack Overflow',
+        link: 'https://stackoverflow.com/',
       },
       {
-        name: 'Telegram',
-        link: 'https://webk.telegram.org',
+        name: 'W3 Schools',
+        link: 'https://www.w3schools.com/python/python_reference.asp',
+      },
+      {
+        name: 'Django Cheat Sheet',
+        link: 'https://dev.to/ericchapman/my-beloved-django-cheat-sheet-2056',
       },
     ],
   },

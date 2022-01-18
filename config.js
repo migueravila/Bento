@@ -104,20 +104,20 @@ const CONFIG = {
     ],
     secondList: [
       {
-        name: 'Frontend Mentor',
-        link: 'https://www.frontendmentor.io',
+        name: 'HackerRank',
+        link: 'https://www.hackerrank.com/',
       },
       {
         name: 'Freecodecamp',
         link: 'https://www.freecodecamp.org/',
       },
       {
-        name: 'Full Stack Open',
-        link: 'https://fullstackopen.com/en/',
+        name: 'Codecademy',
+        link: 'https://www.codecademy.com//',
       },
       {
-        name: 'HackerRank',
-        link: 'https://www.hackerrank.com/',
+        name: 'Project Euler',
+        link: 'https://projecteuler.net/',
       },
     ],
   },

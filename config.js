@@ -113,7 +113,7 @@ const CONFIG = {
       },
       {
         name: 'Codecademy',
-        link: 'https://www.codecademy.com//',
+        link: 'https://www.codecademy.com/',
       },
       {
         name: 'Project Euler',

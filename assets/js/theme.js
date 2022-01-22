@@ -57,7 +57,9 @@ if(CONFIG.changeThemeByOS && CONFIG.autoChangeTheme) {
 
 if(CONFIG.changeThemeByHour && CONFIG.autoChangeTheme) {
   const date = new Date();
-  const currentTime = date.getHours().toString() + ':' + date.getMinutes().toString()
+  const hours = date.getHours() < 10 ? '0' + date.getHours().toString() : date.getHours().toString(); 
+  const minutes = date.getMinutes() < 10 ? '0' + date.getMinutes().toString() : date.getMinutes().toString(); 
+  const currentTime = hours + ':' + minutes;
   if(currentTime >= CONFIG.hourDarkThemeActive) {
     enableDark();
   } else if (currentTime >= CONFIG.hourDarkThemeInactive) {

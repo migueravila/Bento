@@ -237,12 +237,12 @@ The theme can be automatically changed by the OS' current theme or personalized 
 that you can change in the `config.js` file:
 
 ```js
-  // Autochange dark-theme (24hrs format)
+  // Autochange dark-theme (24hrs format, string must be in format: hh:mm)
   autoChangeTheme: true,
   changeThemeByOS: false,
   changeThemeByHour: true, // If it's true, it will use the values below:
   hourDarkThemeActive: '19:00', // Turn on the dark theme after this hour
-  hourDarkThemeInactive: '7:00', // Turn off the dark theme after this hour and before the above hour
+  hourDarkThemeInactive: '07:00', // Turn off the dark theme after this hour and before the above hour
 ```
 
 ![](assets/img/subheader.png)

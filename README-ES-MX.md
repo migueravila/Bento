@@ -14,17 +14,18 @@
 <br />
 
 ## 👇 Índice
-- [👇 Índice](#-indice)
-- [✨ Características](#-caracteistícas)
+- [👇 Índice](#-índice)
+- [✨ Características](#-características)
 - [🚀 Usos](#-usos)
     - [Como página de inicio](#como-página-de-inicio)
     - [Como una nueva pestaña](#como-una-nueva-pestaña)
 - [🎨 Personalización](#-personalización)
-  - [👋 General: Nombre, Imagen De Fondo y Saludos](#-nombre-imagen-de-fondo-y-saludos)
-  - [🏷️ Botones de enlace](#️-enlaces-de-botones)
+  - [👋 General: Nombre, Imagen De Fondo y Saludos](#-general-nombre-imagen-de-fondo-y-saludos)
+  - [🏷️ Botones de Enlace****](#️-botones-de-enlace)
   - [📑 Lista de enlaces](#-lista-de-enlaces)
-  - [⛈️ Clima: Clave De La Api, Iconos y Grupos](#️-Clima-clave-de-la-api-iconos-y-grupos)
+  - [⛈️ Clima: Clave De La Api, Iconos y Grupos](#️-clima-clave-de-la-api-iconos-y-grupos)
   - [💛 Colores](#-colores)
+  - [🌑 Cambio automatico de tema](#-cambio-automatico-de-tema)
 
 
 ## ✨ Características
@@ -224,6 +225,24 @@ En el archivo `app.css` puedes cambiar las variables para cualquiera de los tema
   --fg: #d8dee9; /* Foreground color */
   --sfg: #3a3a3a; /* Secondary Foreground color */
 }
+```
+
+### 🌑 Cambio automatico de tema
+
+The theme can be automatically changed by the OS' current theme or personalized hours
+that you can change in the `config.js` file:
+
+```js
+  // Autochange
+  autoChangeTheme: true,
+
+  // Autochabge by OS
+  changeThemeByOS: false, 
+
+  // Autochange by hour options (24hrs format, string must be in: hh:mm)
+  changeThemeByHour: true, // If it's true, it will use the values below:
+  hourDarkThemeActive: '18:30', // Turn on the dark theme after this hour
+  hourDarkThemeInactive: '07:00', // Turn off the dark theme after this hour and before the above hour
 ```
 
 ![](assets/img/subheader.png)

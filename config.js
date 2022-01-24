@@ -34,8 +34,8 @@ const CONFIG = {
 
   // Autochange
   autoChangeTheme: true,
-  
-  // by OS
+
+  // Autochabge by OS
   changeThemeByOS: false, 
 
   // Autochange by hour options (24hrs format, string must be in: hh:mm)

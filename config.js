@@ -32,11 +32,15 @@ const CONFIG = {
   defaultLatitude: '37.775',
   defaultLongitude: '-122.419',
 
-  // Autochange dark-theme (24hrs format, string must be in: hh:mm)
+  // Autochange
   autoChangeTheme: true,
-  changeThemeByOS: false,
+  
+  // by OS
+  changeThemeByOS: false, 
+
+  // Autochange by hour options (24hrs format, string must be in: hh:mm)
   changeThemeByHour: true,
-  hourDarkThemeActive: '19:00',
+  hourDarkThemeActive: '18:30',
   hourDarkThemeInactive: '07:00',
 
   // ┌─┐┌─┐┬─┐┌┬┐┌─┐

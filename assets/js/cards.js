@@ -5,7 +5,6 @@
 // Print cards
 const printCards = () => {
   for (const card of CONFIG.cards) {
-    
     // Card Item
     let item = `
         <a

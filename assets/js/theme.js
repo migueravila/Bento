@@ -46,3 +46,23 @@ themeToggle.addEventListener('click', () => {
 if (CONFIG.imageBackground) {
   document.body.classList.add('withImageBackground');
 }
+
+if(CONFIG.changeThemeByOS && CONFIG.autoChangeTheme) {
+  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    enableDark();
+  } else {
+    disableDark();
+  }
+}
+
+if(CONFIG.changeThemeByHour && CONFIG.autoChangeTheme) {
+  const date = new Date();
+  const hours = date.getHours() < 10 ? '0' + date.getHours().toString() : date.getHours().toString(); 
+  const minutes = date.getMinutes() < 10 ? '0' + date.getMinutes().toString() : date.getMinutes().toString(); 
+  const currentTime = hours + ':' + minutes;
+  if(currentTime >= CONFIG.hourDarkThemeActive) {
+    enableDark();
+  } else if (currentTime >= CONFIG.hourDarkThemeInactive) {
+    disableDark();
+  }
+}

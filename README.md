@@ -29,6 +29,7 @@
   - [📑 List Links](#-list-links)
   - [⛈️ Weather: Api Key, Icons and Unit](#️-weather-api-key-icons-and-unit)
   - [💛 Colors](#-colors)
+  - [🌑 Auto change theme](#-auto-change-theme)
 
 
 ## ✨ Features
@@ -228,6 +229,20 @@ In the `app.css` file you can change the variables for both themes (Dark and Lig
   --fg: #d8dee9; /* Foreground color */
   --sfg: #3a3a3a; /* Secondary Foreground color */
 }
+```
+
+### 🌑 Auto change theme
+
+The theme can be automatically changed by the OS' current theme or personalized hours
+that you can change in the `config.js` file:
+
+```js
+  // Autochange dark-theme (24hrs format, string must be in format: hh:mm)
+  autoChangeTheme: true,
+  changeThemeByOS: false,
+  changeThemeByHour: true, // If it's true, it will use the values below:
+  hourDarkThemeActive: '19:00', // Turn on the dark theme after this hour
+  hourDarkThemeInactive: '07:00', // Turn off the dark theme after this hour and before the above hour
 ```
 
 ![](assets/img/subheader.png)

@@ -11,7 +11,7 @@ const CONFIG = {
   // └─┘┴ ┴└─┘┴└─┘└─┘
 
   // General
-  name: 'John',
+  name: 'Serra',
   imageBackground: false,
   openInNewTab: true,
   twelveHourFormat: false,
@@ -33,7 +33,7 @@ const CONFIG = {
   defaultLongitude: '-122.419',
 
   // Autochange
-  autoChangeTheme: true,
+  autoChangeTheme: false,
 
   // Autochabge by OS
   changeThemeByOS: false, 

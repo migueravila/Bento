@@ -34,6 +34,7 @@ if (darkTheme === 'enabled') {
   disableDark();
 }
 
+// Toggle Theme Listener
 themeToggle.addEventListener('click', () => {
   darkTheme = localStorage.getItem('darkTheme');
   if (darkTheme !== 'enabled') {
@@ -58,6 +59,7 @@ if (CONFIG.changeThemeByOS && CONFIG.autoChangeTheme) {
   }
 }
 
+// Theme Autochanger
 if (CONFIG.changeThemeByHour && CONFIG.autoChangeTheme && !CONFIG.changeThemeByOS) {
   const date = new Date();
   const hours =

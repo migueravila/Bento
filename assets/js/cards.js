@@ -1,18 +1,17 @@
 // ┌─┐┌─┐┬─┐┌┬┐┌─┐
 // │  ├─┤├┬┘ ││└─┐
 // └─┘┴ ┴┴└──┴┘└─┘
+// Function to print Button Cards.
 
-// Print cards
 const printCards = () => {
   for (const card of CONFIG.cards) {
-    // Card Item
     let item = `
         <a
           href="${card.link}"
           target="${CONFIG.openInNewTab ? '_blank' : ''}"
-          class="buttons__link  card buttonLink__link-${card.id}"
+          class="card button button__${card.id}"
         >
-          <i class="buttonLink__icon" icon-name="${card.icon}"></i>
+          <i class="buttonIcon" icon-name="${card.icon}"></i>
         </a>
     `;
 

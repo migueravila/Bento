@@ -3,6 +3,10 @@
 // ┴─┘┴└─┘ ┴ └─┘
 // Functions for printing both lists
 
+const generateLists = () => {
+  console.log("Yeah, I'm working");
+}
+
 const printFirstList = () => {
   let icon = `<i class="listIcon" icon-name="${CONFIG.firstListIcon}"></i>`;
   const position = 'beforeend';
@@ -39,5 +43,6 @@ const printSecondList = () => {
   }
 };
 
+generateLists();
 printFirstList();
 printSecondList();

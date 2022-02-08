@@ -16,6 +16,9 @@ const CONFIG = {
   openInNewTab: true,
   twelveHourFormat: false,
 
+  // Layout
+  bentoLayout: 'bento', // 'bento', 'cards', 'lists'
+
   // Greetings
   greetingMorning: 'Good morning!',
   greetingAfternoon: 'Good afternoon,',
@@ -23,7 +26,7 @@ const CONFIG = {
   greetingNight: 'Go to Sleep!',
 
   // Weather
-  weatherKey: 'InsertYourAPIKeyHere123456', // Write here your API Key
+  weatherKey: '15fe26a8e22e4783054e3273824c5e7b', // Write here your API Key
   weatherIcons: 'OneDark', // 'Onedark', 'Nord', 'Dark', 'White'
   weatherUnit: 'C', // 'F', 'C'
   language: 'en', // More languages in https://openweathermap.org/current#multi
@@ -43,12 +46,11 @@ const CONFIG = {
   hourDarkThemeActive: '18:30',
   hourDarkThemeInactive: '07:00',
 
-  // ┌─┐┌─┐┬─┐┌┬┐┌─┐
-  // │  ├─┤├┬┘ ││└─┐
-  // └─┘┴ ┴┴└──┴┘└─┘
+  // ┌┐ ┬ ┬┌┬┐┌┬┐┌─┐┌┐┌┌─┐
+  // ├┴┐│ │ │  │ │ ││││└─┐
+  // └─┘└─┘ ┴  ┴ └─┘┘└┘└─┘
 
-  // Links
-  cards: [
+  buttons: [
     {
       id: '1',
       name: 'Github',
@@ -85,6 +87,43 @@ const CONFIG = {
       icon: 'youtube',
       link: 'https://odysee.com/',
     },
+    {
+      id: '7',
+      name: 'Odysee',
+      icon: 'youtube',
+      link: 'https://odysee.com/',
+    },
+    {
+      id: '8',
+      name: 'Odysee',
+      icon: 'youtube',
+      link: 'https://odysee.com/',
+    },
+    {
+      id: '9',
+      name: 'Odysee',
+      icon: 'youtube',
+      link: 'https://odysee.com/',
+    },
+    {
+      id: '10',
+      name: 'Odysee',
+      icon: 'youtube',
+      link: 'https://odysee.com/',
+    },
+    {
+      id: '11',
+      name: 'Odysee',
+      icon: 'youtube',
+      link: 'https://odysee.com/',
+    },
+    {
+      id: '12',
+      name: 'Odysee',
+      icon: 'youtube',
+      link: 'https://odysee.com/',
+    },
+
   ],
 
   // ┬  ┬┌─┐┌┬┐┌─┐

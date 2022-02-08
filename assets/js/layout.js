@@ -10,8 +10,7 @@ const generateLayout = () => {
         </div>
 
         <div class="linksBlockRight" id="linksBlockRight">
-            <div class="card list list__1" id="list_1"></div>
-            <div class="card list list__2" id="list_2"></div>
+           
         </div>
     `;
   let listLayout = `

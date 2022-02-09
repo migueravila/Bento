@@ -3,46 +3,84 @@
 // ┴─┘┴└─┘ ┴ └─┘
 // Functions for printing both lists
 
-const generateLists = () => {
-  console.log("Yeah, I'm working");
-}
-
-const printFirstList = () => {
-  let icon = `<i class="listIcon" icon-name="${CONFIG.firstListIcon}"></i>`;
-  const position = 'beforeend';
-  list_1.insertAdjacentHTML(position, icon);
-  for (const link of CONFIG.lists.firstList) {
+const generateFirstListsContainer = () => {
+  console.log('Running firstlistscontainer');
+  for (const list of CONFIG.firstlistsContainer) {
     let item = `
+        <div class="card list list__${list.id}" id="list_${list.id}">
+        <i class="listIcon" icon-name="${list.icon}"></i>
         <a
         target="${CONFIG.openInNewTab ? '_blank' : ''}"
-        href="${link.link}"
+        href="${list.links[0].link}"
         class="listItem"
-        >${link.name}</a
-        >
-    `;
+        >${list.links[0].name}</a>
+        <a
+        target="${CONFIG.openInNewTab ? '_blank' : ''}"
+        href="${list.links[1].link}"
+        class="listItem"
+        >${list.links[1].name}</a>
+        <a
+        target="${CONFIG.openInNewTab ? '_blank' : ''}"
+        href="${list.links[2].link}"
+        class="listItem"
+        >${list.links[2].name}</a>
+        <a
+        target="${CONFIG.openInNewTab ? '_blank' : ''}"
+        href="${list.links[3].link}"
+        class="listItem"
+        >${list.links[3].name}</a>
+        </div>
+      `;
     const position = 'beforeend';
-    list_1.insertAdjacentHTML(position, item);
+    lists_1.insertAdjacentHTML(position, item);
   }
 };
 
-const printSecondList = () => {
-  let icon = `<i class="listIcon" icon-name="${CONFIG.secondListIcon}"></i>`;
-  const position = 'beforeend';
-  list_2.insertAdjacentHTML(position, icon);
-  for (const link of CONFIG.lists.secondList) {
+const generateSecondListsContainer = () => {
+  console.log('Running second');
+  for (const list of CONFIG.secondListsContainer) {
     let item = `
-          <a
-          target="${CONFIG.openInNewTab ? '_blank' : ''}"
-          href="${link.link}"
-          class="listItem"
-          >${link.name}</a
-          >
+        <div class="card list list__${list.id}" id="list_${list.id}">
+        <i class="listIcon" icon-name="${list.icon}"></i>
+        <a
+        target="${CONFIG.openInNewTab ? '_blank' : ''}"
+        href="${list.links[0].link}"
+        class="listItem"
+        >${list.links[0].name}</a>
+        <a
+        target="${CONFIG.openInNewTab ? '_blank' : ''}"
+        href="${list.links[1].link}"
+        class="listItem"
+        >${list.links[1].name}</a>
+        <a
+        target="${CONFIG.openInNewTab ? '_blank' : ''}"
+        href="${list.links[2].link}"
+        class="listItem"
+        >${list.links[2].name}</a>
+        <a
+        target="${CONFIG.openInNewTab ? '_blank' : ''}"
+        href="${list.links[3].link}"
+        class="listItem"
+        >${list.links[3].name}</a>
+        </div>
       `;
     const position = 'beforeend';
-    list_2.insertAdjacentHTML(position, item);
+    lists_2.insertAdjacentHTML(position, item);
+  }
+};
+
+const generateLists = () => {
+  switch (CONFIG.bentoLayout) {
+    case 'bento':
+      generateFirstListsContainer();
+      break;
+    case 'lists':
+      generateFirstListsContainer();
+      generateSecondListsContainer();
+      break;
+    default:
+      break;
   }
 };
 
 generateLists();
-printFirstList();
-printSecondList();

@@ -4,46 +4,34 @@
 // Generate Layout.
 
 const generateLayout = () => {
-  let bentoLayout = `
-        <div class="linksBlockLeft" id="linksBlockLeft">
-            <div class="buttonsContainer" id="buttons_1"></div>
-        </div>
+  let firstButtonsContainer = `
+    <div class="buttonsContainer" id="buttons_1"></div>
+  `;
+  let secondButtonsContainer = `
+    <div class="buttonsContainer" id="buttons_2"></div>
+  `;
+  let firstListsContainer = `
+    <div class="listsContainer" id="lists_1"></div>
+  `;
 
-        <div class="linksBlockRight" id="linksBlockRight">
-           
-        </div>
-    `;
-  let listLayout = `
-        <div class="linksBlockLeft" id="linksBlockLeft">
-            <div class="card list list__1" id="list_1"></div>
-            <div class="card list list__2" id="list_2"></div>
-        </div>
-
-        <div class="linksBlockRight" id="linksBlockRight">
-            <div class="card list list__3" id="list_3"></div>
-            <div class="card list list__4" id="list_4"></div>
-        </div>
-    `;
-  let buttonsLayout = `
-        <div class="linksBlockLeft" id="linksBlockLeft">
-            <div class="buttonsContainer" id="buttons_1"></div>
-        </div>
-
-        <div class="linksBlockRight" id="linksBlockRight">
-        <div class="buttonsContainer" id="buttons_2"></div>
-        </div>
-    `;
+  let secondListsContainer = `
+    <div class="listsContainer" id="lists_2"></div>
+  `;
 
   const position = 'beforeend';
+
   switch (CONFIG.bentoLayout) {
     case 'bento':
-      linksBlock.insertAdjacentHTML(position, bentoLayout);
+      linksBlockLeft.insertAdjacentHTML(position, firstButtonsContainer);
+      linksBlockRight.insertAdjacentHTML(position, firstListsContainer);
       break;
     case 'lists':
-      linksBlock.insertAdjacentHTML(position, listLayout);
+      linksBlockLeft.insertAdjacentHTML(position, firstListsContainer);
+      linksBlockRight.insertAdjacentHTML(position, secondListsContainer);
       break;
     case 'buttons':
-      linksBlock.insertAdjacentHTML(position, buttonsLayout);
+      linksBlockLeft.insertAdjacentHTML(position, firstButtonsContainer);
+      linksBlockRight.insertAdjacentHTML(position, secondButtonsContainer);
       break;
     default:
       break;

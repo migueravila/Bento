@@ -17,7 +17,7 @@ const CONFIG = {
   twelveHourFormat: false,
 
   // Layout
-  bentoLayout: 'bento', // 'bento', 'cards', 'lists'
+  bentoLayout: 'buttons', // 'bento', 'lists', 'buttons'
 
   // Greetings
   greetingMorning: 'Good morning!',
@@ -39,7 +39,7 @@ const CONFIG = {
   autoChangeTheme: true,
 
   // Autochabge by OS
-  changeThemeByOS: false, 
+  changeThemeByOS: false,
 
   // Autochange by hour options (24hrs format, string must be in: hh:mm)
   changeThemeByHour: true,
@@ -50,7 +50,7 @@ const CONFIG = {
   // ├┴┐│ │ │  │ │ ││││└─┐
   // └─┘└─┘ ┴  ┴ └─┘┘└┘└─┘
 
-  buttons: [
+  firstButtonsContainer: [
     {
       id: '1',
       name: 'Github',
@@ -87,90 +87,144 @@ const CONFIG = {
       icon: 'youtube',
       link: 'https://odysee.com/',
     },
-    {
-      id: '7',
-      name: 'Odysee',
-      icon: 'youtube',
-      link: 'https://odysee.com/',
-    },
-    {
-      id: '8',
-      name: 'Odysee',
-      icon: 'youtube',
-      link: 'https://odysee.com/',
-    },
-    {
-      id: '9',
-      name: 'Odysee',
-      icon: 'youtube',
-      link: 'https://odysee.com/',
-    },
-    {
-      id: '10',
-      name: 'Odysee',
-      icon: 'youtube',
-      link: 'https://odysee.com/',
-    },
-    {
-      id: '11',
-      name: 'Odysee',
-      icon: 'youtube',
-      link: 'https://odysee.com/',
-    },
-    {
-      id: '12',
-      name: 'Odysee',
-      icon: 'youtube',
-      link: 'https://odysee.com/',
-    },
+  ],
 
+  secondButtonsContainer: [
+    {
+      id: '1',
+      name: 'Odysee',
+      icon: 'youtube',
+      link: 'https://odysee.com/',
+    },
+    {
+      id: '2',
+      name: 'Odysee',
+      icon: 'youtube',
+      link: 'https://odysee.com/',
+    },
+    {
+      id: '3',
+      name: 'Odysee',
+      icon: 'youtube',
+      link: 'https://odysee.com/',
+    },
+    {
+      id: '4',
+      name: 'Odysee',
+      icon: 'youtube',
+      link: 'https://odysee.com/',
+    },
+    {
+      id: '5',
+      name: 'Odysee',
+      icon: 'youtube',
+      link: 'https://odysee.com/',
+    },
+    {
+      id: '6',
+      name: 'Odysee',
+      icon: 'youtube',
+      link: 'https://odysee.com/',
+    },
   ],
 
   // ┬  ┬┌─┐┌┬┐┌─┐
   // │  │└─┐ │ └─┐
   // ┴─┘┴└─┘ ┴ └─┘
 
-  //Icons
-  firstListIcon: 'music',
-  secondListIcon: 'coffee',
+  // Links
+  firstlistsContainer: [
+    {
+      icon: 'music',
+      id: '1',
+      links: [
+        {
+          name: 'Inspirational',
+          link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+        },
+        {
+          name: 'Classic',
+          link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+        },
+        {
+          name: 'Oldies',
+          link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+        },
+        {
+          name: 'Rock',
+          link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+        },
+      ],
+    },
+    {
+      icon: 'coffee',
+      id: '2',
+      links: [
+        {
+          name: 'Inspirational',
+          link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+        },
+        {
+          name: 'Classic',
+          link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+        },
+        {
+          name: 'Oldies',
+          link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+        },
+        {
+          name: 'Rock',
+          link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+        },
+      ],
+    },
+  ],
 
   // Links
-  lists: {
-    firstList: [
-      {
-        name: 'Inspirational',
-        link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-      },
-      {
-        name: 'Classic',
-        link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-      },
-      {
-        name: 'Oldies',
-        link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-      },
-      {
-        name: 'Rock',
-        link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-      },
-    ],
-    secondList: [
-      {
-        name: 'Linkedin',
-        link: 'https://linkedin.com/',
-      },
-      {
-        name: 'Figma',
-        link: 'https://figma.com/',
-      },
-      {
-        name: 'Dribbble',
-        link: 'https://dribbble.com',
-      },
-      {
-        name: 'Telegram',
-        link: 'https://webk.telegram.org',
-      },
-    ],
-  },
+  secondListsContainer: [
+    {
+      icon: 'binary',
+      id: '1',
+      links: [
+        {
+          name: 'Inspirational',
+          link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+        },
+        {
+          name: 'Classic',
+          link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+        },
+        {
+          name: 'Oldies',
+          link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+        },
+        {
+          name: 'Rock',
+          link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+        },
+      ],
+    },
+    {
+      icon: 'github',
+      id: '2',
+      links: [
+        {
+          name: 'Inspirational',
+          link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+        },
+        {
+          name: 'Classic',
+          link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+        },
+        {
+          name: 'Oldies',
+          link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+        },
+        {
+          name: 'Rock',
+          link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+        },
+      ],
+    },
+  ],
 };

@@ -17,7 +17,7 @@ const CONFIG = {
   twelveHourFormat: false,
 
   // Layout
-  bentoLayout: 'buttons', // 'bento', 'lists', 'buttons'
+  bentoLayout: 'lists', // 'bento', 'lists', 'buttons'
 
   // Greetings
   greetingMorning: 'Good morning!',
@@ -46,6 +46,9 @@ const CONFIG = {
   hourDarkThemeActive: '18:30',
   hourDarkThemeInactive: '07:00',
 
+  // ╦  ╦╔╗╔╦╔═╔═╗
+  // ║  ║║║║╠╩╗╚═╗
+  // ╩═╝╩╝╚╝╩ ╩╚═╝
   // ┌┐ ┬ ┬┌┬┐┌┬┐┌─┐┌┐┌┌─┐
   // ├┴┐│ │ │  │ │ ││││└─┐
   // └─┘└─┘ ┴  ┴ └─┘┘└┘└─┘
@@ -92,39 +95,39 @@ const CONFIG = {
   secondButtonsContainer: [
     {
       id: '1',
-      name: 'Odysee',
-      icon: 'youtube',
-      link: 'https://odysee.com/',
+      name: 'Music',
+      icon: 'headphones',
+      link: 'https://open.spotify.com',
     },
     {
       id: '2',
-      name: 'Odysee',
-      icon: 'youtube',
-      link: 'https://odysee.com/',
+      name: 'twitter',
+      icon: 'twitter',
+      link: 'https://twitter.com/',
     },
     {
       id: '3',
-      name: 'Odysee',
-      icon: 'youtube',
-      link: 'https://odysee.com/',
+      name: 'bot',
+      icon: 'bot',
+      link: 'https://discord.com/app',
     },
     {
       id: '4',
-      name: 'Odysee',
-      icon: 'youtube',
-      link: 'https://odysee.com/',
+      name: 'Amazon',
+      icon: 'shopping-bag',
+      link: 'https://amazon.com/',
     },
     {
       id: '5',
-      name: 'Odysee',
-      icon: 'youtube',
-      link: 'https://odysee.com/',
+      name: 'Hashnode',
+      icon: 'pen-tool',
+      link: 'https://hashnode.com/',
     },
     {
       id: '6',
-      name: 'Odysee',
-      icon: 'youtube',
-      link: 'https://odysee.com/',
+      name: 'Figma',
+      icon: 'figma',
+      link: 'https://figma.com/',
     },
   ],
 
@@ -132,7 +135,7 @@ const CONFIG = {
   // │  │└─┐ │ └─┐
   // ┴─┘┴└─┘ ┴ └─┘
 
-  // Links
+  // First Links Container
   firstlistsContainer: [
     {
       icon: 'music',
@@ -180,7 +183,7 @@ const CONFIG = {
     },
   ],
 
-  // Links
+  // Second Links Container
   secondListsContainer: [
     {
       icon: 'binary',

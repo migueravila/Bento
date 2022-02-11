@@ -1,6 +1,5 @@
 ![image](assets/img/header.png)
 
-
 <p style="margin: -20px 0 30px">
   <a href="https://www.buymeacoffee.com/migueravila" target="_blank" style='margin-right:0px; margin-top:5px'>
     <img align="center" src="https://github.com/migueravila/Bento/blob/master/assets/img/donation.png" alt="donation" height="35px" />
@@ -8,11 +7,7 @@
 
   <a href="https://migueravila.github.io/Bento/" target="_blank" style='margin-right:0px; margin-top:5px'>
     <img align="center" src="https://github.com/migueravila/Bento/blob/master/assets/img/live.png" alt="live-preview" height="35px" />
-  </a> 
-
-  <a href="https://github.com/migueravila/Bento/blob/master/README-ES-MX.md" target="_blank" style='margin-right:0px; margin-top:5px'>
-    <img align="center" src="https://github.com/migueravila/Bento/blob/master/assets/img/spanish.png" alt="live-preview" height="35px" />
-  </a> 
+  </a>
 </p>
 
 <br />
@@ -25,8 +20,9 @@
     - [As New Tab](#as-new-tab)
 - [🎨 Customization](#-customization)
   - [👋 General: Name, Image Background and Greetings](#-general-name-image-background-and-greetings)
-  - [🏷️ Button Links](#️-button-links)
-  - [📑 List Links](#-list-links)
+  - [📐 Layouts: Bento, Lists and Buttons.](#-layouts-bento-lists-and-buttons)
+  - [🏷️ Buttons & Links](#️-buttons--links)
+  - [📑 Lists & Links](#-lists--links)
   - [⛈️ Weather: Api Key, Icons and Unit](#️-weather-api-key-icons-and-unit)
   - [💛 Colors](#-colors)
   - [🌑 Auto change theme](#-auto-change-theme)
@@ -35,7 +31,8 @@
 ## ✨ Features
 
 - **Easy configuration** file.
-- **Dark/Light** mode, you can toggle them and It'll be saved in local storage.
+- **Dark/Light** mode, you can toggle them and It'll be saved in local storage.2
+- **Layouts!** to customize your experience following your workflow.
 - **Clock and Date** format can be set to 24 hour (default) or 12 hour.
 - **Greetings** are easy to modify.
 - **Variables** for custom colors and font sizes in the `style.css` code.
@@ -84,9 +81,13 @@ To change the default name, the greetings and if you want to have an image backg
 
 > You cah change the background by substituting the `background.jpg` file in `assets` folder.
 
-![](assets/img/previewbg.png)
+![](assets/img/backgroundImage.png)
 
-### 🏷️ Button Links
+### 📐 Layouts: Bento, Lists and Buttons.
+
+![](assets/img/bentoLayouts.png)
+
+### 🏷️ Buttons & Links
 
 To edit the buttons you just need to change the follow list in the `config.js` file by choosing a link, an icon from [Feather icons](https://feathericons.com/) and a name:
 
@@ -131,7 +132,7 @@ cards: [
   ],
 ```
 
-### 📑 List Links
+### 📑 Lists & Links
 
 The same happens with the list links, you can change the list icon (also using feather icons) and the links:
 
@@ -249,4 +250,4 @@ that you can change in the `config.js` file:
   hourDarkThemeInactive: '07:00', // Turn off the dark theme after this hour and before the above hour
 ```
 
-![](assets/img/subheader.png)
+![](assets/img/darkMode.png)

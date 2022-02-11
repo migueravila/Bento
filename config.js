@@ -17,7 +17,7 @@ const CONFIG = {
   twelveHourFormat: false,
 
   // Layout
-  bentoLayout: 'lists', // 'bento', 'lists', 'buttons'
+  bentoLayout: 'bento', // 'bento', 'lists', 'buttons'
 
   // Greetings
   greetingMorning: 'Good morning!',
@@ -164,19 +164,19 @@ const CONFIG = {
       id: '2',
       links: [
         {
-          name: 'Inspirational',
+          name: 'Linkedin',
           link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
         },
         {
-          name: 'Classic',
+          name: 'Dribbble',
           link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
         },
         {
-          name: 'Oldies',
+          name: 'Trello',
           link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
         },
         {
-          name: 'Rock',
+          name: 'Slack',
           link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
         },
       ],
@@ -190,19 +190,19 @@ const CONFIG = {
       id: '1',
       links: [
         {
-          name: 'Inspirational',
+          name: 'Spotify',
           link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
         },
         {
-          name: 'Classic',
+          name: 'Reddit',
           link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
         },
         {
-          name: 'Oldies',
+          name: 'Hashnode',
           link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
         },
         {
-          name: 'Rock',
+          name: 'Pocket',
           link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
         },
       ],
@@ -212,19 +212,19 @@ const CONFIG = {
       id: '2',
       links: [
         {
-          name: 'Inspirational',
+          name: 'Web',
           link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
         },
         {
-          name: 'Classic',
+          name: 'Rust',
           link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
         },
         {
-          name: 'Oldies',
+          name: 'Go',
           link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
         },
         {
-          name: 'Rock',
+          name: 'Repos',
           link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
         },
       ],

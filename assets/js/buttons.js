@@ -1,6 +1,6 @@
-// ┌─┐┌─┐┬─┐┌┬┐┌─┐
-// │  ├─┤├┬┘ ││└─┐
-// └─┘┴ ┴┴└──┴┘└─┘
+// ┌┐ ┬ ┬┌┬┐┌┬┐┌─┐┌┐┌┌─┐
+// ├┴┐│ │ │  │ │ ││││└─┐
+// └─┘└─┘ ┴  ┴ └─┘┘└┘└─┘
 // Function to print Button Cards.
 
 const generateFirstButtonsContainer = () => {
@@ -19,7 +19,7 @@ const generateFirstButtonsContainer = () => {
 
     buttons_1.insertAdjacentHTML(position, item);
   }
-}
+};
 
 const generateSecondButtonsContainer = () => {
   for (const button of CONFIG.secondButtonsContainer) {
@@ -37,7 +37,7 @@ const generateSecondButtonsContainer = () => {
 
     buttons_2.insertAdjacentHTML(position, item);
   }
-}
+};
 
 const generateButtons = () => {
   switch (CONFIG.bentoLayout) {

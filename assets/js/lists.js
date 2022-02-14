@@ -4,7 +4,6 @@
 // Functions for printing both lists
 
 const generateFirstListsContainer = () => {
-  console.log('Running firstlistscontainer');
   for (const list of CONFIG.firstlistsContainer) {
     let item = `
         <div class="card list list__${list.id}" id="list_${list.id}">
@@ -37,7 +36,6 @@ const generateFirstListsContainer = () => {
 };
 
 const generateSecondListsContainer = () => {
-  console.log('Running second');
   for (const list of CONFIG.secondListsContainer) {
     let item = `
         <div class="card list list__${list.id}" id="list_${list.id}">

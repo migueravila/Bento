@@ -59,7 +59,7 @@ You can use different Add-ons/Extensions for it
 
 ## 🎨 Customization
 
-Almost all customization can be managed in the `config.js` file:
+All customization can be managed in the `config.js` file:
 
 ### 👋 General: Name, Image Background and Greetings
 

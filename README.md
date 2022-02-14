@@ -1,6 +1,5 @@
 ![image](assets/img/header.png)
 
-
 <p style="margin: -20px 0 30px">
   <a href="https://www.buymeacoffee.com/migueravila" target="_blank" style='margin-right:0px; margin-top:5px'>
     <img align="center" src="https://github.com/migueravila/Bento/blob/master/assets/img/donation.png" alt="donation" height="35px" />
@@ -8,11 +7,7 @@
 
   <a href="https://migueravila.github.io/Bento/" target="_blank" style='margin-right:0px; margin-top:5px'>
     <img align="center" src="https://github.com/migueravila/Bento/blob/master/assets/img/live.png" alt="live-preview" height="35px" />
-  </a> 
-
-  <a href="https://github.com/migueravila/Bento/blob/master/README-ES-MX.md" target="_blank" style='margin-right:0px; margin-top:5px'>
-    <img align="center" src="https://github.com/migueravila/Bento/blob/master/assets/img/spanish.png" alt="live-preview" height="35px" />
-  </a> 
+  </a>
 </p>
 
 <br />
@@ -21,12 +16,13 @@
 - [👇 Index](#-index)
 - [✨ Features](#-features)
 - [🚀 Usage](#-usage)
-    - [As Home Page](#as-home-page)
-    - [As New Tab](#as-new-tab)
+  - [🏡 As Home Page](#-as-home-page)
+  - [➕ As New Tab](#-as-new-tab)
 - [🎨 Customization](#-customization)
   - [👋 General: Name, Image Background and Greetings](#-general-name-image-background-and-greetings)
-  - [🏷️ Button Links](#️-button-links)
-  - [📑 List Links](#-list-links)
+  - [📐 Layouts: Bento, Lists and Buttons.](#-layouts-bento-lists-and-buttons)
+  - [🏷️ Buttons & Links](#️-buttons--links)
+  - [📑 Lists & Links](#-lists--links)
   - [⛈️ Weather: Api Key, Icons and Unit](#️-weather-api-key-icons-and-unit)
   - [💛 Colors](#-colors)
   - [🌑 Auto change theme](#-auto-change-theme)
@@ -35,25 +31,26 @@
 ## ✨ Features
 
 - **Easy configuration** file.
-- **Dark/Light** mode, you can toggle them and It'll be saved in local storage.
+- **Dark/Light** mode, you can toggle it and will be saved in local storage.
+- **Layouts!** to customize your experience following your workflow.
 - **Clock and Date** format can be set to 24 hour (default) or 12 hour.
 - **Greetings** are easy to modify.
-- **Variables** for custom colors and font sizes in the `style.css` code.
-- **Icons** all icons are from Feather Icons (Some others I made them with the Feather icons as a base)
+- **Variables** for custom colors and font sizes in the `app.css` code.
+- **Icons** all icons are from [Lucide icons](https://lucide.dev).
 - **Modular** javascript files for an easy read.
 
 ## 🚀 Usage
 
-#### As Home Page
+### 🏡 As Home Page
 
 1. Fork this repo
-2. Enable the Github Pages service `Settings > GitHub Pages > Source [master branch] > Save`
+2. Enable the Github Pages service `Settings → GitHub Pages → Source [master branch] → Save`
 3. Set it as Home Page:
    - Click the menu button. and select Options. Preferences.
    - Click the Home panel.
    - Click the menu next to Homepage and new windows and choose to show custom URLs and add your `Github Pages link`
 
-#### As New Tab
+### ➕ As New Tab
 
 You can use different Add-ons/Extensions for it
 
@@ -62,7 +59,7 @@ You can use different Add-ons/Extensions for it
 
 ## 🎨 Customization
 
-Almost all customization can be managed in the `config.js` file:
+All customization can be managed in the `config.js` file:
 
 ### 👋 General: Name, Image Background and Greetings
 
@@ -82,16 +79,30 @@ To change the default name, the greetings and if you want to have an image backg
 
 ```
 
-> You cah change the background by substituting the `background.jpg` file in `assets` folder.
+> You can change the background by substituting the `background.jpg` file in `assets` folder.
 
-![](assets/img/previewbg.png)
+![](assets/img/backgroundImage.png)
 
-### 🏷️ Button Links
+### 📐 Layouts: Bento, Lists and Buttons.
 
-To edit the buttons you just need to change the follow list in the `config.js` file by choosing a link, an icon from [Feather icons](https://feathericons.com/) and a name:
+Bento has three different layouts `bento`, `lists` & `buttons`. It allows you to cutomize your experience giving you more buttons or lists depending on how are you more comfortable. To modify the laout you need to change the following line in the `config.js` file:
 
 ```js
-cards: [
+  // Layout
+  bentoLayout: 'bento', // 'bento', 'lists', 'buttons'
+
+```
+
+If you want to customize all your extra buttons and lists go to [🏷️ Buttons & Links](#️-buttons--links) & [📑 Lists & Links](#-lists--links) sections.
+
+![](assets/img/bentoLayouts.png)
+
+### 🏷️ Buttons & Links
+
+To edit the buttons you just need to change the follow list in the `config.js` file by choosing a link, an icon from [Lucide icons](https://lucide.dev) and a name. If you're using the `buttons` [layout](#-layouts-bento-lists-and-buttons) you can customize `secondButtonsContainer`
+
+```js
+  firstButtonsContainer: [
     {
       id: '1',
       name: 'Github',
@@ -108,7 +119,7 @@ cards: [
       id: '3',
       name: 'Todoist',
       icon: 'trello',
-      link: 'https://calendar.google.com/calendar/r',
+      link: 'https://todoist.com',
     },
     {
       id: '4',
@@ -119,7 +130,7 @@ cards: [
     {
       id: '5',
       name: 'Reddit',
-      icon: 'bookmark',
+      icon: 'glasses',
       link: 'https://reddit.com',
     },
     {
@@ -131,54 +142,57 @@ cards: [
   ],
 ```
 
-### 📑 List Links
+### 📑 Lists & Links
 
-The same happens with the list links, you can change the list icon (also using feather icons) and the links:
+The same happens with the list links, you can change the list icon (also using Lucide icons) and the links. If you're using the `lists` [layout](#-layouts-bento-lists-and-buttons) you can customize `secondListsContainer`, you can find it bellow `firstListsContainer`.
 
 ```js
-  //Icons
-  firstListIcon: 'music',
-  secondListIcon: 'coffee',
-
-  // Links
-  lists: {
-    firstList: [
-      {
-        name: 'Inspirational',
-        link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-      },
-      {
-        name: 'Classic',
-        link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-      },
-      {
-        name: 'Oldies',
-        link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-      },
-      {
-        name: 'Rock',
-        link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-      },
-    ],
-    secondList: [
-      {
-        name: 'Linkedin',
-        link: 'https://linkedin.com/',
-      },
-      {
-        name: 'Figma',
-        link: 'https://figma.com/',
-      },
-      {
-        name: 'Dribbble',
-        link: 'https://dribbble.com',
-      },
-      {
-        name: 'Telegram',
-        link: 'https://webk.telegram.org',
-      },
-    ],
-  },
+   firstlistsContainer: [
+    {
+      icon: 'music',
+      id: '1',
+      links: [
+        {
+          name: 'Inspirational',
+          link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+        },
+        {
+          name: 'Classic',
+          link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+        },
+        {
+          name: 'Oldies',
+          link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+        },
+        {
+          name: 'Rock',
+          link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+        },
+      ],
+    },
+    {
+      icon: 'coffee',
+      id: '2',
+      links: [
+        {
+          name: 'Linkedin',
+          link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+        },
+        {
+          name: 'Dribbble',
+          link: 'https://www.linkedin.com',
+        },
+        {
+          name: 'Trello',
+          link: 'https://www.trello.com',
+        },
+        {
+          name: 'Slack',
+          link: 'https://www.slack.com',
+        },
+      ],
+    },
+  ],
 ```
 
 ### ⛈️ Weather: Api Key, Icons and Unit
@@ -249,4 +263,4 @@ that you can change in the `config.js` file:
   hourDarkThemeInactive: '07:00', // Turn off the dark theme after this hour and before the above hour
 ```
 
-![](assets/img/subheader.png)
+![](assets/img/darkMode.png)

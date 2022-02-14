@@ -16,8 +16,8 @@
 - [👇 Index](#-index)
 - [✨ Features](#-features)
 - [🚀 Usage](#-usage)
-    - [As Home Page](#as-home-page)
-    - [As New Tab](#as-new-tab)
+  - [🏡 As Home Page](#-as-home-page)
+  - [➕ As New Tab](#-as-new-tab)
 - [🎨 Customization](#-customization)
   - [👋 General: Name, Image Background and Greetings](#-general-name-image-background-and-greetings)
   - [📐 Layouts: Bento, Lists and Buttons.](#-layouts-bento-lists-and-buttons)
@@ -31,26 +31,26 @@
 ## ✨ Features
 
 - **Easy configuration** file.
-- **Dark/Light** mode, you can toggle them and It'll be saved in local storage.2
+- **Dark/Light** mode, you can toggle it and will be saved in local storage.
 - **Layouts!** to customize your experience following your workflow.
 - **Clock and Date** format can be set to 24 hour (default) or 12 hour.
 - **Greetings** are easy to modify.
-- **Variables** for custom colors and font sizes in the `style.css` code.
-- **Icons** all icons are from Feather Icons (Some others I made them with the Feather icons as a base)
+- **Variables** for custom colors and font sizes in the `app.css` code.
+- **Icons** all icons are from [Lucide icons](https://lucide.dev).
 - **Modular** javascript files for an easy read.
 
 ## 🚀 Usage
 
-#### As Home Page
+### 🏡 As Home Page
 
 1. Fork this repo
-2. Enable the Github Pages service `Settings > GitHub Pages > Source [master branch] > Save`
+2. Enable the Github Pages service `Settings → GitHub Pages → Source [master branch] → Save`
 3. Set it as Home Page:
    - Click the menu button. and select Options. Preferences.
    - Click the Home panel.
    - Click the menu next to Homepage and new windows and choose to show custom URLs and add your `Github Pages link`
 
-#### As New Tab
+### ➕ As New Tab
 
 You can use different Add-ons/Extensions for it
 
@@ -79,7 +79,7 @@ To change the default name, the greetings and if you want to have an image backg
 
 ```
 
-> You cah change the background by substituting the `background.jpg` file in `assets` folder.
+> You can change the background by substituting the `background.jpg` file in `assets` folder.
 
 ![](assets/img/backgroundImage.png)
 

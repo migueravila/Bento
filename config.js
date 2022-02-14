@@ -16,17 +16,17 @@ const CONFIG = {
   openInNewTab: true,
   twelveHourFormat: false,
 
-  // Layout
-  bentoLayout: 'bento', // 'bento', 'lists', 'buttons'
-
   // Greetings
   greetingMorning: 'Good morning!',
   greetingAfternoon: 'Good afternoon,',
   greetingEvening: 'Good evening,',
   greetingNight: 'Go to Sleep!',
 
+  // Layout
+  bentoLayout: 'bento', // 'bento', 'lists', 'buttons'
+
   // Weather
-  weatherKey: '15fe26a8e22e4783054e3273824c5e7b', // Write here your API Key
+  weatherKey: 'InsertYourAPIKeyHere123456', // Write here your API Key
   weatherIcons: 'OneDark', // 'Onedark', 'Nord', 'Dark', 'White'
   weatherUnit: 'C', // 'F', 'C'
   language: 'en', // More languages in https://openweathermap.org/current#multi
@@ -39,16 +39,13 @@ const CONFIG = {
   autoChangeTheme: true,
 
   // Autochabge by OS
-  changeThemeByOS: false,
+  changeThemeByOS: true,
 
   // Autochange by hour options (24hrs format, string must be in: hh:mm)
-  changeThemeByHour: true,
+  changeThemeByHour: false,
   hourDarkThemeActive: '18:30',
   hourDarkThemeInactive: '07:00',
 
-  // ╦  ╦╔╗╔╦╔═╔═╗
-  // ║  ║║║║╠╩╗╚═╗
-  // ╩═╝╩╝╚╝╩ ╩╚═╝
   // ┌┐ ┬ ┬┌┬┐┌┬┐┌─┐┌┐┌┌─┐
   // ├┴┐│ │ │  │ │ ││││└─┐
   // └─┘└─┘ ┴  ┴ └─┘┘└┘└─┘
@@ -165,19 +162,19 @@ const CONFIG = {
       links: [
         {
           name: 'Linkedin',
-          link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+          link: 'https://www.linkedin.com',
         },
         {
           name: 'Dribbble',
-          link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+          link: 'https://www.dribbble.com',
         },
         {
           name: 'Trello',
-          link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+          link: 'https://www.trello.com',
         },
         {
           name: 'Slack',
-          link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+          link: 'https://www.slack.com',
         },
       ],
     },
@@ -191,19 +188,19 @@ const CONFIG = {
       links: [
         {
           name: 'Spotify',
-          link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+          link: 'https://www.spotify.com',
         },
         {
           name: 'Reddit',
-          link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+          link: 'https://www.reddit.com',
         },
         {
           name: 'Hashnode',
-          link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+          link: 'https://www.hashnode.com',
         },
         {
           name: 'Pocket',
-          link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+          link: 'https://www.pocket.com',
         },
       ],
     },
@@ -212,20 +209,20 @@ const CONFIG = {
       id: '2',
       links: [
         {
-          name: 'Web',
-          link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+          name: 'Front',
+          link: 'https://www.reddit.com/r/Frontend/',
         },
         {
           name: 'Rust',
-          link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+          link: 'https://www.reddit.com/r/rust/',
         },
         {
           name: 'Go',
-          link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+          link: 'https://www.reddit.com/r/golang/',
         },
         {
           name: 'Repos',
-          link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+          link: 'https://github.com/migueravila,
         },
       ],
     },

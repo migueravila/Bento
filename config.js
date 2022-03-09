@@ -53,9 +53,9 @@ const CONFIG = {
   firstButtonsContainer: [
     {
       id: '1',
-      name: 'Github',
-      icon: 'github',
-      link: 'https://github.com/',
+      name: 'Twitter',
+      icon: 'twitter',
+      link: 'https://twitter.com/home',
     },
     {
       id: '2',
@@ -65,9 +65,9 @@ const CONFIG = {
     },
     {
       id: '3',
-      name: 'Todoist',
-      icon: 'trello',
-      link: 'https://todoist.com',
+      name: 'Maps',
+      icon: 'map-pin',
+      link: 'https://www.google.com/maps/@33.6847834,-118.0068974,15z?hl=en',
     },
     {
       id: '4',
@@ -77,15 +77,15 @@ const CONFIG = {
     },
     {
       id: '5',
-      name: 'Reddit',
-      icon: 'glasses',
-      link: 'https://reddit.com',
+      name: 'Messages',
+      icon: 'message-square',
+      link: 'https://messages.google.com/web/conversations?redirected=true',
     },
     {
       id: '6',
-      name: 'Odysee',
-      icon: 'youtube',
-      link: 'https://odysee.com/',
+      name: 'WhatsApp',
+      icon: 'message-circle',
+      link: 'https://web.whatsapp.com/',
     },
   ],
 
@@ -139,7 +139,7 @@ const CONFIG = {
       id: '1',
       links: [
         {
-          name: 'My Yahoo',
+          name: 'Home',
           link: 'https://my.yahoo.com/',
         },
         {
@@ -147,12 +147,12 @@ const CONFIG = {
           link: 'https://www.google.com/maps/@33.6847834,-118.0068974,15z?hl=en',
         },
         {
-          name: 'Oldies',
-          link: 'https://messages.google.com/web/conversations?redirected=true',
+          name: 'Amazon',
+          link: 'https://smile.amazon.com/',
         },
         {
-          name: 'Calendar',
-          link: 'https://calendar.google.com/calendar/u/0/r',
+          name: 'Docs',
+          link: 'https://docs.google.com/document/u/0/',
         },
       ],
     },

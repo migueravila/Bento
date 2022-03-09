@@ -20,20 +20,19 @@
   --fg-list: 2vh; /* Links List */
   --icon: 3vh; /* Icon Size */
 
-  /* Fonts Color */
-  --fg: #3a3a3a; /* Foreground color */
-  --sfg: #494949; /* Sceondary Foreground color */
-
-  /* Light Colors  */
-  --accent: #57a0d9; /* Hover color */
+  /* Dark Colors  */
+  --accent: #1B81F3; /* Hover color */
   --background: #08111C; /* Background color */
-  --cards: #e4e6e6; /* Cards color */
+  --cards: #14268C; /* Cards color */
+
+  /* Fonts Color */
+  --fg: #1B81F3; /* Foreground color */
+  --sfg: #935A6B; /* Secondary Foreground color */
 
   /* Image background  */
-  --imgbg: url(assets/background.jpg); /* Image URL */
   --imgcol: linear-gradient(
-    rgba(255, 255, 255, 0.7),
-    rgba(255, 255, 255, 0.7)
+    rgba(0, 0, 0, 0.85),
+    rgba(0, 0, 0, 0.85)
   ); /* Filter color */
 }
 

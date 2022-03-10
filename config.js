@@ -143,8 +143,8 @@ const CONFIG = {
           link: 'https://my.yahoo.com/',
         },
         {
-          name: 'Maps',
-          link: 'https://www.google.com/maps/@33.6847834,-118.0068974,15z?hl=en',
+          name: 'Weather',
+          link: 'https://www.wunderground.com/',
         },
         {
           name: 'Amazon',

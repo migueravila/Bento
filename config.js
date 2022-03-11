@@ -147,8 +147,8 @@ const CONFIG = {
           link: 'https://www.wunderground.com/',
         },
         {
-          name: 'Amazon',
-          link: 'https://smile.amazon.com/',
+          name: 'Keep',
+          link: 'https://keep.google.com/u/0/',
         },
         {
           name: 'Docs',

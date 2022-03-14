@@ -10,7 +10,7 @@
 //  ┘ ┴ ┴┴└─┴┴ ┴└─┘┴─┘└─┘└─┘ 
  */
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap'); /* Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap'); /* Font Import */
 
 :root {
   /* Font Size */
@@ -21,27 +21,27 @@
   --icon: 3vh; /* Icon Size */
 
   /* Fonts Color */
-  --fg: #3a3a3a; /* Foreground color */
+  --fg: #ffffff; /* Foreground color */
   --sfg: #494949; /* Sceondary Foreground color */
 
   /* Light Colors  */
-  --accent: #57a0d9; /* Hover color */
-  --background: #f5f5f5; /* Background color */
-  --cards: #e4e6e6; /* Cards color */
+  --accent: rgb(170, 243, 233); /* Hover color */
+  --background: rgba(245, 245, 245, 0.4); /* Background color */
+  --cards: rgba(228, 230, 230, 0.4); /* Cards color */
 
   /* Image background  */
-  --imgbg: url(assets/background.jpg); /* Image URL */
+  --imgbg: url(https://th.bing.com/th/id/R.570ca09aa7450b886da8551039a0a91f?rik=encCYYfTln%2fPPg&pid=ImgRaw&r=0); /* Image URL */
   --imgcol: linear-gradient(
-    rgba(255, 255, 255, 0.7),
-    rgba(255, 255, 255, 0.7)
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.2)
   ); /* Filter color */
 }
 
 .darktheme {
   /* Dark Colors  */
   --accent: #57a0d9; /* Hover color */
-  --background: #19171a; /* Background color */
-  --cards: #201e21; /* Cards color */
+  --background: rgba(25, 23, 26, 0.2); /* Background color */
+  --cards: rgba(32, 30, 33,0.2); /* Cards color */
 
   /* Fonts Color */
   --fg: #d8dee9; /* Foreground color */
@@ -49,8 +49,8 @@
 
   /* Image background  */
   --imgcol: linear-gradient(
-    rgba(0, 0, 0, 0.85),
-    rgba(0, 0, 0, 0.85)
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2)
   ); /* Filter color */
 }
 
@@ -64,8 +64,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
-  transition: 0.2s ease-in-out;
+  font-family: 'Inter', sans-serif;
+  transition: 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+  
 }
 
 body {
@@ -75,6 +76,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  backdrop-filter: blur(20px);
 }
 
 .notransition {
@@ -87,6 +89,7 @@ body {
 .withImageBackground {
   background-image: var(--imgcol), var(--imgbg);
   background-size: cover;
+  background-position: center;
 }
 
 #themeButton {
@@ -117,8 +120,7 @@ body {
 
 .card {
   background-color: var(--cards);
-  box-shadow: 0 5px 7px rgba(0, 0, 0, 0.35);
-  border-radius: 5px;
+  border-radius: 20px;
 }
 
 .card:hover {

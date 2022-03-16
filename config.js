@@ -11,10 +11,10 @@ const CONFIG = {
   // └─┘┴ ┴└─┘┴└─┘└─┘
 
   // General
-  name: 'John',
+  name: 'Bloom',
   imageBackground: true,
-  openInNewTab: true,
-  twelveHourFormat: false,
+  openInNewTab: false,
+  twelveHourFormat: true,
 
   // Greetings
   greetingMorning: 'Good morning!',
@@ -23,7 +23,7 @@ const CONFIG = {
   greetingNight: 'Go to Sleep!',
 
   // Layout
-  bentoLayout: 'bento', // 'bento', 'lists', 'buttons'
+  bentoLayout: 'buttons', // 'bento', 'lists', 'buttons'
 
   // Weather
   weatherKey: 'InsertYourAPIKeyHere123456', // Write here your API Key
@@ -39,12 +39,12 @@ const CONFIG = {
   autoChangeTheme: true,
 
   // Autochange by OS
-  changeThemeByOS: true,
+  changeThemeByOS: false,
 
   // Autochange by hour options (24hrs format, string must be in: hh:mm)
-  changeThemeByHour: false,
+  changeThemeByHour: true,
   hourDarkThemeActive: '18:30',
-  hourDarkThemeInactive: '07:00',
+  hourDarkThemeInactive: '06:00',
 
   // ┌┐ ┬ ┬┌┬┐┌┬┐┌─┐┌┐┌┌─┐
   // ├┴┐│ │ │  │ │ ││││└─┐

@@ -254,7 +254,7 @@ that you can change in the `config.js` file:
   // Autochange
   autoChangeTheme: true,
 
-  // Autochabge by OS
+  // Autochange by OS
   changeThemeByOS: false, 
 
   // Autochange by hour options (24hrs format, string must be in: hh:mm)

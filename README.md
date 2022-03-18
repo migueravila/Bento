@@ -18,6 +18,7 @@
 - [🚀 Usage](#-usage)
   - [🏡 As Home Page](#-as-home-page)
   - [➕ As New Tab](#-as-new-tab)
+  - [🐬 In a Docker Container](#-in-a-docker-container)
 - [🎨 Customization](#-customization)
   - [👋 General: Name, Image Background and Greetings](#-general-name-image-background-and-greetings)
   - [📐 Layouts: Bento, Lists and Buttons.](#-layouts-bento-lists-and-buttons)
@@ -54,8 +55,22 @@
 
 You can use different Add-ons/Extensions for it
 
-- If you use Firefox: [Custom New Tab Page](https://addons.mozilla.org/en-US/firefox/addon/custom-new-tab-page/?src=search)
+- If you use Firefox: [Custom New Tab Page](https://addons.mozilla.org/en-US/firefox/addon/custom-new-tab-page/?src=search) and make sure you enable "Force links to open in the top frame (experimental)" in the extension's preferences page.
 - If you use Chromium (Brave, Vivaldi, Chrome): [Custom New Tab URL](https://chrome.google.com/webstore/detail/custom-new-tab-url/mmjbdbjnoablegbkcklggeknkfcjkjia)
+
+### 🐬 In a Docker Container
+
+You can run Bento in a Docker Container, either with `docker run`, or with the included `docker-compose` file.
+
+#### Docker run
+ 1. Clone this repo to pull the config.js file: `git clone https://github.com/migueravila/Bento/`
+ 2. Run the following `docker` command, providing the path to the config.js file, changing port mappings if needed.
+ 3. `# docker run -it -d -p 80:80 -v <config.js location>:/usr/share/nginx/html/config.js lewisdoesstuff/bento`
+
+#### docker-compose
+  1. Clone this repo with `git clone https://github.com/migueravila/Bento/`
+  2. Edit port mappings, and provide a path to the config.js file in `docker-compose.yml`
+  3. `cd` into the cloned repo, then run `# docker-compose -d up` to start. 
 
 ## 🎨 Customization
 
@@ -254,7 +269,7 @@ that you can change in the `config.js` file:
   // Autochange
   autoChangeTheme: true,
 
-  // Autochabge by OS
+  // Autochange by OS
   changeThemeByOS: false, 
 
   // Autochange by hour options (24hrs format, string must be in: hh:mm)

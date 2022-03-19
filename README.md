@@ -262,7 +262,7 @@ In the `app.css` file you can change the variables for both themes (Dark and Lig
 
 ### 🌑 Auto change theme
 
-The theme can be automatically changed by the OS' current theme or personalized hours
+The theme can be automatically changed by the OS' current theme, set hours, or following sunrise/sunset.
 that you can change in the `config.js` file:
 
 ```js
@@ -276,6 +276,9 @@ that you can change in the `config.js` file:
   changeThemeByHour: true, // If it's true, it will use the values below:
   hourDarkThemeActive: '18:30', // Turn on the dark theme after this hour
   hourDarkThemeInactive: '07:00', // Turn off the dark theme after this hour and before the above hour
+  
+  // Autochange automatically based on location (sunrise/sunset). Openweathermap API key required.
+  changeThemeByLocation: false,
 ```
 
 ![](assets/img/darkMode.png)

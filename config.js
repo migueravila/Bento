@@ -47,9 +47,12 @@ const CONFIG = {
 	hourDarkThemeActive: '18:30',
 	hourDarkThemeInactive: '07:00',
 
-	// ┌┐ ┬ ┬┌┬┐┌┬┐┌─┐┌┐┌┌─┐
-	// ├┴┐│ │ │  │ │ ││││└─┐
-	// └─┘└─┘ ┴  ┴ └─┘┘└┘└─┘
+  	// Autochange automatically based on location (sunrise/sunset). Openweathermap API key required.
+  	changeThemeByLocation: false,
+
+  // ┌┐ ┬ ┬┌┬┐┌┬┐┌─┐┌┐┌┌─┐
+  // ├┴┐│ │ │  │ │ ││││└─┐
+  // └─┘└─┘ ┴  ┴ └─┘┘└┘└─┘
 
 	firstButtonsContainer: [
 		{

@@ -61,3 +61,18 @@ if (CONFIG.changeThemeByHour && CONFIG.autoChangeTheme && !CONFIG.changeThemeByO
 		disableDark();
 	}
 }
+
+// there may be a better way to do this &&
+if (CONFIG.changeThemeByLocation && CONFIG.autoChangeTheme && !CONFIG.changeThemeByOS && !CONFIG.changeThemeByHour) {
+  Promise.resolve(weatherPromise).then(weather => {
+    const unix = Date.now() / 1000;
+    if (
+      unix >= weather.sunrise &&
+      unix < weather.sunset
+    ) {
+      disableDark();
+    } else {
+      enableDark();
+    }
+  });
+}

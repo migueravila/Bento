@@ -84,6 +84,7 @@ To change the default name, the greetings and if you want to have an image backg
  // General
   name: 'John',
   imageBackground: false,
+  imageUrl: './assets/background.jpg', // Set custom background image URL. If the page is served insecurely, you may have issues loading images from pages over https.
   openInNewTab: true,
 
   // Greetings
@@ -94,7 +95,7 @@ To change the default name, the greetings and if you want to have an image backg
 
 ```
 
-> You can change the background by substituting the `background.jpg` file in `assets` folder.
+> You can change the background by providing a link to an image in `config.js`.
 
 ![](assets/img/backgroundImage.png)
 

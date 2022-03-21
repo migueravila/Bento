@@ -33,7 +33,7 @@
     --sfg: #ffffff;
     /* Sceondary Foreground color */
     /* Light Colors  */
-    --accent: #5b5fc7;
+    --accent: #399EE6;
     /* Hover color */
     --background: rgba(245, 245, 245, 0.4);
     /* Background color */
@@ -48,11 +48,11 @@
 
 .darktheme {
     /* Dark Colors  */
-    --accent: #7f85f5;
+    --accent: #C9CBFF;
     /* Hover color */
-    --background: rgba(25, 23, 26, 1);
+    --background: #1A1826;
     /* Background color */
-    --cards: rgba(32, 30, 33, 1);
+    --cards: #161320;
     /* Cards color */
     /* Fonts Color */
     --fg: #d8dee9;
@@ -157,6 +157,33 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.search {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    background: var(--cards);
+    border: none;
+    border-radius: 7px;
+    width: 445%;
+    height: 50px;
+    color: var(--fg);
+    font-size: 14px;
+    outline: none;
+    text-align: center;
+}
+
+.search::placeholder {
+    color: var(--fg);
+}
+
+.search:focus::placeholder {
+    color: var(--sfg);
+}
+
+.search:focus {
+    background: var(--accent);
+    color: var(--sfg);
 }
 
 .date {

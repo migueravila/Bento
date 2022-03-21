@@ -1,63 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Bento</title>
-    <link
-      rel=" shortcut icon"
-      type="image/png"
-      href="assets/icons/favicon.png"
-    />
-    <link rel="stylesheet" href="app.css" />
-    <script src="https://unpkg.com/lucide@latest"></script>
-  </head>
 
-  <!-- 
+<head>
+    <meta charset="UTF-8" />
+    <title>Startpage</title>
+    <link rel=" shortcut icon" type="image/png" href="assets/icons/favicon.png" />
+
+
+    <link rel="stylesheet" href="styles/ayu-catuppin.css" />
+    <!-- Rename the 'app' to some styles! ^ -->
+
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<!-- 
       ╔╗ ╔═╗╔╗╔╔╦╗╔═╗
       ╠╩╗║╣ ║║║ ║ ║ ║
       ╚═╝╚═╝╝╚╝ ╩ ╚═╝
       -->
 
-  <body class="">
+<body class="">
     <button id="themeButton">
       <i id="themeIcon" icon-name="moon"></i>
     </button>
     <div class="container">
-      <!-- Clock and Greetings  -->
 
-      <div class="timeBlock">
-        <div class="clock">
-          <div id="hour"></div>
-          <div id="separator"></div>
-          <div id="minutes"></div>
+        <!-- Google Search -->
+
+        <form id="phpaction" class="" method="GET" action="https://www.google.com/search">
+            <input id="searchtxt" name="q" type="text" class="search" placeholder="Search in Google" autocomplete="off">
+        </form>
+
+        <!-- Clock and Greetings  -->
+
+        <div class="timeBlock">
+            <div class="clock">
+                <div id="hour"></div>
+                <div id="separator"></div>
+                <div id="minutes"></div>
+            </div>
+            <div id="greetings"></div>
         </div>
-        <div id="greetings"></div>
-      </div>
 
-      <!-- Date and Weather  -->
+        <!-- Date and Weather  -->
 
-      <div class="weatherBlock">
-        <div class="date">
-          <div id="month"></div>
-          <div id="day"></div>
+        <div class="weatherBlock">
+            <div class="date">
+                <div id="month"></div>
+                <div id="day"></div>
+            </div>
+            <div class="weather">
+                <div class="weatherIcon">
+                    <img src="assets/icons/OneDark/unknown.png" />
+                </div>
+                <div class="weatherValue">
+                    <p>- °<span class="g">c</span></p>
+                </div>
+                <div class="weatherDescription">
+                    <p></p>
+                </div>
+            </div>
         </div>
-        <div class="weather">
-          <div class="weatherIcon">
-            <img src="assets/icons/OneDark/unknown.png" />
-          </div>
-          <div class="weatherValue">
-            <p>- °<span class="g">c</span></p>
-          </div>
-          <div class="weatherDescription">
-            <p></p>
-          </div>
-        </div>
-      </div>
 
-      <div class="linksBlock" id="linksBlock">
-        <div class="linksBlockLeft" id="linksBlockLeft"></div>
-        <div class="linksBlockRight" id="linksBlockRight"></div>
-      </div>
+
+
+        <div class="linksBlock" id="linksBlock">
+            <div class="linksBlockLeft" id="linksBlockLeft"></div>
+            <div class="linksBlockRight" id="linksBlockRight"></div>
+        </div>
     </div>
 
     <!-- Config  -->
@@ -76,10 +87,11 @@
 
     <!-- Icons -->
     <script>
-      lucide.createIcons();
+        lucide.createIcons();
     </script>
-  </body>
+</body>
 
-  <!-- Developed and designed by Miguel Ávila: -->
-  <!-- https://avila.sh-->
+<!-- Developed and designed by Miguel Ávila: -->
+<!-- https://avila.sh-->
+
 </html>

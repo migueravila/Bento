@@ -12,10 +12,13 @@ const CONFIG = {
 
 	// General
 	name: 'John',
-	imageBackground: false,
 	openInNewTab: true,
 	twelveHourFormat: false,
 
+	// Theme
+	theme: 'bento',
+	imageBackground: false,
+	
 	// Greetings
 	greetingMorning: 'Good morning!',
 	greetingAfternoon: 'Good afternoon,',

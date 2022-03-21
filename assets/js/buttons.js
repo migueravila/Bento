@@ -4,8 +4,8 @@
 // Function to print Button Cards.
 
 const generateFirstButtonsContainer = () => {
-  for (const button of CONFIG.firstButtonsContainer) {
-    let item = `
+	for (const button of CONFIG.firstButtonsContainer) {
+		let item = `
         <a
           href="${button.link}"
           target="${CONFIG.openInNewTab ? '_blank' : ''}"
@@ -15,15 +15,15 @@ const generateFirstButtonsContainer = () => {
         </a>
     `;
 
-    const position = 'beforeend';
+		const position = 'beforeend';
 
-    buttons_1.insertAdjacentHTML(position, item);
-  }
+		buttons_1.insertAdjacentHTML(position, item);
+	}
 };
 
 const generateSecondButtonsContainer = () => {
-  for (const button of CONFIG.secondButtonsContainer) {
-    let item = `
+	for (const button of CONFIG.secondButtonsContainer) {
+		let item = `
         <a
           href="${button.link}"
           target="${CONFIG.openInNewTab ? '_blank' : ''}"
@@ -33,24 +33,24 @@ const generateSecondButtonsContainer = () => {
         </a>
     `;
 
-    const position = 'beforeend';
+		const position = 'beforeend';
 
-    buttons_2.insertAdjacentHTML(position, item);
-  }
+		buttons_2.insertAdjacentHTML(position, item);
+	}
 };
 
 const generateButtons = () => {
-  switch (CONFIG.bentoLayout) {
-    case 'bento':
-      generateFirstButtonsContainer();
-      break;
-    case 'buttons':
-      generateFirstButtonsContainer();
-      generateSecondButtonsContainer();
-      break;
-    default:
-      break;
-  }
+	switch (CONFIG.bentoLayout) {
+		case 'bento':
+			generateFirstButtonsContainer();
+			break;
+		case 'buttons':
+			generateFirstButtonsContainer();
+			generateSecondButtonsContainer();
+			break;
+		default:
+			break;
+	}
 };
 
 generateButtons();

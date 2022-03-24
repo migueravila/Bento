@@ -31,7 +31,7 @@ greeting = greeting.replace("{name}", name)
 // (easier and more readable than checking if the name
 // template was used in each greeting)
 
-// if the index of the first found name is not equal to the index of the name
+// if the index of the first mention of the users name is not equal to the index of the name
 // at the end...
 if (greeting.indexOf(name) !== (greeting.length - name.length)) {
   // ...assume the user used the name template and remove the name at the end

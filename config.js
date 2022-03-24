@@ -11,14 +11,14 @@ const CONFIG = {
   // └─┘┴ ┴└─┘┴└─┘└─┘
 
   // General
-  name: 'John',
+  name: 'Ging',
   imageBackground: false,
-  openInNewTab: true,
-  twelveHourFormat: false,
+  openInNewTab: false,
+  twelveHourFormat: true,
 
   // Greetings
-  greetingMorning: 'Good morning!',
-  greetingAfternoon: 'Good afternoon,',
+  greetingMorning: 'Good mowning!',
+  greetingAfternoon: 'Good aftewnoon,',
   greetingEvening: 'Good evening,',
   greetingNight: '{name}, you should go to sleep!',
 
@@ -26,7 +26,7 @@ const CONFIG = {
   bentoLayout: 'bento', // 'bento', 'lists', 'buttons'
 
   // Weather
-  weatherKey: 'InsertYourAPIKeyHere123456', // Write here your API Key
+  weatherKey: 'b7ce85f5fedbe72b9966ab00dca8ec6d', // Write here your API Key
   weatherIcons: 'OneDark', // 'Onedark', 'Nord', 'Dark', 'White'
   weatherUnit: 'C', // 'F', 'C'
   language: 'en', // More languages in https://openweathermap.org/current#multi
@@ -59,21 +59,15 @@ const CONFIG = {
     },
     {
       id: '2',
-      name: 'Mail',
-      icon: 'mail',
-      link: 'https://mail.protonmail.com/',
+      name: 'OpenSea',
+      icon: 'anchor',
+      link: 'https://opensea.io/',
     },
     {
       id: '3',
-      name: 'Todoist',
-      icon: 'trello',
-      link: 'https://todoist.com',
-    },
-    {
-      id: '4',
-      name: 'Calendar',
-      icon: 'calendar',
-      link: 'https://calendar.google.com/calendar/r',
+      name: 'SpeedRun',
+      icon: 'fast-forward',
+      link: 'https://speedrun.com',
     },
     {
       id: '5',
@@ -89,45 +83,6 @@ const CONFIG = {
     },
   ],
 
-  secondButtonsContainer: [
-    {
-      id: '1',
-      name: 'Music',
-      icon: 'headphones',
-      link: 'https://open.spotify.com',
-    },
-    {
-      id: '2',
-      name: 'twitter',
-      icon: 'twitter',
-      link: 'https://twitter.com/',
-    },
-    {
-      id: '3',
-      name: 'bot',
-      icon: 'bot',
-      link: 'https://discord.com/app',
-    },
-    {
-      id: '4',
-      name: 'Amazon',
-      icon: 'shopping-bag',
-      link: 'https://amazon.com/',
-    },
-    {
-      id: '5',
-      name: 'Hashnode',
-      icon: 'pen-tool',
-      link: 'https://hashnode.com/',
-    },
-    {
-      id: '6',
-      name: 'Figma',
-      icon: 'figma',
-      link: 'https://figma.com/',
-    },
-  ],
-
   // ┬  ┬┌─┐┌┬┐┌─┐
   // │  │└─┐ │ └─┐
   // ┴─┘┴└─┘ ┴ └─┘
@@ -139,21 +94,21 @@ const CONFIG = {
       id: '1',
       links: [
         {
-          name: 'Inspirational',
-          link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+          name: 'Briddim',
+          link: 'https://music.apple.com/us/playlist/b%CE%B3iddim/pl.u-WabZv4ZieNAvxLY',
         },
         {
-          name: 'Classic',
-          link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+          name: 'Color Bass',
+          link: 'https://music.apple.com/us/playlist/colo%CE%B3-b%CE%BBss/pl.u-WabZvAVueNAvxLY'
         },
         {
-          name: 'Oldies',
-          link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+          name: 'Hardstyle',
+          link: 'https://music.apple.com/us/playlist/h%CE%BB%CE%B3dstyl%CE%BE/pl.u-NpXmzeWF4yVpke7'
         },
         {
-          name: 'Rock',
-          link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-        },
+          name: 'Riddim',
+          link: 'https://music.apple.com/us/playlist/%CE%B3iddim/pl.u-NpXmza7t4yVpke7'
+        }
       ],
     },
     {
@@ -161,8 +116,8 @@ const CONFIG = {
       id: '2',
       links: [
         {
-          name: 'Linkedin',
-          link: 'https://www.linkedin.com',
+          name: 'Steam',
+          link: 'https://www.steam.com',
         },
         {
           name: 'Dribbble',
@@ -178,53 +133,5 @@ const CONFIG = {
         },
       ],
     },
-  ],
-
-  // Second Links Container
-  secondListsContainer: [
-    {
-      icon: 'binary',
-      id: '1',
-      links: [
-        {
-          name: 'Spotify',
-          link: 'https://www.spotify.com',
-        },
-        {
-          name: 'Reddit',
-          link: 'https://www.reddit.com',
-        },
-        {
-          name: 'Hashnode',
-          link: 'https://www.hashnode.com',
-        },
-        {
-          name: 'Pocket',
-          link: 'https://www.pocket.com',
-        },
-      ],
-    },
-    {
-      icon: 'github',
-      id: '2',
-      links: [
-        {
-          name: 'Front',
-          link: 'https://www.reddit.com/r/Frontend/',
-        },
-        {
-          name: 'Rust',
-          link: 'https://www.reddit.com/r/rust/',
-        },
-        {
-          name: 'Go',
-          link: 'https://www.reddit.com/r/golang/',
-        },
-        {
-          name: 'Repos',
-          link: 'https://github.com/migueravila',
-        },
-      ],
-    },
-  ],
-};
+  ]
+}

@@ -13,6 +13,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap'); /* Font Import */
 
 :root {
+
+  /* Make everything fade cause special */
+  /* https://medium.com/cloud-native-the-gathering/how-to-use-css-to-fade-in-and-fade-out-html-text-and-pictures-f45c11364f08 */
+  animation: fadeIn ease 3s;
+  -webkit-animation: fadeIn ease 3s;
+  -moz-animation: fadeIn ease 3s;
+  -o-animation: fadeIn ease 3s;
+  -ms-animation: fadeIn ease 3s;
   /* Font Size */
   --fg-primary: 12vh; /* Time and Greetings */
   --fg-secondary: 3vh; /* Greetings and Weather widger */
@@ -20,32 +28,31 @@
   --fg-list: 2vh; /* Links List */
   --icon: 3vh; /* Icon Size */
 
-  /* Fonts Color */
-  --fg: #3a3a3a; /* Foreground color */
-  --sfg: #494949; /* Sceondary Foreground color */
+  /* Dark Colors  */
+  --accent: #1B81F3; /* Hover color */
+  --background: #08111C; /* Background color */
+  --cards: #14268C; /* Cards color */
 
-  /* Light Colors  */
-  --accent: #57a0d9; /* Hover color */
-  --background: #f5f5f5; /* Background color */
-  --cards: #e4e6e6; /* Cards color */
+  /* Fonts Color */
+  --fg: #1B81F3; /* Foreground color */
+  --sfg: #935A6B; /* Secondary Foreground color */
 
   /* Image background  */
-  --imgbg: url(assets/background.jpg); /* Image URL */
   --imgcol: linear-gradient(
-    rgba(255, 255, 255, 0.7),
-    rgba(255, 255, 255, 0.7)
+    rgba(0, 0, 0, 0.85),
+    rgba(0, 0, 0, 0.85)
   ); /* Filter color */
 }
 
 .darktheme {
   /* Dark Colors  */
-  --accent: #57a0d9; /* Hover color */
-  --background: #19171a; /* Background color */
-  --cards: #201e21; /* Cards color */
+  --accent: #1B81F3; /* Hover color */
+  --background: #08111C; /* Background color */
+  --cards: #14268C; /* Cards color */
 
   /* Fonts Color */
-  --fg: #d8dee9; /* Foreground color */
-  --sfg: #2c292e; /* Secondary Foreground color */
+  --fg: #1B81F3; /* Foreground color */
+  --sfg: #935A6B; /* Secondary Foreground color */
 
   /* Image background  */
   --imgcol: linear-gradient(
@@ -367,5 +374,51 @@ body {
     grid-gap: 3vw;
     padding-left: 100px;
     padding-right: 100px;
+  }
+}
+
+
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
   }
 }

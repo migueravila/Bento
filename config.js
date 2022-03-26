@@ -173,7 +173,7 @@ const CONFIG = {
           link: 'https://www.nytimes.com/',
         },
         {
-          name: 'Guardian',
+          name: 'The Guardian',
           link: 'https://www.theguardian.com/uk',
         },
       ],

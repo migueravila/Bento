@@ -14,7 +14,7 @@ const CONFIG = {
   name: 'Ahmed N. Alfahdi',
   imageBackground: false,
   openInNewTab: true,
-  twelveHourFormat: false,
+  twelveHourFormat: true,
 
   // Greetings
   greetingMorning: 'Good morning!',
@@ -81,27 +81,27 @@ const CONFIG = {
   // ┴─┘┴└─┘ ┴ └─┘
 
   //Icons
-  firstListIcon: 'music',
+  firstListIcon: 'tv',
   secondListIcon: 'coffee',
 
   // Links
   lists: {
     firstList: [
       {
-        name: 'Inspirational',
-        link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+        name: 'مجلة حكمة',
+        link: 'https://hekmah.org/',
       },
       {
-        name: 'Classic',
-        link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+        name: 'ArcoLinux',
+        link: 'https://www.arcolinuxd.com/',
       },
       {
-        name: 'Oldies',
-        link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+        name: 'Vim Tips',
+        link: 'http://www.rayninfo.co.uk/vimtips.html',
       },
       {
-        name: 'Rock',
-        link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+        name: 'Arch Wiki | Random page',
+        link: 'https://wiki.archlinux.org/title/Special:Random',
       },
     ],
     secondList: [

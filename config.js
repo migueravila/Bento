@@ -127,3 +127,17 @@ const CONFIG = {
     ],
   },
 };
+
+window.matchMedia('(prefers-color-scheme: dark)')
+      .addEventListener('change', event => {
+  if (event.matches) {
+    document.body.classList.add('darktheme');
+  }
+  else {
+    document.body.className = document.body.className.replace("darktheme","");
+  }
+})
+
+if(window.matchMedia('(prefers-color-scheme: light)').matches) {
+  document.body.className = document.body.className.replace("darktheme","");
+}

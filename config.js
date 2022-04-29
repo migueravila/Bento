@@ -6,34 +6,36 @@
 // └─┘└─┘┘└┘└  ┴└─┘└─┘┴└─┴ ┴ ┴ ┴└─┘┘└┘
 
 const CONFIG = {
-	// ┌┐ ┌─┐┌─┐┬┌─┐┌─┐
-	// ├┴┐├─┤└─┐││  └─┐
-	// └─┘┴ ┴└─┘┴└─┘└─┘
+  // ┌┐ ┌─┐┌─┐┬┌─┐┌─┐
+  // ├┴┐├─┤└─┐││  └─┐
+  // └─┘┴ ┴└─┘┴└─┘└─┘
 
-	// General
-  	name: 'Bilal',
- 	imageBackground: false,
-  	openInNewTab: false,
+  // General
+  name: 'Bilal',
+  imageBackground: false,
+  openInNewTab: false,
 
-  	// Greetings
-  	greetingMorning: 'Good morning,',
-  	greetingAfternoon: 'Good afternoon,',
-  	greetingEvening: 'Good evening,',
-  	greetingNight: 'Good evening,',
+  // Greetings
+  greetingMorning: 'Good morning,',
+  greetingAfternoon: 'Good afternoon,',
+  greetingEvening: 'Good evening,',
+  greetingNight: 'Good evening,',
 
-  	// Weather
-  	weatherKey: 'f7b9795af021d5b7e584a0f4fae9ce59',
-  	weatherIcons: 'OneDark',
-  	weatherUnit: 'C',
-  	weatherLatitude: '25.204849',
-  	weatherLongitude: '55.270782',
+  // Weather
+  weatherKey: 'f7b9795af021d5b7e584a0f4fae9ce59',
+  weatherIcons: 'OneDark',
+  weatherUnit: 'C',
+  weatherLatitude: '25.204849',
+  weatherLongitude: '55.270782',
+  
 
-	// ┌┐ ┬ ┬┌┬┐┌┬┐┌─┐┌┐┌┌─┐
-	// ├┴┐│ │ │  │ │ ││││└─┐
-	// └─┘└─┘ ┴  ┴ └─┘┘└┘└─┘
+  // ┌─┐┌─┐┬─┐┌┬┐┌─┐
+  // │  ├─┤├┬┘ ││└─┐
+  // └─┘┴ ┴┴└──┴┘└─┘
 
-	firstButtonsContainer: [
-		{
+  // Links
+  cards: [
+    {
       id: '1',
       name: 'Twitter',
       icon: 'twitter',
@@ -70,12 +72,13 @@ const CONFIG = {
       link: 'https://proxy.cubari.moe/#/saved',
     },
   ],
-	
-	// ┬  ┬┌─┐┌┬┐┌─┐
-	// │  │└─┐ │ └─┐
-	// ┴─┘┴└─┘ ┴ └─┘
 
-	 //Icons
+
+  // ┬  ┬┌─┐┌┬┐┌─┐
+  // │  │└─┐ │ └─┐
+  // ┴─┘┴└─┘ ┴ └─┘
+
+  //Icons
   firstListIcon: 'home',
   secondListIcon: 'hash',
 
@@ -141,3 +144,4 @@ window.matchMedia('(prefers-color-scheme: dark)')
 if(window.matchMedia('(prefers-color-scheme: light)').matches) {
   document.body.className = document.body.className.replace("darktheme","");
 }
+

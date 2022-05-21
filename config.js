@@ -35,10 +35,10 @@ const CONFIG = {
   bentoLayout: 'bento', // 'bento', 'lists', 'buttons'
 
   // Autochange
-  autoChangeTheme: true,
+  autoChangeTheme: false,
 
   // Autochange by OS
-  changeThemeByOS: true,
+  changeThemeByOS: false,
 
   // Autochange by hour options (24hrs format, string must be in: hh:mm)
   changeThemeByHour: false,
@@ -64,66 +64,27 @@ const CONFIG = {
     },
     {
       id: '3',
-      name: 'Todoist',
+      name: 'Notion',
       icon: 'trello',
-      link: 'https://todoist.com',
+      link: 'https://notion.so/',
     },
     {
       id: '4',
-      name: 'Calendar',
-      icon: 'calendar',
-      link: 'https://calendar.google.com/calendar/r',
+      name: 'Google Drive',
+      icon: 'upload-cloud',
+      link: 'https://drive.google.com/',
     },
     {
       id: '5',
       name: 'Reddit',
-      icon: 'glasses',
+      icon: 'bot',
       link: 'https://reddit.com',
     },
     {
       id: '6',
-      name: 'Odysee',
+      name: 'YouTube',
       icon: 'youtube',
-      link: 'https://odysee.com/',
-    },
-  ],
-
-  secondButtonsContainer: [
-    {
-      id: '1',
-      name: 'Music',
-      icon: 'headphones',
-      link: 'https://open.spotify.com',
-    },
-    {
-      id: '2',
-      name: 'twitter',
-      icon: 'twitter',
-      link: 'https://twitter.com/',
-    },
-    {
-      id: '3',
-      name: 'bot',
-      icon: 'bot',
-      link: 'https://discord.com/app',
-    },
-    {
-      id: '4',
-      name: 'Amazon',
-      icon: 'shopping-bag',
-      link: 'https://amazon.com/',
-    },
-    {
-      id: '5',
-      name: 'Hashnode',
-      icon: 'pen-tool',
-      link: 'https://hashnode.com/',
-    },
-    {
-      id: '6',
-      name: 'Figma',
-      icon: 'figma',
-      link: 'https://figma.com/',
+      link: 'https://youtube.com/',
     },
   ],
 
@@ -134,96 +95,96 @@ const CONFIG = {
   // First Links Container
   firstlistsContainer: [
     {
-      icon: 'music',
+      icon: 'piggy-bank',
       id: '1',
       links: [
         {
-          name: 'Inspirational',
-          link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+          name: 'IBKR',
+          link: 'https://www.interactivebrokers.co.uk/en/home.php',
         },
         {
-          name: 'Classic',
-          link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+          name: 'Trading View',
+          link: 'https://www.tradingview.com/',
         },
         {
-          name: 'Oldies',
-          link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+          name: 'Gurufocus',
+          link: 'https://www.gurufocus.com/',
         },
         {
-          name: 'Rock',
-          link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+          name: 'Valuat.io',
+          link: 'https://valuat.io',
         },
       ],
     },
     {
-      icon: 'coffee',
+      icon: 'terminal-square',
       id: '2',
       links: [
         {
-          name: 'Linkedin',
-          link: 'https://www.linkedin.com',
+          name: 'STRV ACDM',
+          link: 'https://github.com/strvcom/frontend-academy-2022/wiki',
         },
         {
-          name: 'Dribbble',
-          link: 'https://www.dribbble.com',
+          name: 'Udemy',
+          link: 'https://www.udemy.com',
         },
         {
-          name: 'Trello',
-          link: 'https://www.trello.com',
+          name: 'Frontend Resources',
+          link: 'https://codingheroes.io/resources/',
         },
         {
-          name: 'Slack',
-          link: 'https://www.slack.com',
+          name: 'Figma',
+          link: 'https://www.figma.com',
         },
       ],
     },
   ],
 
   // Second Links Container
-  secondListsContainer: [
-    {
-      icon: 'binary',
-      id: '1',
-      links: [
-        {
-          name: 'Spotify',
-          link: 'https://www.spotify.com',
-        },
-        {
-          name: 'Reddit',
-          link: 'https://www.reddit.com',
-        },
-        {
-          name: 'Hashnode',
-          link: 'https://www.hashnode.com',
-        },
-        {
-          name: 'Pocket',
-          link: 'https://www.pocket.com',
-        },
-      ],
-    },
-    {
-      icon: 'github',
-      id: '2',
-      links: [
-        {
-          name: 'Front',
-          link: 'https://www.reddit.com/r/Frontend/',
-        },
-        {
-          name: 'Rust',
-          link: 'https://www.reddit.com/r/rust/',
-        },
-        {
-          name: 'Go',
-          link: 'https://www.reddit.com/r/golang/',
-        },
-        {
-          name: 'Repos',
-          link: 'https://github.com/migueravila',
-        },
-      ],
-    },
-  ],
+  //   secondListsContainer: [
+  //     {
+  //       icon: 'binary',
+  //       id: '1',
+  //       links: [
+  //         {
+  //           name: 'Spotify',
+  //           link: 'https://www.spotify.com',
+  //         },
+  //         {
+  //           name: 'Reddit',
+  //           link: 'https://www.reddit.com',
+  //         },
+  //         {
+  //           name: 'Hashnode',
+  //           link: 'https://www.hashnode.com',
+  //         },
+  //         {
+  //           name: 'Pocket',
+  //           link: 'https://www.pocket.com',
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       icon: 'github',
+  //       id: '2',
+  //       links: [
+  //         {
+  //           name: 'Front',
+  //           link: 'https://www.reddit.com/r/Frontend/',
+  //         },
+  //         {
+  //           name: 'Rust',
+  //           link: 'https://www.reddit.com/r/rust/',
+  //         },
+  //         {
+  //           name: 'Go',
+  //           link: 'https://www.reddit.com/r/golang/',
+  //         },
+  //         {
+  //           name: 'Repos',
+  //           link: 'https://github.com/migueravila',
+  //         },
+  //       ],
+  //     },
+  //   ],
 }

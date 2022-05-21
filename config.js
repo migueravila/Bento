@@ -61,9 +61,9 @@ const CONFIG = {
     },
     {
       id: '5',
-      name: 'Reddit',
+      name: 'Exam Prepartion',
       icon: 'bookmark',
-      link: 'https://reddit.com',
+      link: 'https://docs.google.com/document/d/1vjZfYH9xHrRWG_aGW8rod-XUX4_rJPU_ainoJw0wd_4/edit#',
     },
     {
       id: '6',

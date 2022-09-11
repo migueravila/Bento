@@ -11,25 +11,25 @@ const CONFIG = {
 	// └─┘┴ ┴└─┘┴└─┘└─┘
 
 	// General
-	name: 'John',
+	name: 'Sindi.',
 	imageBackground: false,
 	openInNewTab: true,
 	twelveHourFormat: false,
 
 	// Greetings
-	greetingMorning: 'Good morning!',
-	greetingAfternoon: 'Good afternoon,',
-	greetingEvening: 'Good evening,',
-	greetingNight: 'Go to Sleep!',
+	greetingMorning: 'Buenos días,',
+	greetingAfternoon: 'Buenas tardes,',
+	greetingEvening: 'Buenas noches,',
+	greetingNight: 'Deberías estar durmiendo,',
 
 	// Layout
 	bentoLayout: 'bento', // 'bento', 'lists', 'buttons'
 
 	// Weather
 	weatherKey: 'InsertYourAPIKeyHere123456', // Write here your API Key
-	weatherIcons: 'OneDark', // 'Onedark', 'Nord', 'Dark', 'White'
+	weatherIcons: 'Dark', // 'Onedark', 'Nord', 'Dark', 'White'
 	weatherUnit: 'C', // 'F', 'C'
-	language: 'en', // More languages in https://openweathermap.org/current#multi
+	language: 'es', // More languages in https://openweathermap.org/current#multi
 
 	trackLocation: true, // If false or an error occurs, the app will use the lat/lon below
 	defaultLatitude: '37.775',
@@ -61,13 +61,13 @@ const CONFIG = {
 			id: '2',
 			name: 'Mail',
 			icon: 'mail',
-			link: 'https://mail.protonmail.com/',
+			link: 'https://gmail.com/',
 		},
 		{
 			id: '3',
 			name: 'Todoist',
 			icon: 'trello',
-			link: 'https://todoist.com',
+			link: 'https://www.notion.so/QUINTO-CICLO-7a45e865214c4cf0a7381880ed801cbc',
 		},
 		{
 			id: '4',
@@ -139,19 +139,19 @@ const CONFIG = {
 			id: '1',
 			links: [
 				{
-					name: 'Inspirational',
+					name: 'Punkrage',
+					link: 'https://www.youtube.com/playlist?list=PLuwJwwFiiw-mNOBk33HCLB8EiXmUqrkPY',
+				},
+				{
+					name: 'TechnoHype',
+					link: 'https://www.youtube.com/playlist?list=PLuwJwwFiiw-kcv7BStUPaKuZ8Z4YQj2bP',
+				},
+				{
+					name: 'Chill',
 					link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
 				},
 				{
-					name: 'Classic',
-					link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-				},
-				{
-					name: 'Oldies',
-					link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-				},
-				{
-					name: 'Rock',
+					name: 'Study',
 					link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
 				},
 			],

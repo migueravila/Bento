@@ -83,9 +83,9 @@ const CONFIG = {
 		},
 		{
 			id: '6',
-			name: 'Odysee',
-			icon: 'youtube',
-			link: 'https://odysee.com/',
+			name: 'Whatsapp',
+			icon: 'whatsapp',
+			link: 'https://web.whatsapp.com/',
 		},
 	],
 

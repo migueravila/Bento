@@ -59,27 +59,27 @@ const CONFIG = {
 		},
 		{
 			id: '2',
-			name: 'Mail',
+			name: 'Correo',
 			icon: 'mail',
 			link: 'https://gmail.com/',
 		},
 		{
 			id: '3',
-			name: 'Todoist',
+			name: 'Agenda',
 			icon: 'trello',
 			link: 'https://www.notion.so/QUINTO-CICLO-7a45e865214c4cf0a7381880ed801cbc',
 		},
 		{
 			id: '4',
-			name: 'Calendar',
+			name: 'Calendario',
 			icon: 'calendar',
 			link: 'https://calendar.google.com/calendar/r',
 		},
 		{
 			id: '5',
-			name: 'Reddit',
-			icon: 'glasses',
-			link: 'https://reddit.com',
+			name: 'Youtube',
+			icon: 'youtube',
+			link: 'https://youtube.com',
 		},
 		{
 			id: '6',
@@ -89,7 +89,7 @@ const CONFIG = {
 		},
 	],
 
-	secondButtonsContainer: [
+	/* secondButtonsContainer: [
 		{
 			id: '1',
 			name: 'Music',
@@ -126,8 +126,9 @@ const CONFIG = {
 			icon: 'figma',
 			link: 'https://figma.com/',
 		},
+   
 	],
-
+*/
 	// ┬  ┬┌─┐┌┬┐┌─┐
 	// │  │└─┐ │ └─┐
 	// ┴─┘┴└─┘ ┴ └─┘

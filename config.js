@@ -66,7 +66,7 @@ const CONFIG = {
 		{
 			id: '3',
 			name: 'Agenda',
-			icon: 'trello',
+			icon: 'album',
 			link: 'https://www.notion.so/QUINTO-CICLO-7a45e865214c4cf0a7381880ed801cbc',
 		},
 		{
@@ -84,12 +84,12 @@ const CONFIG = {
 		{
 			id: '6',
 			name: 'Whatsapp',
-			icon: 'messenger',
+			icon: 'message-circle',
 			link: 'https://web.whatsapp.com/',
 		},
 	],
 
-	/* secondButtonsContainer: [
+	secondButtonsContainer: [
 		{
 			id: '1',
 			name: 'Music',
@@ -128,7 +128,7 @@ const CONFIG = {
 		},
    
 	],
-*/
+
 	// ┬  ┬┌─┐┌┬┐┌─┐
 	// │  │└─┐ │ └─┐
 	// ┴─┘┴└─┘ ┴ └─┘
@@ -140,11 +140,11 @@ const CONFIG = {
 			id: '1',
 			links: [
 				{
-					name: 'Punkrage',
+					name: 'Punk',
 					link: 'https://www.youtube.com/playlist?list=PLuwJwwFiiw-mNOBk33HCLB8EiXmUqrkPY',
 				},
 				{
-					name: 'TechnoHype',
+					name: 'Techno',
 					link: 'https://www.youtube.com/playlist?list=PLuwJwwFiiw-kcv7BStUPaKuZ8Z4YQj2bP',
 				},
 				{
@@ -152,7 +152,7 @@ const CONFIG = {
 					link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
 				},
 				{
-					name: 'Study',
+					name: 'Study-Lofi',
 					link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
 				},
 			],
@@ -162,20 +162,20 @@ const CONFIG = {
 			id: '2',
 			links: [
 				{
-					name: 'Linkedin',
-					link: 'https://www.linkedin.com',
+					name: 'Twitter',
+					link: 'https://www.twitter.com',
 				},
 				{
-					name: 'Dribbble',
-					link: 'https://www.dribbble.com',
+					name: 'Reddit',
+					link: 'https://www.reddit.com',
 				},
 				{
-					name: 'Trello',
-					link: 'https://www.trello.com',
+					name: 'Aliexpress',
+					link: 'https://www.aliexpress.com',
 				},
 				{
-					name: 'Slack',
-					link: 'https://www.slack.com',
+					name: 'Mercadolibre',
+					link: 'https://www.mercadolibre.com.pe',
 				},
 			],
 		},

@@ -5,6 +5,8 @@
 // │  │ ││││├┤ ││ ┬│ │├┬┘├─┤ │ ││ ││││
 // └─┘└─┘┘└┘└  ┴└─┘└─┘┴└─┴ ┴ ┴ ┴└─┘┘└┘
 
+const LANGUAGE = 'Indonesian'; // 'English', 'Indonesian'
+
 const CONFIG = {
 	// ┌┐ ┌─┐┌─┐┬┌─┐┌─┐
 	// ├┴┐├─┤└─┐││  └─┐
@@ -17,10 +19,10 @@ const CONFIG = {
 	twelveHourFormat: false,
 
 	// Greetings
-	greetingMorning: 'Good morning!',
-	greetingAfternoon: 'Good afternoon,',
-	greetingEvening: 'Good evening,',
-	greetingNight: 'Go to Sleep!',
+	greetingMorning: '',
+	greetingAfternoon: '',
+	greetingEvening: '',
+	greetingNight: '',
 
 	// Layout
 	bentoLayout: 'bento', // 'bento', 'lists', 'buttons'
@@ -228,3 +230,28 @@ const CONFIG = {
 		},
 	],
 };
+
+if (CONFIG) {
+	switch (LANGUAGE) {
+		case 'English':
+			CONFIG.greetingMorning = 'Good Morning'
+			CONFIG.greetingAfternoon = 'Good Afternoon'
+			CONFIG.greetingEvening = 'Good Evening'
+			CONFIG.greetingNight = 'Go to Sleep!'
+			break;
+
+		case 'Indonesian':
+			CONFIG.greetingMorning = 'Selamat Pagi'
+			CONFIG.greetingAfternoon = 'Selamat Siang'
+			CONFIG.greetingEvening = 'Selamat Sore'
+			CONFIG.greetingNight = 'Saatnya istirahat!'
+			break;
+
+		default:
+			CONFIG.greetingMorning = 'Good Morning'
+			CONFIG.greetingAfternoon = 'Good Afternoon'
+			CONFIG.greetingEvening = 'Good Evening'
+			CONFIG.greetingNight = 'Go to Sleep!'
+			break;
+	}
+}

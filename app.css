@@ -1,13 +1,13 @@
-/* 
+/*
 // ╔╗ ╔═╗╔╗╔╔╦╗╔═╗
 // ╠╩╗║╣ ║║║ ║ ║ ║
-// ╚═╝╚═╝╝╚╝ ╩ ╚═╝ 
+// ╚═╝╚═╝╝╚╝ ╩ ╚═╝
 */
 
-/* 
+/*
 //  ┬  ┬┌─┐┬─┐┬┌─┐┌┐ ┬  ┌─┐┌─┐
 //  ┐┌┘├─┤├┬┘│├─┤├┴┐│  ├┤ └─┐
-//  ┘ ┴ ┴┴└─┴┴ ┴└─┘┴─┘└─┘└─┘ 
+//  ┘ ┴ ┴┴└─┴┴ ┴└─┘┴─┘└─┘└─┘
  */
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap'); /* Font Import */
@@ -54,10 +54,10 @@
   ); /* Filter color */
 }
 
-/* 
+/*
 //  ┌─┐┌┬┐┬ ┬┬  ┌─┐┌─┐
 //  └─┐ │ └┬┘│  ├┤ └─┐
-//  └─┘ ┴  ┴ ┴─┘└─┘└─┘ 
+//  └─┘ ┴  ┴ ┴─┘└─┘└─┘
 */
 
 * {
@@ -87,6 +87,70 @@ body {
 .withImageBackground {
   background-image: var(--imgcol), var(--imgbg);
   background-size: cover;
+}
+
+#languageSelector {
+  position: absolute;
+  margin: 2em 2em 0 0;
+  right: 55px;
+  top: -3px;
+  color: var(--fg);
+  border: none;
+  cursor: pointer;
+  /* background-color: red; */
+}
+
+#languageSelector .language-dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+#languageSelector .language-dropbtn:hover, #languageSelector .language-dropbtn:focus {
+  background-color: #2980B9;
+}
+
+#languageSelector .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+#languageSelector .dropdown-content .languageValue {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.show {
+  display: block !important;
+}
+
+#languageSelector select {
+  /* width: 70px; */
+  background-color: transparent;
+  border: none;
+  /* color: white; */
+  cursor: pointer;
+  color: var(--fg);
+}
+
+#languageSelector select option {
+  color: var(--fg);
+  background-color: var(--background);
+  outline: none;
+  border: none;
+  padding: 10px;
+  width: 100px;
+  height: 100px;
 }
 
 #themeButton {

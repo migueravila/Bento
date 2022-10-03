@@ -5,9 +5,9 @@
 // │  │ ││││├┤ ││ ┬│ │├┬┘├─┤ │ ││ ││││
 // └─┘└─┘┘└┘└  ┴└─┘└─┘┴└─┴ ┴ ┴ ┴└─┘┘└┘
 
-const LANGUAGE = 'Indonesian'; // 'English', 'Indonesian'
+// let LANGUAGE = ''; // 'English', 'Indonesian', 'French'
 
-const CONFIG = {
+let CONFIG = {
 	// ┌┐ ┌─┐┌─┐┬┌─┐┌─┐
 	// ├┴┐├─┤└─┐││  └─┐
 	// └─┘┴ ┴└─┘┴└─┘└─┘
@@ -18,11 +18,23 @@ const CONFIG = {
 	openInNewTab: true,
 	twelveHourFormat: false,
 
-	// Greetings
-	greetingMorning: '',
-	greetingAfternoon: '',
-	greetingEvening: '',
-	greetingNight: '',
+	// Greetings English
+	greetingMorning: 'Good Morning',
+	greetingAfternoon: 'Good Afternoon',
+	greetingEvening: 'Good Evening',
+	greetingNight: 'Go to sleep!',
+
+	// Greetings Indonesian
+	greetingMorningIndonesian: 'Selamat Pagi',
+	greetingAfternoonIndonesian: 'Selamat Siang',
+	greetingEveningIndonesian: 'Selamat Sore',
+	greetingNightIndonesian: 'Saatnya istirahat!',
+
+	// Greetings French
+	greetingMorningFrench: 'Bonjour',
+	greetingAfternoonFrench: 'Bonne après-midi',
+	greetingEveningFrench: 'Bonsoir',
+	greetingNightFrench: 'Il est temps de dormir!',
 
 	// Layout
 	bentoLayout: 'bento', // 'bento', 'lists', 'buttons'
@@ -231,27 +243,34 @@ const CONFIG = {
 	],
 };
 
-if (CONFIG) {
-	switch (LANGUAGE) {
-		case 'English':
-			CONFIG.greetingMorning = 'Good Morning'
-			CONFIG.greetingAfternoon = 'Good Afternoon'
-			CONFIG.greetingEvening = 'Good Evening'
-			CONFIG.greetingNight = 'Go to Sleep!'
-			break;
+// if (CONFIG) {
+// 	switch (LANGUAGE) {
+// 		case 'English':
+// 			CONFIG.greetingMorning = 'Good Morning'
+// 			CONFIG.greetingAfternoon = 'Good Afternoon'
+// 			CONFIG.greetingEvening = 'Good Evening'
+// 			CONFIG.greetingNight = 'Go to Sleep!'
+// 			break;
 
-		case 'Indonesian':
-			CONFIG.greetingMorning = 'Selamat Pagi'
-			CONFIG.greetingAfternoon = 'Selamat Siang'
-			CONFIG.greetingEvening = 'Selamat Sore'
-			CONFIG.greetingNight = 'Saatnya istirahat!'
-			break;
+// 		case 'Indonesian':
+// 			CONFIG.greetingMorning = 'Selamat Pagi'
+// 			CONFIG.greetingAfternoon = 'Selamat Siang'
+// 			CONFIG.greetingEvening = 'Selamat Sore'
+// 			CONFIG.greetingNight = 'Saatnya istirahat!'
+// 			break;
 
-		default:
-			CONFIG.greetingMorning = 'Good Morning'
-			CONFIG.greetingAfternoon = 'Good Afternoon'
-			CONFIG.greetingEvening = 'Good Evening'
-			CONFIG.greetingNight = 'Go to Sleep!'
-			break;
-	}
-}
+// 		case 'French':
+// 			CONFIG.greetingMorning = 'Bonjour'
+// 			CONFIG.greetingAfternoon = 'Bonne après-midi'
+// 			CONFIG.greetingEvening = 'Bonsoir'
+// 			CONFIG.greetingNight = 'Il est temps de dormir!'
+// 			break;
+
+// 		default:
+// 			CONFIG.greetingMorning = 'Good Morning'
+// 			CONFIG.greetingAfternoon = 'Good Afternoon'
+// 			CONFIG.greetingEvening = 'Good Evening'
+// 			CONFIG.greetingNight = 'Go to Sleep!'
+// 			break;
+// 	}
+// }

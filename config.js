@@ -166,16 +166,16 @@ const CONFIG = {
 					link: 'https://www.twitter.com',
 				},
 				{
-					name: 'Reddit',
-					link: 'https://www.reddit.com',
+					name: 'Drive',
+					link: 'https://drive.google.com/drive/my-drive',
 				},
 				{
-					name: 'Aliexpress',
-					link: 'https://www.aliexpress.com',
+					name: 'Moodle',
+					link: 'https://aula.lamolina.edu.pe/',
 				},
 				{
-					name: 'Mercadolibre',
-					link: 'https://www.mercadolibre.com.pe',
+					name: 'Maipi',
+					link: 'https://maipi.lamolina.edu.pe/academico/perfil',
 				},
 			],
 		},

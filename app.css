@@ -21,8 +21,8 @@
   --icon: 3vh; /* Icon Size */
 
   /* Fonts Color */
-  --fg: #3a3a3a; /* Foreground color */
-  --sfg: #494949; /* Sceondary Foreground color */
+  --fg: #041c05; /* Foreground color */
+  --sfg: #1d321d; /* Sceondary Foreground color */
 
   /* Light Colors  */
   --accent: #57a0d9; /* Hover color */
@@ -39,13 +39,13 @@
 
 .darktheme {
   /* Dark Colors  */
-  --accent: #57a0d9; /* Hover color */
+  --accent: #287d4a; /* Hover color */
   --background: #19171a; /* Background color */
-  --cards: #201e21; /* Cards color */
+  --cards: #041c05; /* Cards color */
 
   /* Fonts Color */
-  --fg: #d8dee9; /* Foreground color */
-  --sfg: #2c292e; /* Secondary Foreground color */
+  --fg: #041c05; /* Foreground color */
+  --sfg: #1d321d; /* Secondary Foreground color */
 
   /* Image background  */
   --imgcol: linear-gradient(
@@ -135,6 +135,7 @@ body {
   justify-content: center;
 }
 
+/*
 .weatherBlock {
   grid-column: 3 / span 2;
   grid-row: 1 / span 2;
@@ -143,6 +144,7 @@ body {
   align-items: center;
   justify-content: center;
 }
+*/
 
 .date {
   display: flex;

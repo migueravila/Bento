@@ -12,21 +12,25 @@ const generateFirstListsContainer = () => {
           target="${CONFIG.openInNewTab ? '_blank' : ''}"
           href="${list.links[0].link}"
           class="listItem"
+          id="musicList1"
           >${list.links[0].name}</a>
           <a
           target="${CONFIG.openInNewTab ? '_blank' : ''}"
           href="${list.links[1].link}"
           class="listItem"
+          id="musicList2"
           >${list.links[1].name}</a>
           <a
           target="${CONFIG.openInNewTab ? '_blank' : ''}"
           href="${list.links[2].link}"
           class="listItem"
+          id="musicList3"
           >${list.links[2].name}</a>
           <a
           target="${CONFIG.openInNewTab ? '_blank' : ''}"
           href="${list.links[3].link}"
           class="listItem"
+          id="musicList4"
           >${list.links[3].name}</a>
         </div>
       `;

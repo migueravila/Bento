@@ -5,8 +5,6 @@
 // │  │ ││││├┤ ││ ┬│ │├┬┘├─┤ │ ││ ││││
 // └─┘└─┘┘└┘└  ┴└─┘└─┘┴└─┴ ┴ ┴ ┴└─┘┘└┘
 
-// let LANGUAGE = ''; // 'English', 'Indonesian', 'French'
-
 let CONFIG = {
 	// ┌┐ ┌─┐┌─┐┬┌─┐┌─┐
 	// ├┴┐├─┤└─┐││  └─┐
@@ -59,6 +57,24 @@ let CONFIG = {
 	changeThemeByHour: false,
 	hourDarkThemeActive: '18:30',
 	hourDarkThemeInactive: '07:00',
+
+	// Music (English)
+	musicEnglish1: 'Inspirational',
+	musicEnglish2: 'Classic',
+	musicEnglish3: 'Oldies',
+	musicEnglish4: 'Rock',
+
+	// Music (Indonesian)
+	musicIndonesian1: 'Inspirasional',
+	musicIndonesian2: 'Klasik',
+	musicIndonesian3: 'Jadul',
+	musicIndonesian4: 'Rock',
+
+	// Music (French)
+	musicFrench1: 'Inspirante',
+	musicFrench2: 'Classique',
+	musicFrench3: 'Vieilles',
+	musicFrench4: 'Rock',
 
 	// ┌┐ ┬ ┬┌┬┐┌┬┐┌─┐┌┐┌┌─┐
 	// ├┴┐│ │ │  │ │ ││││└─┐
@@ -242,35 +258,3 @@ let CONFIG = {
 		},
 	],
 };
-
-// if (CONFIG) {
-// 	switch (LANGUAGE) {
-// 		case 'English':
-// 			CONFIG.greetingMorning = 'Good Morning'
-// 			CONFIG.greetingAfternoon = 'Good Afternoon'
-// 			CONFIG.greetingEvening = 'Good Evening'
-// 			CONFIG.greetingNight = 'Go to Sleep!'
-// 			break;
-
-// 		case 'Indonesian':
-// 			CONFIG.greetingMorning = 'Selamat Pagi'
-// 			CONFIG.greetingAfternoon = 'Selamat Siang'
-// 			CONFIG.greetingEvening = 'Selamat Sore'
-// 			CONFIG.greetingNight = 'Saatnya istirahat!'
-// 			break;
-
-// 		case 'French':
-// 			CONFIG.greetingMorning = 'Bonjour'
-// 			CONFIG.greetingAfternoon = 'Bonne après-midi'
-// 			CONFIG.greetingEvening = 'Bonsoir'
-// 			CONFIG.greetingNight = 'Il est temps de dormir!'
-// 			break;
-
-// 		default:
-// 			CONFIG.greetingMorning = 'Good Morning'
-// 			CONFIG.greetingAfternoon = 'Good Afternoon'
-// 			CONFIG.greetingEvening = 'Good Evening'
-// 			CONFIG.greetingNight = 'Go to Sleep!'
-// 			break;
-// 	}
-// }

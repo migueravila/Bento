@@ -101,33 +101,39 @@ body {
 }
 
 #languageSelector .language-dropbtn {
-  background-color: #3498DB;
-  color: white;
-  padding: 16px;
+  /* background-color: #3498DB; */
+  color: var(--fg);
+  padding: 0px;
   font-size: 16px;
   border: none;
   cursor: pointer;
+  margin-bottom: 10px;
+  display: flex;
+  gap: 5px;
 }
 
 #languageSelector .language-dropbtn:hover, #languageSelector .language-dropbtn:focus {
-  background-color: #2980B9;
+  /* background-color: #2980B9; */
 }
 
 #languageSelector .dropdown-content {
   display: none;
+  transform: translateX(50%);
+  right: 50%;
   position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
+  background-color: var(--cards);
+  min-width: 120px;
   overflow: auto;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 7px rgba(0, 0, 0, 0.35);
   z-index: 1;
 }
 
 #languageSelector .dropdown-content .languageValue {
-  color: black;
+  color: var(--fg);
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+  /* text-align: center; */
 }
 
 .show {

@@ -13,6 +13,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap'); /* Font Import */
 
 :root {
+
   /* Font Size */
   --fg-primary: 12vh; /* Time and Greetings */
   --fg-secondary: 3vh; /* Greetings and Weather widger */

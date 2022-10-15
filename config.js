@@ -16,6 +16,7 @@ const CONFIG = {
 	openInNewTab: true,
 	twelveHourFormat: false,
 
+
 	// Greetings
 	greetingMorning: 'Good morning!',
 	greetingAfternoon: 'Good afternoon,',

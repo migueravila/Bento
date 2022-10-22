@@ -42,6 +42,7 @@ const changeToEnglish = () => {
 	document.getElementById('musicList2').innerText = musicList2_english;
 	document.getElementById('musicList3').innerText = musicList3_english;
 	document.getElementById('musicList4').innerText = musicList4_english;
+
 	if (hour >= 23 || hour < 5) {
 		document.getElementById('greetings').innerText = gree1_english + name;
 	}
@@ -61,6 +62,7 @@ const changeToIndonesian = () => {
 	document.getElementById('musicList2').innerText = musicList2_indonesian;
 	document.getElementById('musicList3').innerText = musicList3_indonesian;
 	document.getElementById('musicList4').innerText = musicList4_indonesian;
+
     if (hour >= 23 || hour < 5) {
 		document.getElementById('greetings').innerText = gree1_indonesian + name;
 	}
@@ -80,6 +82,7 @@ const changeToFrench = () => {
 	document.getElementById('musicList2').innerText = musicList2_french;
 	document.getElementById('musicList3').innerText = musicList3_french;
 	document.getElementById('musicList4').innerText = musicList4_french;
+
     if (hour >= 23 || hour < 5) {
 		document.getElementById('greetings').innerText = gree1_french + name;
 	}

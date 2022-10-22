@@ -398,6 +398,7 @@ body {
   font-weight: bold;
   text-align: center;
   width: 80%;
+  cursor: pointer;
 }
 .listItem:hover {
   background-color: var(--accent);

@@ -59,21 +59,21 @@ let CONFIG = {
 	hourDarkThemeInactive: '07:00',
 
 	// Music (English)
-	musicEnglish1: 'Inspirational',
+	musicEnglish1: 'Relax',
 	musicEnglish2: 'Classic',
-	musicEnglish3: 'Oldies',
+	musicEnglish3: 'Electro',
 	musicEnglish4: 'Rock',
 
 	// Music (Indonesian)
-	musicIndonesian1: 'Inspirasional',
+	musicIndonesian1: 'Santai',
 	musicIndonesian2: 'Klasik',
-	musicIndonesian3: 'Jadul',
+	musicIndonesian3: 'Elektro',
 	musicIndonesian4: 'Rock',
 
 	// Music (French)
-	musicFrench1: 'Inspirante',
+	musicFrench1: 'Détends',
 	musicFrench2: 'Classique',
-	musicFrench3: 'Vieilles',
+	musicFrench3: 'Électro',
 	musicFrench4: 'Rock',
 
 	// ┌┐ ┬ ┬┌┬┐┌┬┐┌─┐┌┐┌┌─┐
@@ -169,7 +169,7 @@ let CONFIG = {
 			id: '1',
 			links: [
 				{
-					name: 'Inspirational',
+					name: 'Relax',
 					link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
 				},
 				{
@@ -177,7 +177,7 @@ let CONFIG = {
 					link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
 				},
 				{
-					name: 'Oldies',
+					name: 'Electro',
 					link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
 				},
 				{

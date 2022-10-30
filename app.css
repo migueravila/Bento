@@ -192,12 +192,28 @@ body {
   border: none;
   cursor: pointer;
   background-color: #00000000;
+  /* width: 1000px;
+  height: 1000px; */
 }
 
 #themeIcon {
   width: 25px;
   height: 25px;
 }
+
+/* @media screen and (max-width: 768px) {
+  #themeIcon {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #themeIcon {
+    width: 100px;
+    height: 100px;
+  }
+} */
 
 .container {
   width: 145vh;
@@ -432,6 +448,28 @@ body {
 /* M E D I A - Q U E R I E S */
 
 @media only screen and (max-width: 68.75em) {
+  #languageSelector .language-dropbtn {
+    font-size: 64px;
+  }
+
+  #languageSelector {
+    font-size: 48px;
+    right: 100px;
+    top: -25px;
+  }
+
+  .lucide-chevron-down{
+    width: 75px;
+    height: 75px;
+  }
+
+  #themeButton__icon {
+    width: 100px;
+    height: 100px;
+    margin: 2em 2em 0 0;
+  }
+
+
   .container {
     grid-gap: 20px;
     padding: 40px;
@@ -451,11 +489,14 @@ body {
   }
 
   .linksBlockRight {
-    display: none;
+    /* display: none; */
+    grid-row: 6 / span 2;
+    grid-column: 1 / span 5;
   }
 
   .linksBlockLeft {
-    grid-column: 1 / span 4;
+    grid-row: 1 / span 5;
+    grid-column: 1 / span 5;
   }
 
   .button {

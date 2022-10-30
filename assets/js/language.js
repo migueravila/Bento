@@ -44,16 +44,16 @@ const changeToEnglish = () => {
 	document.getElementById('musicList4').innerText = musicList4_english;
 
 	if (hour >= 23 || hour < 5) {
-		document.getElementById('greetings').innerText = gree1_english + name;
+		document.getElementById('greetings').innerText = gree1_english + CONFIG.name;
 	}
 	else if (hour >= 6 && hour < 12) {
-		document.getElementById('greetings').innerText = gree2_english + name;
+		document.getElementById('greetings').innerText = gree2_english + CONFIG.name;
 	}
 	else if (hour >= 12 && hour < 17) {
-		document.getElementById('greetings').innerText = gree3_english + name;
+		document.getElementById('greetings').innerText = gree3_english + CONFIG.name;
 	}
 	else {
-		document.getElementById('greetings').innerText = gree4_english + name;
+		document.getElementById('greetings').innerText = gree4_english + CONFIG.name;
 	}
 }
 
@@ -64,16 +64,16 @@ const changeToIndonesian = () => {
 	document.getElementById('musicList4').innerText = musicList4_indonesian;
 
     if (hour >= 23 || hour < 5) {
-		document.getElementById('greetings').innerText = gree1_indonesian + name;
+		document.getElementById('greetings').innerText = gree1_indonesian + CONFIG.name;
 	}
 	else if (hour >= 6 && hour < 12) {
-		document.getElementById('greetings').innerText = gree2_indonesian + name;
+		document.getElementById('greetings').innerText = gree2_indonesian + CONFIG.name;
 	}
 	else if (hour >= 12 && hour < 17) {
-		document.getElementById('greetings').innerText = gree3_indonesian + name;
+		document.getElementById('greetings').innerText = gree3_indonesian + CONFIG.name;
 	}
 	else {
-		document.getElementById('greetings').innerText = gree4_indonesian + name;
+		document.getElementById('greetings').innerText = gree4_indonesian + CONFIG.name;
 	}
 }
 
@@ -84,16 +84,16 @@ const changeToFrench = () => {
 	document.getElementById('musicList4').innerText = musicList4_french;
 
     if (hour >= 23 || hour < 5) {
-		document.getElementById('greetings').innerText = gree1_french + name;
+		document.getElementById('greetings').innerText = gree1_french + CONFIG.name;
 	}
 	else if (hour >= 6 && hour < 12) {
-		document.getElementById('greetings').innerText = gree2_french + name;
+		document.getElementById('greetings').innerText = gree2_french + CONFIG.name;
 	}
 	else if (hour >= 12 && hour < 17) {
-		document.getElementById('greetings').innerText = gree3_french + name;
+		document.getElementById('greetings').innerText = gree3_french + CONFIG.name;
 	}
 	else {
-		document.getElementById('greetings').innerText = gree4_french + name;
+		document.getElementById('greetings').innerText = gree4_french + CONFIG.name;
 	}
 }
 

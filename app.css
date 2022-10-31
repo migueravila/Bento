@@ -488,6 +488,10 @@ body {
     font-size: var(--fg-secondary);
   }
 
+  .list {
+    padding: 30px;
+  }
+
   .linksBlockRight {
     /* display: none; */
     grid-row: 6 / span 2;
@@ -504,6 +508,6 @@ body {
     padding-left: 100px;
     padding-right: 100px;
   }
-  
-  
+
+
 }

@@ -1,3 +1,7 @@
+### :wave: Hey! If you're using this fork for theming, auto switching, or docker support, I'd recommend checking out [Bento-next](https://github.com/lewisdoesstuff/bento-next)
+
+Bento-next is my fork of Bento, entirely rewritten in Vue 3, with *many* more features that don't fit as well upstream. You can now host it with a Docker image, or on GitHub Pages.
+
 ![image](assets/img/header.png)
 
 <p style="margin: -20px 0 30px">
@@ -19,6 +23,8 @@
   - [🏡 As Home Page](#-as-home-page)
   - [➕ As New Tab](#-as-new-tab)
   - [🐬 In a Docker Container](#-in-a-docker-container)
+    - [Docker run](#docker-run)
+    - [docker-compose](#docker-compose)
 - [🎨 Customization](#-customization)
   - [👋 General: Name, Image Background and Greetings](#-general-name-image-background-and-greetings)
   - [📐 Layouts: Bento, Lists and Buttons.](#-layouts-bento-lists-and-buttons)

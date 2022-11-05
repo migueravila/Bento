@@ -37,30 +37,6 @@
   ); /* Filter color */
 }
 
-#modalOverlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 99999;
-  height: 100%;
-  width: 100%;
-}
-.modalPopup {
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: #fff;
-  width: 50%;
-  padding: 0 0 30px;
-  -webkit-box-shadow: 0 2px 10px 3px rgba(0,0,0,.2);
-  -moz-box-shadow: 0 2px 10px 3px rgba(0,0,0,.2);
-  box-shadow: 0 2px 10px 3px rgba(0,0,0,.2);
-}
-.modalContent {padding: 0 2em;}
-
-
 .darktheme {
   /* Dark Colors  */
   --accent: #57a0d9; /* Hover color */
@@ -113,6 +89,74 @@ body {
   background-size: cover;
 }
 
+#modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 99999;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalPopup {
+  background: var(--background);
+  width: 60vw;
+  height: 30%;
+  padding: 0 0 30px;
+  box-shadow: 0 5px 7px rgba(0, 0, 0, 0.35);
+  border-radius: 5px;
+  margin-bottom: 20vh;
+}
+
+.modalContent {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  color: var(--fg);
+}
+
+.modalContent h1 {
+  font-size: var(--fg-secondary);
+}
+
+.modalContent input {
+  width: 50%;
+  height: 40px;
+  background-color: var(--cards);
+  border: none;
+  outline: none;
+  color: var(--fg);
+  font-size: var(--fg-list);
+  padding: 0 10px;
+}
+
+.modalContent button {
+  width: 50%;
+  height: 40px;
+  background-color: var(--cards);
+  color: var(--fg);
+  font-size: var(--fg-list);
+  font-weight: bolder;
+  outline: none;
+  box-shadow: 0 5px 7px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.modalContent button:hover {
+  background-color: var(--accent);
+  color: var(--sfg);
+}
+
 #languageSelector {
   position: absolute;
   margin: 2em 2em 0 0;
@@ -134,10 +178,6 @@ body {
   margin-bottom: 10px;
   display: flex;
   gap: 5px;
-}
-
-#languageSelector .language-dropbtn:hover, #languageSelector .language-dropbtn:focus {
-  /* background-color: #2980B9; */
 }
 
 #languageSelector .dropdown-content {
@@ -448,6 +488,26 @@ body {
 /* M E D I A - Q U E R I E S */
 
 @media only screen and (max-width: 68.75em) {
+  .modalContent {
+    gap: 35px;
+  }
+
+  .modalContent h1 {
+    font-size: 40px;
+  }
+
+  .modalContent input {
+    width: 80%;
+    height: 70px;
+    font-size: 25px;
+  }
+
+  .modalContent button {
+    width: 80%;
+    height: 70px;
+    font-size: 25px;
+  }
+
   #languageSelector .language-dropbtn {
     font-size: 64px;
   }

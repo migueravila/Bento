@@ -1,0 +1,109 @@
+:root {
+
+  --latte-rosewater-h: 11;
+  --latte-rosewater-s: 59;
+  --latte-rosewater-l: 67;
+  --latte-rosewater: hsl(var(--latte-rosewater-h), calc(var(--latte-rosewater-s) * 1%), calc((var(--latte-rosewater-l) + 0) * 1%));
+
+  --latte-text-h: 234;
+  --latte-text-s: 16;
+  --latte-text-l: 35;
+  --latte-text: hsl(var(--latte-text-h), calc(var(--latte-text-s) * 1%), calc((var(--latte-text-l) + 0) * 1%));
+
+  --latte-surface0-h: 223;
+  --latte-surface0-s: 16;
+  --latte-surface0-l: 83;
+  --latte-surface0: hsl(var(--latte-surface0-h), calc(var(--latte-surface0-s) * 1%), calc((var(--latte-surface0-l) + 0) * 1%));
+
+  --latte-base-h: 220;
+  --latte-base-s: 23;
+  --latte-base-l: 95;
+  --latte-base: hsl(var(--latte-base-h), calc(var(--latte-base-s) * 1%), calc((var(--latte-base-l) + 0) * 1%));
+
+  --latte-mantle-h: 220;
+  --latte-mantle-s: 22;
+  --latte-mantle-l: 92;
+  --latte-mantle: hsl(var(--latte-mantle-h), calc(var(--latte-mantle-s) * 1%), calc((var(--latte-mantle-l) + 0) * 1%));
+
+
+
+  --frappe-rosewater-h: 10;
+  --frappe-rosewater-s: 57;
+  --frappe-rosewater-l: 88;
+  --frappe-rosewater: hsl(var(--frappe-rosewater-h), calc(var(--frappe-rosewater-s) * 1%), calc((var(--frappe-rosewater-l) + 0) * 1%));
+
+  --frappe-text-h: 227;
+  --frappe-text-s: 70;
+  --frappe-text-l: 87;
+  --frappe-text: hsl(var(--frappe-text-h), calc(var(--frappe-text-s) * 1%), calc((var(--frappe-text-l) + 0) * 1%));
+
+  --frappe-surface0-h: 230;
+  --frappe-surface0-s: 16;
+  --frappe-surface0-l: 30;
+  --frappe-surface0: hsl(var(--frappe-surface0-h), calc(var(--frappe-surface0-s) * 1%), calc((var(--frappe-surface0-l) + 0) * 1%));
+
+  --frappe-base-h: 229;
+  --frappe-base-s: 19;
+  --frappe-base-l: 23;
+  --frappe-base: hsl(var(--frappe-base-h), calc(var(--frappe-base-s) * 1%), calc((var(--frappe-base-l) + 0) * 1%));
+
+  --frappe-mantle-h: 231;
+  --frappe-mantle-s: 19;
+  --frappe-mantle-l: 20;
+  --frappe-mantle: hsl(var(--frappe-mantle-h), calc(var(--frappe-mantle-s) * 1%), calc((var(--frappe-mantle-l) + 0) * 1%));
+
+
+
+  --macchiato-rosewater-h: 10;
+  --macchiato-rosewater-s: 58;
+  --macchiato-rosewater-l: 90;
+  --macchiato-rosewater: hsl(var(--macchiato-rosewater-h), calc(var(--macchiato-rosewater-s) * 1%), calc((var(--macchiato-rosewater-l) + 0) * 1%));
+
+  --macchiato-text-h: 227;
+  --macchiato-text-s: 68;
+  --macchiato-text-l: 88;
+  --macchiato-text: hsl(var(--macchiato-text-h), calc(var(--macchiato-text-s) * 1%), calc((var(--macchiato-text-l) + 0) * 1%));
+
+  --macchiato-surface0-h: 230;
+  --macchiato-surface0-s: 19;
+  --macchiato-surface0-l: 26;
+  --macchiato-surface0: hsl(var(--macchiato-surface0-h), calc(var(--macchiato-surface0-s) * 1%), calc((var(--macchiato-surface0-l) + 0) * 1%));
+
+  --macchiato-base-h: 232;
+  --macchiato-base-s: 23;
+  --macchiato-base-l: 18;
+  --macchiato-base: hsl(var(--macchiato-base-h), calc(var(--macchiato-base-s) * 1%), calc((var(--macchiato-base-l) + 0) * 1%));
+
+  --macchiato-mantle-h: 233;
+  --macchiato-mantle-s: 23;
+  --macchiato-mantle-l: 15;
+  --macchiato-mantle: hsl(var(--macchiato-mantle-h), calc(var(--macchiato-mantle-s) * 1%), calc((var(--macchiato-mantle-l) + 0) * 1%));
+
+
+
+  --mocha-rosewater-h: 10;
+  --mocha-rosewater-s: 56;
+  --mocha-rosewater-l: 91;
+  --mocha-rosewater: hsl(var(--mocha-rosewater-h), calc(var(--mocha-rosewater-s) * 1%), calc((var(--mocha-rosewater-l) + 0) * 1%));
+
+  --mocha-text-h: 226;
+  --mocha-text-s: 64;
+  --mocha-text-l: 88;
+  --mocha-text: hsl(var(--mocha-text-h), calc(var(--mocha-text-s) * 1%), calc((var(--mocha-text-l) + 0) * 1%));
+
+  --mocha-surface0-h: 237;
+  --mocha-surface0-s: 16;
+  --mocha-surface0-l: 23;
+  --mocha-surface0: hsl(var(--mocha-surface0-h), calc(var(--mocha-surface0-s) * 1%), calc((var(--mocha-surface0-l) + 0) * 1%));
+
+  --mocha-base-h: 240;
+  --mocha-base-s: 21;
+  --mocha-base-l: 15;
+  --mocha-base: hsl(var(--mocha-base-h), calc(var(--mocha-base-s) * 1%), calc((var(--mocha-base-l) + 0) * 1%));
+
+  --mocha-mantle-h: 240;
+  --mocha-mantle-s: 21;
+  --mocha-mantle-l: 12;
+  --mocha-mantle: hsl(var(--mocha-mantle-h), calc(var(--mocha-mantle-s) * 1%), calc((var(--mocha-mantle-l) + 0) * 1%));
+
+}

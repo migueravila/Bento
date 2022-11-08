@@ -10,13 +10,17 @@ const CONFIG = {
 	// ├┴┐├─┤└─┐││  └─┐
 	// └─┘┴ ┴└─┘┴└─┘└─┘
 
-  // General
-  name: 'John',
-  imageBackground: false,
-  openInNewTab: true,
-  twelveHourFormat: false,
-  title: 'Bento',
+  
+	// General
+	name: 'John',
+	openInNewTab: true,
+	twelveHourFormat: false,
+    title: 'Bento',
 
+	// Theme
+	theme: 'bento',
+	imageBackground: false,
+    
 	// Greetings
 	greetingMorning: 'Good morning!',
 	greetingAfternoon: 'Good afternoon,',

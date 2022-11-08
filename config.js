@@ -10,11 +10,17 @@ const CONFIG = {
 	// ├┴┐├─┤└─┐││  └─┐
 	// └─┘┴ ┴└─┘┴└─┘└─┘
 
+  
 	// General
 	name: 'John',
-	imageBackground: false,
 	openInNewTab: true,
 	twelveHourFormat: false,
+  title: 'Bento',
+
+	// Theme
+	theme: 'bento',
+	imageBackground: false,
+  imageUrl: './assets/background.jpg', // Set custom background image URL. If the page is served insecurely, you may have issues loading images from pages over https.
 
 	// Greetings
 	greetingMorning: 'Good morning!',
@@ -46,9 +52,12 @@ const CONFIG = {
 	hourDarkThemeActive: '18:30',
 	hourDarkThemeInactive: '07:00',
 
-	// ┌┐ ┬ ┬┌┬┐┌┬┐┌─┐┌┐┌┌─┐
-	// ├┴┐│ │ │  │ │ ││││└─┐
-	// └─┘└─┘ ┴  ┴ └─┘┘└┘└─┘
+  	// Autochange automatically based on location (sunrise/sunset). Openweathermap API key required.
+  	changeThemeByLocation: false,
+
+  // ┌┐ ┬ ┬┌┬┐┌┬┐┌─┐┌┐┌┌─┐
+  // ├┴┐│ │ │  │ │ ││││└─┐
+  // └─┘└─┘ ┴  ┴ └─┘┘└┘└─┘
 
 	firstButtonsContainer: [
 		{

@@ -1,3 +1,7 @@
+### :wave: Hey! If you're using this fork for theming, auto switching, or docker support, I'd recommend checking out [Bento-next](https://github.com/lewisdoesstuff/bento-next)
+
+Bento-next is my fork of Bento, entirely rewritten in Vue 3, with *many* more features that don't fit as well upstream. You can now host it with a Docker image, or on GitHub Pages.
+
 ![image](assets/img/header.png)
 
 <p style="margin: -20px 0 30px">
@@ -19,6 +23,8 @@
   - [🏡 As Home Page](#-as-home-page)
   - [➕ As New Tab](#-as-new-tab)
   - [🐬 In a Docker Container](#-in-a-docker-container)
+    - [Docker run](#docker-run)
+    - [docker-compose](#docker-compose)
 - [🎨 Customization](#-customization)
   - [👋 General: Name, Image Background and Greetings](#-general-name-image-background-and-greetings)
   - [📐 Layouts: Bento, Lists and Buttons.](#-layouts-bento-lists-and-buttons)
@@ -26,6 +32,7 @@
   - [📑 Lists & Links](#-lists--links)
   - [⛈️ Weather: Api Key, Icons and Unit](#️-weather-api-key-icons-and-unit)
   - [💛 Colors](#-colors)
+  - [🖌️ Custom Colors](#️-custom-colors)
   - [🌑 Auto change theme](#-auto-change-theme)
 
 
@@ -60,6 +67,8 @@ You can use different Add-ons/Extensions for it
 
 ### 🐬 In a Docker Container
 
+*Note: the current published docker image is built from the upstream repo.**
+
 You can run Bento in a Docker Container, either with `docker run`, or with the included `docker-compose` file.
 
 #### Docker run
@@ -83,8 +92,14 @@ To change the default name, the greetings and if you want to have an image backg
 ```js
  // General
   name: 'John',
-  imageBackground: false,
   openInNewTab: true,
+  twelveHourFormat: false,
+  title: 'Bento', 
+
+  // Theme
+  theme: 'bento',
+  imageBackground: false,
+  imageUrl: './assets/background.jpg', // Set custom background image URL. If the page is served insecurely, you may have issues loading images from pages over https.  
 
   // Greetings
   greetingMorning: 'Good morning!',
@@ -94,7 +109,7 @@ To change the default name, the greetings and if you want to have an image backg
 
 ```
 
-> You can change the background by substituting the `background.jpg` file in `assets` folder.
+> You can change the background by providing a link to an image in `config.js`.
 
 ![](assets/img/backgroundImage.png)
 
@@ -236,33 +251,73 @@ Finally just add them to the `config.js` file.
 
 ### 💛 Colors
 
-In the `app.css` file you can change the variables for both themes (Dark and Light):
+Bento supports custom theming with several pre-included presets to choose from!
+Change the current theme in `config.js`
+Included themes: 
+  
+  - [Arc](https://github.com/horst3180/arc-theme)
+  - Bento (default)
+  - [Catppuccin](https://github.com/catppuccin/catppuccin) -- The full set of Catppuccin colors can be added to Bento using the themes found at [catppuccin/bento](https://github.com/catppuccin/bento)
+  - [Concept-Dark](https://www.deviantart.com/zb652/art/Concept-Dark-885878180)
+  - [Monokai (free)](https://monokai.pro/)
+  - [Nord](https://www.nordtheme.com/)
+  - Sakura
+  - [Solarized](https://ethanschoonover.com/solarized/)
+  - [Summer](https://github.com/JhonnyRice/summer)
+
+
+```js
+	// Theme
+	theme: 'bento',
+```
+### 🖌️ Custom Colors
+
+You can create your own themes by adding them to the `./assets/themes/` folder, with a `.css` extension!  
+Example:
 
 ```css
-/* Light theme  */
-
 :root {
-  --accent: #61b0f1; /* Hover color */
-  --bg: #f5f5f5; /* Background color */
-  --sbg: #e4e6e6; /* Cards color */
-  --fg: #3a3a3a; /* Foreground color */
-  --sfg: #3a3a3a; /* Sceondary Foreground color */
-}
 
-/* Dark theme  */
+  /* Light Colors  */
+
+  --background: #f5f5f5; /* Background color */
+  --accent: #57a0d9; /* Hover color */
+  --cards: #e4e6e6; /* Cards color */
+
+  /* Fonts Color */
+  --fg: #3a3a3a; /* Foreground color */
+  --sfg: #494949; /* Sceondary Foreground color */
+
+  /* Image background  */
+  --imgcol: linear-gradient(
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.7)
+  ); /* Filter color */
+}
 
 .darktheme {
-  --accent: #61b0f1; /* Hover color */
-  --bg: #19171a; /* Background color */
-  --sbg: #201e21; /* Cards color */
+  /* Dark Colors  */
+  
+  --background: #19171a; /* Background color */
+  --accent: #57a0d9; /* Hover color */
+  --cards: #201e21; /* Cards color */
+
+  /* Fonts Color */
   --fg: #d8dee9; /* Foreground color */
-  --sfg: #3a3a3a; /* Secondary Foreground color */
+  --sfg: #2c292e; /* Secondary Foreground color */
+
+  /* Image background  */
+  --imgcol: linear-gradient(
+    rgba(0, 0, 0, 0.85),
+    rgba(0, 0, 0, 0.85)
+  ); /* Filter color */
 }
+
 ```
 
 ### 🌑 Auto change theme
 
-The theme can be automatically changed by the OS' current theme or personalized hours
+The theme can be automatically changed by the OS' current theme, set hours, or following sunrise/sunset.
 that you can change in the `config.js` file:
 
 ```js
@@ -276,6 +331,9 @@ that you can change in the `config.js` file:
   changeThemeByHour: true, // If it's true, it will use the values below:
   hourDarkThemeActive: '18:30', // Turn on the dark theme after this hour
   hourDarkThemeInactive: '07:00', // Turn off the dark theme after this hour and before the above hour
+  
+  // Autochange automatically based on location (sunrise/sunset). Openweathermap API key required.
+  changeThemeByLocation: false,
 ```
 
 ![](assets/img/darkMode.png)

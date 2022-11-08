@@ -7,6 +7,17 @@ let darkTheme = localStorage.getItem('darkTheme');
 const themeToggle = document.querySelector('#themeButton');
 const bodyBackground = document.getElementById('#body');
 
+setTheme();
+
+function setTheme() { 
+	const theme = CONFIG.theme;
+	var link = document.createElement("link");
+	link.type = "text/css";
+	link.rel = "stylesheet";
+	link.href = `./assets/themes/${theme}.css`
+	document.head.appendChild(link);
+}
+
 const enableDark = () => {
 	document.body.classList.add('darktheme');
 	localStorage.setItem('darkTheme', 'enabled');
@@ -39,6 +50,8 @@ themeToggle.addEventListener('click', () => {
 });
 
 if (CONFIG.imageBackground) {
+	const root = document.querySelector(':root');
+	root.style.setProperty('--imgbg', `url(${CONFIG.imageUrl})`);
 	document.body.classList.add('withImageBackground');
 }
 
@@ -60,4 +73,19 @@ if (CONFIG.changeThemeByHour && CONFIG.autoChangeTheme && !CONFIG.changeThemeByO
 	} else if (currentTime >= CONFIG.hourDarkThemeInactive) {
 		disableDark();
 	}
+}
+
+// there may be a better way to do this &&
+if (CONFIG.changeThemeByLocation && CONFIG.autoChangeTheme && !CONFIG.changeThemeByOS && !CONFIG.changeThemeByHour) {
+  Promise.resolve(weatherPromise).then(weather => {
+    const unix = Date.now() / 1000;
+    if (
+      unix >= weather.sunrise &&
+      unix < weather.sunset
+    ) {
+      disableDark();
+    } else {
+      enableDark();
+    }
+  });
 }

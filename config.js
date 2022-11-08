@@ -15,12 +15,13 @@ const CONFIG = {
 	name: 'John',
 	openInNewTab: true,
 	twelveHourFormat: false,
-    title: 'Bento',
+  title: 'Bento',
 
 	// Theme
 	theme: 'bento',
 	imageBackground: false,
-    
+  imageUrl: './assets/background.jpg', // Set custom background image URL. If the page is served insecurely, you may have issues loading images from pages over https.
+
 	// Greetings
 	greetingMorning: 'Good morning!',
 	greetingAfternoon: 'Good afternoon,',

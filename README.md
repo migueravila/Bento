@@ -32,6 +32,7 @@ Bento-next is my fork of Bento, entirely rewritten in Vue 3, with *many* more fe
   - [📑 Lists & Links](#-lists--links)
   - [⛈️ Weather: Api Key, Icons and Unit](#️-weather-api-key-icons-and-unit)
   - [💛 Colors](#-colors)
+  - [🖌️ Custom Colors](#️-custom-colors)
   - [🌑 Auto change theme](#-auto-change-theme)
 
 
@@ -66,6 +67,8 @@ You can use different Add-ons/Extensions for it
 
 ### 🐬 In a Docker Container
 
+*Note: the current published docker image is built from the upstream repo.**
+
 You can run Bento in a Docker Container, either with `docker run`, or with the included `docker-compose` file.
 
 #### Docker run
@@ -89,8 +92,14 @@ To change the default name, the greetings and if you want to have an image backg
 ```js
  // General
   name: 'John',
-  imageBackground: false,
   openInNewTab: true,
+  twelveHourFormat: false,
+  title: 'Bento', 
+
+  // Theme
+  theme: 'bento',
+  imageBackground: false,
+  imageUrl: './assets/background.jpg', // Set custom background image URL. If the page is served insecurely, you may have issues loading images from pages over https.  
 
   // Greetings
   greetingMorning: 'Good morning!',
@@ -100,7 +109,7 @@ To change the default name, the greetings and if you want to have an image backg
 
 ```
 
-> You can change the background by substituting the `background.jpg` file in `assets` folder.
+> You can change the background by providing a link to an image in `config.js`.
 
 ![](assets/img/backgroundImage.png)
 
@@ -248,7 +257,7 @@ Included themes:
   
   - [Arc](https://github.com/horst3180/arc-theme)
   - Bento (default)
-  - [Catppuccin](https://github.com/catppuccin/catppuccin)
+  - [Catppuccin](https://github.com/catppuccin/catppuccin) -- The full set of Catppuccin colors can be added to Bento using the themes found at [catppuccin/bento](https://github.com/catppuccin/bento)
   - [Concept-Dark](https://www.deviantart.com/zb652/art/Concept-Dark-885878180)
   - [Monokai (free)](https://monokai.pro/)
   - [Nord](https://www.nordtheme.com/)

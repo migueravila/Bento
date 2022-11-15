@@ -30,7 +30,11 @@
   --cards: #e4e6e6; /* Cards color */
 
   /* Image background  */
-  --imgbg: url(assets/background.jpg); /* Image URL */
+  --imgbg1: url('https://source.unsplash.com/1920x1080/?landscape'); /* Image URL */
+  --imgbg2: url('https://source.unsplash.com/1920x1080/?nature'); /* Image URL */
+  --imgbg3: url('https://source.unsplash.com/1920x1080/?mountain'); /* Image URL */
+  --imgbg4: url('https://source.unsplash.com/1920x1080/?city'); /* Image URL */
+  --imgbg5: url('https://source.unsplash.com/1920x1080/?forest'); /* Image URL */
   --imgcol: linear-gradient(
     rgba(255, 255, 255, 0.7),
     rgba(255, 255, 255, 0.7)
@@ -75,6 +79,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .notransition {
@@ -87,6 +92,54 @@ body {
 .withImageBackground {
   background-image: var(--imgcol), var(--imgbg);
   background-size: cover;
+}
+
+/* Swiper Background Image */
+.swiper {
+  position: absolute !important;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+}
+
+.swiper .swiper-wrapper .swiper-slide {
+  /* background-image: var(--imgcol); */
+  background-size: cover;
+  background-position: center;
+}
+
+.swiper .swiper-wrapper .swiper-slide.slide-1 {
+  background-image: var(--imgcol), var(--imgbg1);
+  background-size: cover;
+  background-position: center;
+}
+
+.swiper .swiper-wrapper .swiper-slide.slide-2 {
+  background-image: var(--imgcol), var(--imgbg2);
+  background-size: cover;
+  background-position: center;
+}
+
+.swiper .swiper-wrapper .swiper-slide.slide-3 {
+  background-image: var(--imgcol), var(--imgbg3);
+  background-size: cover;
+  background-position: center;
+}
+
+.swiper .swiper-wrapper .swiper-slide.slide-4 {
+  background-image: var(--imgcol), var(--imgbg4);
+  background-size: cover;
+  background-position: center;
+}
+
+.swiper .swiper-wrapper .swiper-slide.slide-5 {
+  background-image: var(--imgcol), var(--imgbg5);
+  background-size: cover;
+  background-position: center;
+}
+
+.main-content {
+  z-index: 1;
 }
 
 #modalOverlay {
@@ -488,6 +541,10 @@ body {
 /* M E D I A - Q U E R I E S */
 
 @media only screen and (max-width: 68.75em) {
+  .container {
+    width: 100vw;
+  }
+
   .modalContent {
     gap: 35px;
   }

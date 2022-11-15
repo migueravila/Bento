@@ -5,6 +5,7 @@
 		<title>Bento</title>
 		<link rel=" shortcut icon" type="image/png" href="assets/icons/favicon.png" />
 		<link rel="stylesheet" href="app.css" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 		<script src="https://unpkg.com/lucide@latest"></script>
 	</head>
 
@@ -15,59 +16,77 @@
       -->
 
 	<body class="">
-		<div id="modalOverlay"></div>
-
-		<div id="languageSelector">
-			<div id="languageDropbtn" class="language-dropbtn"></div>
-			<div id="myDropdown" class="dropdown-content">
-				<div id="languageEnglish" class="languageValue"></div>
-				<div id="languageIndonesian" class="languageValue"></div>
-				<div id="languageFrench" class="languageValue"></div>
+		<div class="swiper">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide slide-1"></div>
+				<div class="swiper-slide slide-2"></div>
+				<div class="swiper-slide slide-3"></div>
+				<div class="swiper-slide slide-4"></div>
+				<div class="swiper-slide slide-5"></div>
 			</div>
+			<!-- <div class="swiper-pagination"></div> -->
+			<!-- <div class="swiper-button-prev"></div> -->
+			<!-- <div class="swiper-button-next"></div> -->
+			<!-- <div class="swiper-scrollbar"></div> -->
 		</div>
-		<button id="themeButton">
-			<i id="themeIcon" icon-name="moon"></i>
-		</button>
-		<div class="container">
-			<!-- Clock and Greetings  -->
 
-			<div class="timeBlock">
-				<div class="clock">
-					<img src="" alt="">
-					<div id="hour"></div>
-					<div id="separator"></div>
-					<div id="minutes"></div>
-				</div>
-				<div id="greetings"></div>
-			</div>
+		<div class="main-content">
+			<div id="modalOverlay"></div>
 
-			<!-- Date and Weather  -->
-
-			<div class="weatherBlock">
-				<div class="date">
-					<div id="month"></div>
-					<div id="day"></div>
-				</div>
-				<div class="weather">
-					<div class="weatherIcon">
-						<img src="assets/icons/OneDark/unknown.png" />
-					</div>
-					<div class="weatherValue">
-						<p>- °<span class="g">c</span></p>
-					</div>
-					<div class="weatherDescription">
-						<p></p>
-					</div>
+			<div id="languageSelector">
+				<div id="languageDropbtn" class="language-dropbtn"></div>
+				<div id="myDropdown" class="dropdown-content">
+					<div id="languageEnglish" class="languageValue"></div>
+					<div id="languageIndonesian" class="languageValue"></div>
+					<div id="languageFrench" class="languageValue"></div>
 				</div>
 			</div>
 
-			<div class="linksBlock" id="linksBlock">
-				<div class="linksBlockLeft" id="linksBlockLeft"></div>
-				<div class="linksBlockRight" id="linksBlockRight"></div>
-			</div>
+			<button id="themeButton">
+				<i id="themeIcon" icon-name="moon"></i>
+			</button>
 
-			<!-- Audio -->
-			<audio src="assets/audio/Chill Vlog Happy Lofi Beat Marshmallow by Lukrembo.mp3" id="audio"></audio>
+			<div class="container">
+				<!-- Clock and Greetings  -->
+
+				<div class="timeBlock">
+					<div class="clock">
+						<img src="" alt="">
+						<div id="hour"></div>
+						<div id="separator"></div>
+						<div id="minutes"></div>
+					</div>
+					<div id="greetings"></div>
+				</div>
+
+				<!-- Date and Weather  -->
+
+				<div class="weatherBlock">
+					<div class="date">
+						<div id="month"></div>
+						<div id="day"></div>
+					</div>
+					<div class="weather">
+						<div class="weatherIcon">
+							<img src="assets/icons/OneDark/unknown.png" />
+						</div>
+						<div class="weatherValue">
+							<p>- °<span class="g">c</span></p>
+						</div>
+						<div class="weatherDescription">
+							<p></p>
+						</div>
+					</div>
+				</div>
+
+				<div class="linksBlock" id="linksBlock">
+					<div class="linksBlockLeft" id="linksBlockLeft"></div>
+					<div class="linksBlockRight" id="linksBlockRight"></div>
+				</div>
+
+				<!-- Audio -->
+				<audio src="assets/audio/Chill Vlog Happy Lofi Beat Marshmallow by Lukrembo.mp3" id="audio"></audio>
+			</div>
 		</div>
 
 		<!-- Config  -->
@@ -95,6 +114,9 @@
 		<script>
 			lucide.createIcons();
 		</script>
+
+		<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+		<script src="assets/js/swiper.js"></script>
 
 		<!-- The Modal -->
 	</body>

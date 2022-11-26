@@ -41,39 +41,6 @@
   ); /* Filter color */
 }
 
-/* COUNTDOWN TIMER */
-/*.timer {
-  font-family: sans-serif;
-  display: inline-block;
-  padding: 24px 32px;
-  border-radius: 30px;
-  background: white;
-}
-
-.timer__part {
-  font-size: 36px;
-  font-weight: bold;
-}
-
-.timer__btn {
-  width: 50px;
-  height: 50px;
-  margin-left: 16px;
-  border-radius: 50%;
-  border: none;
-  color: white;
-  background: #8208e6;
-  cursor: pointer;
-}
-
-.timer__btn--start {
-  background: #00b84c;
-}
-
-.timer__btn--stop {
-  background: #ff0256;
-}*/
-
 .darktheme {
   /* Dark Colors  */
   --accent: #57a0d9; /* Hover color */
@@ -125,6 +92,45 @@ body {
 .withImageBackground {
   background-image: var(--imgcol), var(--imgbg);
   background-size: cover;
+}
+
+/* COUNTDOWN TIMER */
+.timer {
+  font-family: sans-serif;
+  display: inline-block;
+  padding: 16px 24px;
+  border-radius: 5px;
+  background-color: var(--cards);
+  box-shadow: 0 5px 7px rgba(0, 0, 0, 0.35);
+  position: absolute;
+  z-index: 1;
+  top: 15px;
+  left: 15px;
+  color: var(--fg);
+}
+
+.timer__part {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.timer__btn {
+  width: 50px;
+  height: 50px;
+  margin-left: 16px;
+  border-radius: 50%;
+  border: none;
+  color: var(--fg);
+  background: #8208e6;
+  cursor: pointer;
+}
+
+.timer__btn--start {
+  background: #00b84c;
+}
+
+.timer__btn--stop {
+  background: #ff0256;
 }
 
 /* Swiper Background Image */
@@ -596,6 +602,10 @@ body {
     width: 80%;
     height: 70px;
     font-size: 25px;
+  }
+
+  .timer {
+    display: none;
   }
 
   #languageSelector .language-dropbtn {

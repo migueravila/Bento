@@ -1,7 +1,7 @@
 // COUNTDOWN TIMER
 const y = document.getElementById("audioTimer");
 let statusTimer = false;
-let contoh;
+let audioInterval;
 
 class Timer {
 	constructor(root) {
@@ -65,17 +65,10 @@ class Timer {
 		this.updateInterfaceTime();
 
 		if (this.remainingSeconds === 0) {
-		//   this.stop();
 		  clearInterval(this.interval);
-          contoh = setInterval(() => {
+          audioInterval = setInterval(() => {
             y.play();
           }, 500);
-        //   setTimeout(() => {
-        //     if (window.confirm('Stop timer?')) {
-        //         y.pause();
-        //         clearInterval(contoh);
-        //     }
-        //   }, 1000);
 		}
 	  }, 1000);
 
@@ -91,7 +84,7 @@ class Timer {
 
 	  y.pause()
 
-	  clearInterval(contoh)
+	  clearInterval(audioInterval)
 
 	  this.updateInterfaceControls();
 	}

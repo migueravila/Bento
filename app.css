@@ -30,11 +30,11 @@
   --cards: #e4e6e6; /* Cards color */
 
   /* Image background  */
-  --imgbg1: url('https://source.unsplash.com/1920x1080/?landscape'); /* Image URL */
-  --imgbg2: url('https://source.unsplash.com/1920x1080/?nature'); /* Image URL */
-  --imgbg3: url('https://source.unsplash.com/1920x1080/?mountain'); /* Image URL */
-  --imgbg4: url('https://source.unsplash.com/1920x1080/?city'); /* Image URL */
-  --imgbg5: url('https://source.unsplash.com/1920x1080/?forest'); /* Image URL */
+  --imgbg1: url('https://source.unsplash.com/1920x1080/?landscape');
+  --imgbg2: url('https://source.unsplash.com/1920x1080/?nature');
+  --imgbg3: url('https://source.unsplash.com/1920x1080/?mountain');
+  --imgbg4: url('https://source.unsplash.com/1920x1080/?city');
+  --imgbg5: url('https://source.unsplash.com/1920x1080/?forest');
   --imgcol: linear-gradient(
     rgba(255, 255, 255, 0.7),
     rgba(255, 255, 255, 0.7)

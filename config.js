@@ -5,22 +5,34 @@
 // │  │ ││││├┤ ││ ┬│ │├┬┘├─┤ │ ││ ││││
 // └─┘└─┘┘└┘└  ┴└─┘└─┘┴└─┴ ┴ ┴ ┴└─┘┘└┘
 
-const CONFIG = {
+let CONFIG = {
 	// ┌┐ ┌─┐┌─┐┬┌─┐┌─┐
 	// ├┴┐├─┤└─┐││  └─┐
 	// └─┘┴ ┴└─┘┴└─┘└─┘
 
 	// General
-	name: 'John',
+	name: '',
 	imageBackground: false,
 	openInNewTab: true,
 	twelveHourFormat: false,
 
-	// Greetings
-	greetingMorning: 'Good morning!',
-	greetingAfternoon: 'Good afternoon,',
-	greetingEvening: 'Good evening,',
-	greetingNight: 'Go to Sleep!',
+	// Greetings English
+	greetingMorning: 'Good Morning',
+	greetingAfternoon: 'Good Afternoon',
+	greetingEvening: 'Good Evening',
+	greetingNight: 'Go to sleep!',
+
+	// Greetings Indonesian
+	greetingMorningIndonesian: 'Selamat Pagi',
+	greetingAfternoonIndonesian: 'Selamat Siang',
+	greetingEveningIndonesian: 'Selamat Sore',
+	greetingNightIndonesian: 'Saatnya istirahat!',
+
+	// Greetings French
+	greetingMorningFrench: 'Bonjour',
+	greetingAfternoonFrench: 'Bonne après-midi',
+	greetingEveningFrench: 'Bonsoir',
+	greetingNightFrench: 'Il est temps de dormir!',
 
 	// Layout
 	bentoLayout: 'bento', // 'bento', 'lists', 'buttons'
@@ -45,6 +57,24 @@ const CONFIG = {
 	changeThemeByHour: false,
 	hourDarkThemeActive: '18:30',
 	hourDarkThemeInactive: '07:00',
+
+	// Music (English)
+	musicEnglish1: 'Relax',
+	musicEnglish2: 'Classic',
+	musicEnglish3: 'Electro',
+	musicEnglish4: 'Rock',
+
+	// Music (Indonesian)
+	musicIndonesian1: 'Santai',
+	musicIndonesian2: 'Klasik',
+	musicIndonesian3: 'Elektro',
+	musicIndonesian4: 'Rock',
+
+	// Music (French)
+	musicFrench1: 'Détends',
+	musicFrench2: 'Classique',
+	musicFrench3: 'Électro',
+	musicFrench4: 'Rock',
 
 	// ┌┐ ┬ ┬┌┬┐┌┬┐┌─┐┌┐┌┌─┐
 	// ├┴┐│ │ │  │ │ ││││└─┐
@@ -139,7 +169,7 @@ const CONFIG = {
 			id: '1',
 			links: [
 				{
-					name: 'Inspirational',
+					name: 'Relax',
 					link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
 				},
 				{
@@ -147,7 +177,7 @@ const CONFIG = {
 					link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
 				},
 				{
-					name: 'Oldies',
+					name: 'Electro',
 					link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
 				},
 				{

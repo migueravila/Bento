@@ -16,6 +16,8 @@ const CONFIG = {
 	openInNewTab: true,
 	twelveHourFormat: false,
 
+	searchEngine: 'Google', // 'Bing', 'Brave', 'DuckDuckGo', 'Google'
+
 	// Greetings
 	greetingMorning: 'Good morning!',
 	greetingAfternoon: 'Good afternoon,',

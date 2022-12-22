@@ -1,15 +1,5 @@
 ![image](assets/img/header.png)
 
-<p style="margin: -20px 0 30px">
-  <a href="https://www.buymeacoffee.com/migueravila" target="_blank" style='margin-right:0px; margin-top:5px'>
-    <img align="center" src="https://github.com/migueravila/Bento/blob/master/assets/img/donation.png" alt="donation" height="35px" />
-  </a>
-
-  <a href="https://migueravila.github.io/Bento/" target="_blank" style='margin-right:0px; margin-top:5px'>
-    <img align="center" src="https://github.com/migueravila/Bento/blob/master/assets/img/live.png" alt="live-preview" height="35px" />
-  </a>
-</p>
-
 <br />
 
 ## 👇 Index
@@ -30,7 +20,6 @@
   - [💛 Colors](#-colors)
   - [🌑 Auto change theme](#-auto-change-theme)
 
-
 ## ✨ Features
 
 - **Easy configuration** file.
@@ -39,7 +28,7 @@
 - **Clock and Date** format can be set to 24 hour (default) or 12 hour.
 - **Greetings** are easy to modify.
 - **Variables** for custom colors and font sizes in the `app.css` code.
-- **Icons** all icons are from [Lucide icons](https://lucide.dev).
+- All **icons** are from [Lucide icons](https://lucide.dev).
 - **Modular** javascript files for an easy read.
 
 ## 🚀 Usage

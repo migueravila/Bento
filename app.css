@@ -4,11 +4,7 @@
 // ╚═╝╚═╝╝╚╝ ╩ ╚═╝ 
 */
 
-/* 
-//  ┬  ┬┌─┐┬─┐┬┌─┐┌┐ ┬  ┌─┐┌─┐
-//  ┐┌┘├─┤├┬┘│├─┤├┴┐│  ├┤ └─┐
-//  ┘ ┴ ┴┴└─┴┴ ┴└─┘┴─┘└─┘└─┘ 
- */
+/* V A R I A B L E S */
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap'); /* Font Import */
 
@@ -54,11 +50,7 @@
   ); /* Filter color */
 }
 
-/* 
-//  ┌─┐┌┬┐┬ ┬┬  ┌─┐┌─┐
-//  └─┐ │ └┬┘│  ├┤ └─┐
-//  └─┘ ┴  ┴ ┴─┘└─┘└─┘ 
-*/
+/* S T Y L E S */
 
 * {
   margin: 0;

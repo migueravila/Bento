@@ -16,7 +16,11 @@ var tempUnit = CONFIG.weatherUnit;
 
 const KELVIN = 273.15;
 const key = `${CONFIG.weatherKey}`;
-setPosition();
+
+setPosition(); // call first, setINterval doesnt trigger when first reached
+setInterval(function() {
+	setPosition();
+}, 120000) // run once every two minutes
 
 function setPosition(position) {
 	if (!CONFIG.trackLocation || !navigator.geolocation) {

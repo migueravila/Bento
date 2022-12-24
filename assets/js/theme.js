@@ -39,6 +39,8 @@ themeToggle.addEventListener('click', () => {
 });
 
 if (CONFIG.imageBackground) {
+	const root = document.querySelector(':root');
+	root.style.setProperty('--imgbg', `url(${CONFIG.imageUrl})`);
 	document.body.classList.add('withImageBackground');
 }
 

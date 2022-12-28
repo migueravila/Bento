@@ -7,6 +7,17 @@ let darkTheme = localStorage.getItem('darkTheme');
 const themeToggle = document.querySelector('#themeButton');
 const bodyBackground = document.getElementById('#body');
 
+setTheme();
+
+function setTheme() { 
+	const theme = CONFIG.theme;
+	var link = document.createElement("link");
+	link.type = "text/css";
+	link.rel = "stylesheet";
+	link.href = `./assets/themes/${theme}.css`
+	document.head.appendChild(link);
+}
+
 const enableDark = () => {
 	document.body.classList.add('darktheme');
 	localStorage.setItem('darkTheme', 'enabled');

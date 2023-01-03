@@ -213,6 +213,7 @@ Finally, choose an Icon set:
 - **OneDark** (_Default one_) Using the One Dark Pro color scheme
 - **Dark** For White theme only users that want a minimalist look
 - **White** For Dark theme only users that want a minimalist look
+- **Moe** Using the [Moe Colour Scheme](https://seduccionlinux.wordpress.com/moe-moe-dark/)
 
 Finally just add them to the `config.js` file.
 

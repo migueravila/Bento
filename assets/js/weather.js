@@ -7,12 +7,35 @@ const iconElement = document.querySelector('.weatherIcon');
 const tempElement = document.querySelector('.weatherValue p');
 const descElement = document.querySelector('.weatherDescription p');
 
+let loadLastWeather = CONFIG.showLastWeather;
+let lastTemperature = localStorage.getItem('lastTemperature');
+let lastTempDescription = localStorage.getItem('lastWeatherDescription');
+let lastWeatherIcon = localStorage.getItem('lastWeatherIcon');
+
 const weather = {};
 weather.temperature = {
 	unit: 'celsius',
 };
 
-var tempUnit = CONFIG.weatherUnit;
+let tempUnit = CONFIG.weatherUnit;
+
+function storeWeather(temperature, description, icon) {
+	localStorage.setItem('lastTemperature', temperature.toFixed(0));
+	localStorage.setItem('lastWeatherDescription', description);
+	localStorage.setItem('lastWeatherIcon', icon);
+}
+
+function showLastWeather() {
+	iconElement.innerHTML = `<img src="assets/icons/${CONFIG.weatherIcons}/${localStorage.getItem('lastWeatherIcon')}.png"/>`;
+	tempElement.innerHTML = `${localStorage.getItem('lastTemperature')}°<span class="darkfg">${tempUnit}</span>`;
+	descElement.innerHTML = localStorage.getItem('lastWeatherDescription');
+}
+
+if (loadLastWeather && lastTemperature) {
+	showLastWeather()
+} else {
+	iconElement.innerHTML = `<img src="assets/icons/${CONFIG.weatherIcons}/unknown.png"/>`;
+}
 
 const KELVIN = 273.15;
 const key = `${CONFIG.weatherKey}`;
@@ -49,6 +72,11 @@ function getWeather(latitude, longitude) {
 			weather.temperature.value = tempUnit == 'C' ? celsius : (celsius * 9) / 5 + 32;
 			weather.description = data.weather[0].description;
 			weather.iconId = data.weather[0].icon;
+
+			if (loadLastWeather) {
+				storeWeather(data.main.temp - KELVIN, data.weather[0].description, data.weather[0].icon)
+			}
+
 		})
 		.then(function() {
 			displayWeather();

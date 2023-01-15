@@ -161,20 +161,20 @@ const CONFIG = {
 			id: '2',
 			links: [
 				{
-					name: 'Linkedin',
-					link: 'https://www.linkedin.com',
+					name: 'Gawwuda Winux',
+					link: 'https://garudalinux.org',
 				},
 				{
-					name: 'Dribbble',
-					link: 'https://www.dribbble.com',
+					name: 'Gawwuda Winux Fowum',
+					link: 'https://forum.garudalinux.org',
 				},
 				{
-					name: 'Trello',
-					link: 'https://www.trello.com',
+					name: 'SpaceDock',
+					link: 'https://spacedock.info',
 				},
 				{
-					name: 'Slack',
-					link: 'https://www.slack.com',
+					name: 'Odysee',
+					link: 'https://odysee.com',
 				},
 			],
 		},

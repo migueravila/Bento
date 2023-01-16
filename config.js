@@ -161,11 +161,11 @@ const CONFIG = {
 			id: '2',
 			links: [
 				{
-					name: 'Gawwuda Winux',
+					name: 'Garuda Linux',
 					link: 'https://garudalinux.org',
 				},
 				{
-					name: 'Gawwuda Winux Fowum',
+					name: 'Garuda Linux Forum',
 					link: 'https://forum.garudalinux.org',
 				},
 				{

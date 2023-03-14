@@ -32,8 +32,8 @@ const CONFIG = {
 	language: 'en', // More languages in https://openweathermap.org/current#multi
 
 	trackLocation: true, // If false or an error occurs, the app will use the lat/lon below
-	defaultLatitude: '37.775',
-	defaultLongitude: '-122.419',
+	defaultLatitude: '52.520008',
+	defaultLongitude: '13.404954',
 
 	// Autochange
 	autoChangeTheme: true,
@@ -77,9 +77,9 @@ const CONFIG = {
 		},
 		{
 			id: '5',
-			name: 'Reddit',
+			name: 'Times',
 			icon: 'glasses',
-			link: 'https://reddit.com',
+			link: 'https://www.nytimes.com/',
 		},
 		{
 			id: '6',
@@ -100,7 +100,7 @@ const CONFIG = {
 			id: '2',
 			name: 'twitter',
 			icon: 'twitter',
-			link: 'https://twitter.com/',
+			link: 'https://nitter.net',
 		},
 		{
 			id: '3',
@@ -140,19 +140,19 @@ const CONFIG = {
 			links: [
 				{
 					name: 'Inspirational',
-					link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+					link: 'https://www.youtube.com/watch?v=rBrd_3VMC3c',
 				},
 				{
 					name: 'Classic',
-					link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+					link: 'https://c418.org/albums/minecraft-volume-alpha',
 				},
 				{
 					name: 'Oldies',
-					link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+					link: 'https://www.youtube.com/watch?v=m2uTFF_3MaA',
 				},
 				{
 					name: 'Rock',
-					link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+					link: 'https://www.youtube.com/watch?v=QkF3oxziUI4',
 				},
 			],
 		},

@@ -106,13 +106,13 @@ const CONFIG = {
 			id: '3',
 			name: 'bot',
 			icon: 'bot',
-			link: 'https://discord.com/app',
+			link: 'https://codeforces.com/',
 		},
 		{
 			id: '4',
 			name: 'Amazon',
 			icon: 'shopping-bag',
-			link: 'https://amazon.com/',
+			link: 'https://leetcode.com/problemset/all/',
 		},
 		{
 			id: '5',

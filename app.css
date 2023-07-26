@@ -61,6 +61,24 @@
   /* color: skyblue; */
 }
 
+@keyframes Dance {
+  0%{
+      transform: translateY(0.5rem);
+  }
+  25%{
+      transform: translateY(-0.5rem);
+  }
+  50%{
+      transform: translateY(0.5rem);
+  }
+  75%{
+      transform: translateY(-0.5rem);
+  }
+  100%{
+      transform: translateY(0.5rem);
+  }
+}
+
 body {
   width: 100vw;
   height: 100vh;
@@ -106,6 +124,7 @@ body {
   grid-template-rows: repeat(4, 1fr);
   grid-gap: 30px;
   padding: 20px;
+  animation: Dance 8s infinite;
 }
 
 .card {

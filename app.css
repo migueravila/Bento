@@ -21,7 +21,7 @@
   --sfg: #494949; /* Sceondary Foreground color */
 
   /* Light Colors  */
-  --accent: #57a0d9; /* Hover color */
+  --accent: #57a0d9; /* Hover color #57a0d9 */ 
   --background: #f5f5f5; /* Background color */
   --cards: #e4e6e6; /* Cards color */
 
@@ -40,7 +40,7 @@
   --cards: #201e21; /* Cards color */
 
   /* Fonts Color */
-  --fg: #d8dee9; /* Foreground color */
+  --fg: #d8dee9; /* Foreground color  #d8dee9*/
   --sfg: #2c292e; /* Secondary Foreground color */
 
   /* Image background  */
@@ -58,6 +58,25 @@
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
   transition: 0.2s ease-in-out;
+  /* color: skyblue; */
+}
+
+@keyframes Dance {
+  0%{
+      transform: translateY(0.5rem);
+  }
+  25%{
+      transform: translateY(-0.5rem);
+  }
+  50%{
+      transform: translateY(0.5rem);
+  }
+  75%{
+      transform: translateY(-0.5rem);
+  }
+  100%{
+      transform: translateY(0.5rem);
+  }
 }
 
 body {
@@ -105,6 +124,7 @@ body {
   grid-template-rows: repeat(4, 1fr);
   grid-gap: 30px;
   padding: 20px;
+  animation: Dance 8s infinite;
 }
 
 .card {

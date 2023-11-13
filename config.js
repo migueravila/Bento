@@ -11,7 +11,7 @@ const CONFIG = {
 	// └─┘┴ ┴└─┘┴└─┘└─┘
 
 	// General
-	name: 'John',
+	name: 'Zulhaditya',
 	imageBackground: false,
 	openInNewTab: true,
 	twelveHourFormat: false,
@@ -51,41 +51,41 @@ const CONFIG = {
 	// └─┘└─┘ ┴  ┴ └─┘┘└┘└─┘
 
 	firstButtonsContainer: [
-		{
+    {
 			id: '1',
-			name: 'Github',
-			icon: 'github',
-			link: 'https://github.com/',
+			name: 'YouTube',
+			icon: 'youtube',
+			link: 'https://youtube.com',
 		},
 		{
 			id: '2',
-			name: 'Mail',
-			icon: 'mail',
-			link: 'https://mail.protonmail.com/',
+			name: 'Github',
+			icon: 'github',
+			link: 'https://github.com/Zulhaditya',
 		},
 		{
 			id: '3',
-			name: 'Todoist',
-			icon: 'trello',
-			link: 'https://todoist.com',
+			name: 'Gmail',
+			icon: 'mail',
+			link: 'https://gmail.com',
 		},
 		{
 			id: '4',
-			name: 'Calendar',
-			icon: 'calendar',
-			link: 'https://calendar.google.com/calendar/r',
+			name: 'Drive',
+			icon: 'drive',
+			link: 'https://drive.google.com/drive/home',
 		},
 		{
 			id: '5',
-			name: 'Reddit',
-			icon: 'glasses',
-			link: 'https://reddit.com',
+			name: 'Fiverr',
+			icon: 'fiverr',
+			link: 'https://www.fiverr.com/users/zulhaditya/seller_dashboard',
 		},
 		{
 			id: '6',
-			name: 'Odysee',
-			icon: 'youtube',
-			link: 'https://odysee.com/',
+			name: 'Dev',
+			icon: 'computer',
+			link: 'https://dev.to/',
 		},
 	],
 
@@ -135,24 +135,24 @@ const CONFIG = {
 	// First Links Container
 	firstlistsContainer: [
 		{
-			icon: 'music',
+			icon: 'youtube',
 			id: '1',
 			links: [
 				{
-					name: 'Inspirational',
-					link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+					name: 'Podcast',
+					link: 'https://www.youtube.com/@corbuzier/videos',
 				},
 				{
-					name: 'Classic',
-					link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+					name: 'ThePrimeagen',
+					link: 'https://www.youtube.com/@ThePrimeTimeagen/videos',
 				},
 				{
-					name: 'Oldies',
-					link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+					name: 'David Bombal',
+					link: 'https://www.youtube.com/@davidbombal/videos',
 				},
 				{
-					name: 'Rock',
-					link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+					name: 'Picky Picks',
+					link: 'https://www.youtube.com/@PickyPicksid/videos',
 				},
 			],
 		},
@@ -161,20 +161,20 @@ const CONFIG = {
 			id: '2',
 			links: [
 				{
-					name: 'Linkedin',
-					link: 'https://www.linkedin.com',
+					name: 'Facebook',
+					link: 'https://web.facebook.com',
 				},
 				{
-					name: 'Dribbble',
-					link: 'https://www.dribbble.com',
-				},
-				{
-					name: 'Trello',
-					link: 'https://www.trello.com',
+					name: 'Instagram',
+					link: 'https://www.instagram.com',
 				},
 				{
 					name: 'Slack',
 					link: 'https://www.slack.com',
+				},
+        {
+					name: 'X',
+					link: 'https://twitter.com/home',
 				},
 			],
 		},

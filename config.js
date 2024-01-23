@@ -71,9 +71,9 @@ const CONFIG = {
 		},
 		{
 			id: '4',
-			name: 'Calendar',
-			icon: 'calendar',
-			link: 'https://calendar.google.com/calendar/r',
+			name: 'Manga Reader',
+			icon: 'paw-print',
+			link: 'https://mangareader.to/home',
 		},
 		{
 			id: '5',
@@ -115,16 +115,17 @@ const CONFIG = {
 		},
 		{
 			id: '4',
-			name: 'Manga Reader',
-			icon: 'paw-print',
-			link: 'https://mangareader.to/home',
+			name: 'Twitch',
+			icon: 'twitch',
+			link: 'https://www.twitch.tv/',
 			
 		},
 		{
 			id: '5',
-			name: 'Twitch',
-			icon: 'twitch',
-			link: 'https://www.twitch.tv/',
+			name: 'Twitter',
+			icon: 'twitter',
+			link: 'https://twitter.com/home',
+			
 			
 		},
 		{

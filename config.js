@@ -27,7 +27,7 @@ const CONFIG = {
 	
 	// Weather
 	weatherKey: 'b56c89f2664c14a26997cdf839e89203', // Write here your API Key
-	weatherIcons: 'OneDark', // 'Onedark', 'Nord', 'Dark', 'White'
+	weatherIcons: 'White', // 'Onedark', 'Nord', 'Dark', 'White'
 	weatherUnit: 'C', // 'F', 'C'
 	language: 'en', // More languages in https://openweathermap.org/current#multi
 
@@ -36,7 +36,7 @@ const CONFIG = {
 	defaultLongitude: '-17.275190',
 
 	// Autochange
-	autoChangeTheme: true,
+	autoChangeTheme: false,
 
 	// Autochange by OS
 	changeThemeByOS: true,

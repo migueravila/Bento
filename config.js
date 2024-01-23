@@ -135,7 +135,7 @@ const CONFIG = {
 	// First Links Container
 	firstlistsContainer: [
 		{
-			icon: 'social',
+			icon: 'book-heart',
 			id: '1',
 			links: [
 				{
@@ -151,8 +151,8 @@ const CONFIG = {
 					link: 'https://www.youtube.com/',
 				},
 				{
-					name: 'Rock',
-					link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+					name: 'Twitch',
+					link: 'https://www.twitch.tv/',
 				},
 			],
 		},

@@ -77,54 +77,61 @@ const CONFIG = {
 		},
 		{
 			id: '5',
-			name: 'Reddit',
-			icon: 'glasses',
-			link: 'https://reddit.com',
+			name: 'League of Graphs',
+			icon: 'gamepad-2',
+			link: 'https://www.leagueofgraphs.com/fr/',
+			
 		},
 		{
 			id: '6',
-			name: 'Odysee',
-			icon: 'youtube',
-			link: 'https://odysee.com/',
+			name: 'Ygg Torrent',
+			icon: 'download-cloud',
+			link: 'https://www.yggtorrent.qa/',
+			
 		},
 	],
 
 	secondButtonsContainer: [
 		{
 			id: '1',
-			name: 'Music',
-			icon: 'headphones',
-			link: 'https://open.spotify.com',
+			name: 'Facebook',
+			icon: 'facebook',
+			link: 'https://www.facebook.com/?locale=fr_FR',
+			
 		},
 		{
 			id: '2',
-			name: 'twitter',
-			icon: 'twitter',
-			link: 'https://twitter.com/',
+			name: 'Instagram',
+			icon: 'instagram',
+			link: 'https://www.instagram.com/',
+			
 		},
 		{
 			id: '3',
-			name: 'bot',
-			icon: 'bot',
-			link: 'https://discord.com/app',
+			name: 'Linkedin',
+			icon: 'linkedin',
+			link: 'https://fr.linkedin.com/',
+			
 		},
 		{
 			id: '4',
-			name: 'Amazon',
-			icon: 'shopping-bag',
-			link: 'https://amazon.com/',
+			name: 'Manga Reader',
+			icon: 'paw-print',
+			link: 'https://mangareader.to/home',
+			
 		},
 		{
 			id: '5',
-			name: 'Hashnode',
-			icon: 'pen-tool',
-			link: 'https://hashnode.com/',
+			name: 'Twitch',
+			icon: 'twitch',
+			link: 'https://www.twitch.tv/',
+			
 		},
 		{
 			id: '6',
-			name: 'Figma',
-			icon: 'figma',
-			link: 'https://figma.com/',
+			name: 'Youtube',
+			icon: 'youtube',
+			link: 'https://www.youtube.com/',
 		},
 	],
 

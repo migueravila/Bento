@@ -12,7 +12,7 @@ const CONFIG = {
 
 	// General
 	name: 'KuroShin',
-	imageBackground: true,
+	imageBackground: false,
 	openInNewTab: true,
 	twelveHourFormat: false,
 
@@ -23,7 +23,7 @@ const CONFIG = {
 	greetingNight: 'Go to Sleep!',
 
 	// Layout
-	bentoLayout: 'bento', // 'bento', 'lists', 'buttons'
+	bentoLayout: 'buttons', // 'bento', 'lists', 'buttons'
 	
 	// Weather
 	weatherKey: 'b56c89f2664c14a26997cdf839e89203', // Write here your API Key

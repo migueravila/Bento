@@ -1,62 +1,50 @@
-// ┬ ┬┌─┐┌─┐┌┬┐┬ ┬┌─┐┬─┐
-// │││├┤ ├─┤ │ ├─┤├┤ ├┬┘
-// └┴┘└─┘┴ ┴ ┴ ┴ ┴└─┘┴└─
-// Functions to setup Weather widget.
+ async function getWeather(location) {
+    try {
+      const response = await fetch(`https://wttr.in/${location}?format=%t`);
+      
+      if (!response.ok) {
+        throw new Error('Failed to fetch weather information');
+      }
 
-const iconElement = document.querySelector('.weatherIcon');
-const tempElement = document.querySelector('.weatherValue p');
-const descElement = document.querySelector('.weatherDescription p');
+      const weatherData = await response.text();
+      const weatherContainer = document.getElementById('weather-container');
+      weatherContainer.textContent = `Weather in ${location}: ${weatherData}`;
+    } catch (error) {
+      console.error(error.message);
+    }
+  }
 
-const weather = {};
-weather.temperature = {
-	unit: 'celsius',
-};
 
-var tempUnit = CONFIG.weatherUnit;
+// Function to get weather information from wttr.in based on user's location
+async function getWeatherByLocation() {
+  try {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(async function(position) {
+        const { latitude, longitude } = position.coords;
+        const response = await fetch(`https://wttr.in/${latitude},${longitude}?format=%t`);
+        
+        if (!response.ok) {
+          throw new Error('Failed to fetch weather information');
+        }
 
-const KELVIN = 273.15;
-const key = `${CONFIG.weatherKey}`;
-setPosition();
-
-function setPosition(position) {
-	if (!CONFIG.trackLocation || !navigator.geolocation) {
-		if (CONFIG.trackLocation) {
-			console.error('Geolocation not available');
-		}
-		getWeather(CONFIG.defaultLatitude, CONFIG.defaultLongitude);
-		return;
-	}
-	navigator.geolocation.getCurrentPosition(
-		pos => {
-			getWeather(pos.coords.latitude.toFixed(3), pos.coords.longitude.toFixed(3));
-		},
-		err => {
-			console.error(err);
-			getWeather(CONFIG.defaultLatitude, CONFIG.defaultLongitude);
-		}
-	);
+        const weatherData = await response.text();
+        const weatherContainer = document.getElementById('weather-container');
+        weatherContainer.textContent = `Weather at your location: ${weatherData}`;
+      });
+    } else {
+      throw new Error('Geolocation is not supported by your browser');
+    }
+  } catch (error) {
+    console.error(error.message);
+  }
 }
 
-function getWeather(latitude, longitude) {
-	let api = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&lang=${CONFIG.language}&appid=${key}`;
-	fetch(api)
-		.then(function(response) {
-			let data = response.json();
-			return data;
-		})
-		.then(function(data) {
-			let celsius = Math.floor(data.main.temp - KELVIN);
-			weather.temperature.value = tempUnit == 'C' ? celsius : (celsius * 9) / 5 + 32;
-			weather.description = data.weather[0].description;
-			weather.iconId = data.weather[0].icon;
-		})
-		.then(function() {
-			displayWeather();
-		});
-}
-
-function displayWeather() {
-	iconElement.innerHTML = `<img src="assets/icons/${CONFIG.weatherIcons}/${weather.iconId}.png"/>`;
-	tempElement.innerHTML = `${weather.temperature.value.toFixed(0)}°<span class="darkfg">${tempUnit}</span>`;
-	descElement.innerHTML = weather.description;
-}
+// Ask for location permission when the page loads
+document.addEventListener('DOMContentLoaded', function() {
+  if (confirm('Allow this website to access your location for weather information?')) {
+    getWeatherByLocation();
+  } else {
+    // Provide a fallback or default location if the user denies location access
+    getWeather('Ranchi'); // Change this to your desired default location
+  }
+});

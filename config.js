@@ -162,11 +162,11 @@ const CONFIG = {
 			links: [
 				{
 					name: 'Linkedin',
-					link: 'https://www.linkedin.com',
+					link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
 				},
 				{
 					name: 'Dribbble',
-					link: 'https://www.dribbble.com',
+					link: 'https://www.linkedin.com',
 				},
 				{
 					name: 'Trello',

@@ -14,7 +14,7 @@ const CONFIG = {
 	name: 'John',
 	imageBackground: false,
 	openInNewTab: true,
-	twelveHourFormat: false,
+	twelveHourFormat: true,
 
 	// Greetings
 	greetingMorning: 'Good morning!',
@@ -162,11 +162,11 @@ const CONFIG = {
 			links: [
 				{
 					name: 'Linkedin',
-					link: 'https://www.linkedin.com',
+					link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
 				},
 				{
 					name: 'Dribbble',
-					link: 'https://www.dribbble.com',
+					link: 'https://www.linkedin.com',
 				},
 				{
 					name: 'Trello',
@@ -223,6 +223,54 @@ const CONFIG = {
 				{
 					name: 'Repos',
 					link: 'https://github.com/migueravila',
+				},
+			],
+		},
+	],
+
+	// Third Links Container
+	thirdListsContainer: [
+		{
+			icon: 'music',
+			id: '1',
+			links: [
+				{
+					name: 'Inspirational',
+					link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+				},
+				{
+					name: 'Classic',
+					link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+				},
+				{
+					name: 'Oldies',
+					link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+				},
+				{
+					name: 'Rock',
+					link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+				},
+			],
+		},
+		{
+			icon: 'coffee',
+			id: '2',
+			links: [
+				{
+					name: 'Linkedin',
+					link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+				},
+				{
+					name: 'Dribbble',
+					link: 'https://www.linkedin.com',
+				},
+				{
+					name: 'Trello',
+					link: 'https://www.trello.com',
+				},
+				{
+					name: 'Slack',
+					link: 'https://www.slack.com',
 				},
 			],
 		},
